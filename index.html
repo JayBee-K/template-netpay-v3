@@ -1,166 +1,1194 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport"
-	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
-	<title>Template Netpay</title>
-	<meta name="description" content="Template Netpay">
-	<meta name="author" content="">
+    <title>Template Netpay</title>
+    <meta name="description" content="Template Netpay">
+    <meta name="author" content="">
 
-	<meta property="og:title" content="Template Netpay">
-	<meta property="og:type" content="website">
-	<meta property="og:url" content="">
-	<meta property="og:description" content="Template Netpay">
-	<meta property="og:image" content="">
+    <meta property="og:title" content="Template Netpay">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:description" content="Template Netpay">
+    <meta property="og:image" content="">
 
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
-	      rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
 
-	<link rel="icon" href="./assets/images/favicon.png">
-	<link rel="apple-touch-icon" href="./assets/images/favicon.png">
-	<link rel="stylesheet" href="./assets/plugins/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href="./assets/plugins/swiper/swiper-bundle.min.css">
-	<link rel="stylesheet" href="./assets/plugins/fancybox/fancybox.min.css">
-	<link rel="stylesheet" href="./assets/fonts/fontawesome/css/all.min.css">
-	<link rel="stylesheet" href="./assets/css/base.css">
-	<link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="icon" href="./assets/images/favicon.png">
+    <link rel="apple-touch-icon" href="./assets/images/favicon.png">
+    <link rel="stylesheet" href="./assets/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/plugins/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./assets/plugins/fancybox/fancybox.min.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 
-	<style>
-		:root {
-			--primary-color: #2579f2;
-			--primary-hover: #1470f3;
-			--primary-rgb: 37, 141, 242;
-			--secondary-color: #ee4d2d;
-			--secondary-hover: #ef3f1c;
-			--secondary-rgb: 238, 77, 45;
-		}
-	</style>
+    <style>
+        :root {
+            --primary-color: #2579f2;
+            --primary-hover: #1470f3;
+            --primary-rgb: 37, 141, 242;
+            --secondary-color: #ee4d2d;
+            --secondary-hover: #ef3f1c;
+            --secondary-rgb: 238, 77, 45;
+        }
+    </style>
 </head>
 <body>
 
 <div id="header" class="header">
-	<div class="header-overlay" id="header-overlay"></div>
+    <div class="header-overlay" id="header-overlay"></div>
 </div>
 
 <div id="main" class="main">
-	<div class="section-hero section-gap">
-		<div class="container">
-			<div class="d-flex mx-auto gap-5px">
-				<div class="hero-slider position-relative" id="slider-hero">
-					<div class="swiper h-100">
-						<div class="swiper-wrapper h-100">
-							<div class="swiper-slide h-100">
-								<div class="hero-item position-relative overflow-hidden h-100">
-									<img src="./assets/images/banner/4.png" class="img-fluid h-100" alt="">
-									<a href="" class="stretched-link"></a>
-								</div>
-							</div>
-							<div class="swiper-slide h-100">
-								<div class="hero-item position-relative overflow-hidden h-100">
-									<img src="./assets/images/banner/5.jpg" class="img-fluid h-100" alt="">
-									<a href="" class="stretched-link"></a>
-								</div>
-							</div>
-							<div class="swiper-slide h-100">
-								<div class="hero-item position-relative overflow-hidden h-100">
-									<img src="./assets/images/banner/1.jpg" class="img-fluid h-100" alt="">
-									<a href="" class="stretched-link"></a>
-								</div>
-							</div>
-							<div class="swiper-slide h-100">
-								<div class="hero-item position-relative overflow-hidden h-100">
-									<img src="./assets/images/banner/2.jpg" class="img-fluid h-100" alt="">
-									<a href="" class="stretched-link"></a>
-								</div>
-							</div>
-							<div class="swiper-slide h-100">
-								<div class="hero-item position-relative overflow-hidden h-100">
-									<img src="./assets/images/banner/3.jpg" class="img-fluid h-100" alt="">
-									<a href="" class="stretched-link"></a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="slider-button_prev button-theme button-theme_primary">
-						<i class="far fa-angle-left"></i>
-					</div>
-					<div class="slider-button_next button-theme button-theme_primary">
-						<i class="far fa-angle-right"></i>
-					</div>
-					<div class="slider-pagination"></div>
-				</div>
-				<div class="hero-thumb vstack gap-5px">
-					<div class="position-relative overflow-hidden hero-thumb_item">
-						<img src="./assets/images/banner/1-small.png" class="img-fluid" alt="">
-						<a href="" class="stretched-link"></a>
-					</div>
-					<div class="position-relative overflow-hidden hero-thumb_item">
-						<img src="./assets/images/banner/2-small.png" class="img-fluid" alt="">
-						<a href="" class="stretched-link"></a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="section-featured section-light section-gap">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-6">
-					<div class="featured-card card bg-white vstack">
-						<div class="section-heading hstack justify-content-between mb-0">
-							<div class="section-heading_title">
-								POPULAR GAME CARD
-							</div>
-							<div class="section-heading_link">
-								<a href="">View More <i class="fal fa-angle-right"></i></a>
-							</div>
-						</div>
-						<div class="card-body p-0">
-							<div class="featured-list hstack">
-								<div class="featured-item hstack position-relative overflow-hidden">
-									<div class="featured-item_avatar flex-shrink-0 overflow-hidden">
-										<img src="./assets/images/featured/1.webp" class="img-fluid transition-default" alt="">
-									</div>
-									<div class="featured-item_content w-100 flex-fill">
-										<div class="featured-item_title">
-											Steam Wallet Code (VND)
-										</div>
-										<div class="featured-item_text">
-											Global
-										</div>
-									</div>
-									<a href="" class="stretched-link"></a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="featured-slide" id="slider-featured">
-				<div class="swiper h-auto">
-					<div class="swiper-wrapper h-auto">
-						<div class="swiper-slide h-auto">
-							<div class="featured-card card">
-								<div class="card-header">
-									<div class="card-header_title">
-										POPULAR GAME CARD
-									</div>
-									<div class="card-header_link">
-										<a href="" class="hstack">View More <i class="fal fa-angle-right"></i></a>
-									</div>
-								</div>
-								<div class="card-body"></div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+    <div class="section-hero section-gap">
+        <div class="container">
+            <div class="d-flex mx-auto gap-5px">
+                <div class="hero-slider position-relative" id="slider-hero">
+                    <div class="swiper h-100">
+                        <div class="swiper-wrapper h-100">
+                            <div class="swiper-slide h-100">
+                                <div class="hero-item position-relative overflow-hidden h-100">
+                                    <img src="./assets/images/banner/4.png" class="img-fluid h-100" alt="">
+                                    <a href="" class="stretched-link"></a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide h-100">
+                                <div class="hero-item position-relative overflow-hidden h-100">
+                                    <img src="./assets/images/banner/5.jpg" class="img-fluid h-100" alt="">
+                                    <a href="" class="stretched-link"></a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide h-100">
+                                <div class="hero-item position-relative overflow-hidden h-100">
+                                    <img src="./assets/images/banner/1.jpg" class="img-fluid h-100" alt="">
+                                    <a href="" class="stretched-link"></a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide h-100">
+                                <div class="hero-item position-relative overflow-hidden h-100">
+                                    <img src="./assets/images/banner/2.jpg" class="img-fluid h-100" alt="">
+                                    <a href="" class="stretched-link"></a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide h-100">
+                                <div class="hero-item position-relative overflow-hidden h-100">
+                                    <img src="./assets/images/banner/3.jpg" class="img-fluid h-100" alt="">
+                                    <a href="" class="stretched-link"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-button_prev button-theme button-theme_primary">
+                        <i class="far fa-angle-left"></i>
+                    </div>
+                    <div class="slider-button_next button-theme button-theme_primary">
+                        <i class="far fa-angle-right"></i>
+                    </div>
+                    <div class="slider-pagination"></div>
+                </div>
+                <div class="hero-thumb vstack gap-5px">
+                    <div class="position-relative overflow-hidden hero-thumb_item">
+                        <img src="./assets/images/banner/1-small.png" class="img-fluid" alt="">
+                        <a href="" class="stretched-link"></a>
+                    </div>
+                    <div class="position-relative overflow-hidden hero-thumb_item">
+                        <img src="./assets/images/banner/2-small.png" class="img-fluid" alt="">
+                        <a href="" class="stretched-link"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-featured section-light section-gap">
+        <div class="container">
+            <div class="featured-slide" id="slider-featured">
+                <div class="swiper h-auto">
+                    <div class="swiper-wrapper h-auto">
+                        <div class="swiper-slide h-auto">
+                            <div class="featured-card card bg-white vstack">
+                                <div class="section-heading mb-0">
+                                    <div class="section-heading_title">
+                                        POPULAR GAME CARD
+                                    </div>
+                                    <div class="section-heading_link">
+                                        <a href="">View More <i class="fal fa-angle-right"></i></a>
+                                    </div>
+                                </div>
+                                <div class="card-body p-0">
+                                    <div class="featured-list hstack flex-wrap">
+                                        <div class="featured-item hstack position-relative overflow-hidden">
+                                            <div class="featured-item_avatar flex-shrink-0 overflow-hidden">
+                                                <img src="./assets/images/featured/1.webp"
+                                                     class="img-fluid transition-default" alt="">
+                                            </div>
+                                            <div class="featured-item_content w-100 flex-fill">
+                                                <div class="featured-item_title limit">
+                                                    Steam Wallet Code (VND)
+                                                </div>
+                                                <div class="featured-item_text">
+                                                    Global
+                                                </div>
+                                            </div>
+                                            <a href="" class="stretched-link"></a>
+                                        </div>
+                                        <div class="featured-item hstack position-relative overflow-hidden">
+                                            <div class="featured-item_avatar flex-shrink-0 overflow-hidden">
+                                                <img src="./assets/images/featured/2.webp"
+                                                     class="img-fluid transition-default" alt="">
+                                            </div>
+                                            <div class="featured-item_content w-100 flex-fill">
+                                                <div class="featured-item_title limit">
+                                                    Mobile Legends Diamonds
+                                                </div>
+                                                <div class="featured-item_text">
+                                                    Global
+                                                </div>
+                                            </div>
+                                            <a href="" class="stretched-link"></a>
+                                        </div>
+                                        <div class="featured-item hstack position-relative overflow-hidden">
+                                            <div class="featured-item_avatar flex-shrink-0 overflow-hidden">
+                                                <img src="./assets/images/featured/3.webp"
+                                                     class="img-fluid transition-default" alt="">
+                                            </div>
+                                            <div class="featured-item_content w-100 flex-fill">
+                                                <div class="featured-item_title limit">
+                                                    PUBG Mobile UC (Global)
+                                                </div>
+                                                <div class="featured-item_text">
+                                                    Global
+                                                </div>
+                                            </div>
+                                            <a href="" class="stretched-link"></a>
+                                        </div>
+                                        <div class="featured-item hstack position-relative overflow-hidden">
+                                            <div class="featured-item_avatar flex-shrink-0 overflow-hidden">
+                                                <img src="./assets/images/featured/4.webp"
+                                                     class="img-fluid transition-default" alt="">
+                                            </div>
+                                            <div class="featured-item_content w-100 flex-fill">
+                                                <div class="featured-item_title limit">
+                                                    Ragnarok Origin Global Nyan Berry
+                                                </div>
+                                                <div class="featured-item_text">
+                                                    Global
+                                                </div>
+                                            </div>
+                                            <a href="" class="stretched-link"></a>
+                                        </div>
+                                        <div class="featured-item hstack position-relative overflow-hidden">
+                                            <div class="featured-item_avatar flex-shrink-0 overflow-hidden">
+                                                <img src="./assets/images/featured/1.webp"
+                                                     class="img-fluid transition-default" alt="">
+                                            </div>
+                                            <div class="featured-item_content w-100 flex-fill">
+                                                <div class="featured-item_title limit">
+                                                    Steam Wallet Code (VND)
+                                                </div>
+                                                <div class="featured-item_text">
+                                                    Global
+                                                </div>
+                                            </div>
+                                            <a href="" class="stretched-link"></a>
+                                        </div>
+                                        <div class="featured-item hstack position-relative overflow-hidden">
+                                            <div class="featured-item_avatar flex-shrink-0 overflow-hidden">
+                                                <img src="./assets/images/featured/2.webp"
+                                                     class="img-fluid transition-default" alt="">
+                                            </div>
+                                            <div class="featured-item_content w-100 flex-fill">
+                                                <div class="featured-item_title limit">
+                                                    Mobile Legends Diamonds
+                                                </div>
+                                                <div class="featured-item_text">
+                                                    Global
+                                                </div>
+                                            </div>
+                                            <a href="" class="stretched-link"></a>
+                                        </div>
+                                        <div class="featured-item hstack position-relative overflow-hidden">
+                                            <div class="featured-item_avatar flex-shrink-0 overflow-hidden">
+                                                <img src="./assets/images/featured/3.webp"
+                                                     class="img-fluid transition-default" alt="">
+                                            </div>
+                                            <div class="featured-item_content w-100 flex-fill">
+                                                <div class="featured-item_title limit">
+                                                    PUBG Mobile UC (Global)
+                                                </div>
+                                                <div class="featured-item_text">
+                                                    Global
+                                                </div>
+                                            </div>
+                                            <a href="" class="stretched-link"></a>
+                                        </div>
+                                        <div class="featured-item hstack position-relative overflow-hidden">
+                                            <div class="featured-item_avatar flex-shrink-0 overflow-hidden">
+                                                <img src="./assets/images/featured/4.webp"
+                                                     class="img-fluid transition-default" alt="">
+                                            </div>
+                                            <div class="featured-item_content w-100 flex-fill">
+                                                <div class="featured-item_title limit">
+                                                    Ragnarok Origin Global Nyan Berry
+                                                </div>
+                                                <div class="featured-item_text">
+                                                    Global
+                                                </div>
+                                            </div>
+                                            <a href="" class="stretched-link"></a>
+                                        </div>
+                                        <div class="featured-item hstack position-relative overflow-hidden">
+                                            <div class="featured-item_avatar flex-shrink-0 overflow-hidden">
+                                                <img src="./assets/images/featured/1.webp"
+                                                     class="img-fluid transition-default" alt="">
+                                            </div>
+                                            <div class="featured-item_content w-100 flex-fill">
+                                                <div class="featured-item_title limit">
+                                                    Steam Wallet Code (VND)
+                                                </div>
+                                                <div class="featured-item_text">
+                                                    Global
+                                                </div>
+                                            </div>
+                                            <a href="" class="stretched-link"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide h-auto">
+                            <div class="featured-card card bg-white vstack">
+                                <div class="section-heading hstack justify-content-between mb-0">
+                                    <div class="section-heading_title">
+                                        POPULAR GAME TOP-UP
+                                    </div>
+                                    <div class="section-heading_link">
+                                        <a href="">View More <i class="fal fa-angle-right"></i></a>
+                                    </div>
+                                </div>
+                                <div class="card-body p-0">
+                                    <div class="featured-list hstack flex-wrap">
+                                        <div class="featured-item hstack position-relative overflow-hidden">
+                                            <div class="featured-item_avatar flex-shrink-0 overflow-hidden">
+                                                <img src="./assets/images/featured/1.webp"
+                                                     class="img-fluid transition-default" alt="">
+                                            </div>
+                                            <div class="featured-item_content w-100 flex-fill">
+                                                <div class="featured-item_title limit">
+                                                    Steam Wallet Code (VND)
+                                                </div>
+                                                <div class="featured-item_text">
+                                                    Global
+                                                </div>
+                                            </div>
+                                            <a href="" class="stretched-link"></a>
+                                        </div>
+                                        <div class="featured-item hstack position-relative overflow-hidden">
+                                            <div class="featured-item_avatar flex-shrink-0 overflow-hidden">
+                                                <img src="./assets/images/featured/2.webp"
+                                                     class="img-fluid transition-default" alt="">
+                                            </div>
+                                            <div class="featured-item_content w-100 flex-fill">
+                                                <div class="featured-item_title limit">
+                                                    Mobile Legends Diamonds
+                                                </div>
+                                                <div class="featured-item_text">
+                                                    Global
+                                                </div>
+                                            </div>
+                                            <a href="" class="stretched-link"></a>
+                                        </div>
+                                        <div class="featured-item hstack position-relative overflow-hidden">
+                                            <div class="featured-item_avatar flex-shrink-0 overflow-hidden">
+                                                <img src="./assets/images/featured/3.webp"
+                                                     class="img-fluid transition-default" alt="">
+                                            </div>
+                                            <div class="featured-item_content w-100 flex-fill">
+                                                <div class="featured-item_title limit">
+                                                    PUBG Mobile UC (Global)
+                                                </div>
+                                                <div class="featured-item_text">
+                                                    Global
+                                                </div>
+                                            </div>
+                                            <a href="" class="stretched-link"></a>
+                                        </div>
+                                        <div class="featured-item hstack position-relative overflow-hidden">
+                                            <div class="featured-item_avatar flex-shrink-0 overflow-hidden">
+                                                <img src="./assets/images/featured/4.webp"
+                                                     class="img-fluid transition-default" alt="">
+                                            </div>
+                                            <div class="featured-item_content w-100 flex-fill">
+                                                <div class="featured-item_title limit">
+                                                    Ragnarok Origin Global Nyan Berry
+                                                </div>
+                                                <div class="featured-item_text">
+                                                    Global
+                                                </div>
+                                            </div>
+                                            <a href="" class="stretched-link"></a>
+                                        </div>
+                                        <div class="featured-item hstack position-relative overflow-hidden">
+                                            <div class="featured-item_avatar flex-shrink-0 overflow-hidden">
+                                                <img src="./assets/images/featured/1.webp"
+                                                     class="img-fluid transition-default" alt="">
+                                            </div>
+                                            <div class="featured-item_content w-100 flex-fill">
+                                                <div class="featured-item_title limit">
+                                                    Steam Wallet Code (VND)
+                                                </div>
+                                                <div class="featured-item_text">
+                                                    Global
+                                                </div>
+                                            </div>
+                                            <a href="" class="stretched-link"></a>
+                                        </div>
+                                        <div class="featured-item hstack position-relative overflow-hidden">
+                                            <div class="featured-item_avatar flex-shrink-0 overflow-hidden">
+                                                <img src="./assets/images/featured/2.webp"
+                                                     class="img-fluid transition-default" alt="">
+                                            </div>
+                                            <div class="featured-item_content w-100 flex-fill">
+                                                <div class="featured-item_title limit">
+                                                    Mobile Legends Diamonds
+                                                </div>
+                                                <div class="featured-item_text">
+                                                    Global
+                                                </div>
+                                            </div>
+                                            <a href="" class="stretched-link"></a>
+                                        </div>
+                                        <div class="featured-item hstack position-relative overflow-hidden">
+                                            <div class="featured-item_avatar flex-shrink-0 overflow-hidden">
+                                                <img src="./assets/images/featured/3.webp"
+                                                     class="img-fluid transition-default" alt="">
+                                            </div>
+                                            <div class="featured-item_content w-100 flex-fill">
+                                                <div class="featured-item_title limit">
+                                                    PUBG Mobile UC (Global)
+                                                </div>
+                                                <div class="featured-item_text">
+                                                    Global
+                                                </div>
+                                            </div>
+                                            <a href="" class="stretched-link"></a>
+                                        </div>
+                                        <div class="featured-item hstack position-relative overflow-hidden">
+                                            <div class="featured-item_avatar flex-shrink-0 overflow-hidden">
+                                                <img src="./assets/images/featured/4.webp"
+                                                     class="img-fluid transition-default" alt="">
+                                            </div>
+                                            <div class="featured-item_content w-100 flex-fill">
+                                                <div class="featured-item_title limit">
+                                                    Ragnarok Origin Global Nyan Berry
+                                                </div>
+                                                <div class="featured-item_text">
+                                                    Global
+                                                </div>
+                                            </div>
+                                            <a href="" class="stretched-link"></a>
+                                        </div>
+                                        <div class="featured-item hstack position-relative overflow-hidden">
+                                            <div class="featured-item_avatar flex-shrink-0 overflow-hidden">
+                                                <img src="./assets/images/featured/1.webp"
+                                                     class="img-fluid transition-default" alt="">
+                                            </div>
+                                            <div class="featured-item_content w-100 flex-fill">
+                                                <div class="featured-item_title limit">
+                                                    Steam Wallet Code (VND)
+                                                </div>
+                                                <div class="featured-item_text">
+                                                    Global
+                                                </div>
+                                            </div>
+                                            <a href="" class="stretched-link"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide h-auto">
+                            <div class="featured-card card bg-white vstack">
+                                <div class="section-heading hstack justify-content-between mb-0">
+                                    <div class="section-heading_title">
+                                        NEW GAME CARD
+                                    </div>
+                                </div>
+                                <div class="card-body p-0">
+                                    <div class="featured-list hstack flex-wrap">
+                                        <div class="featured-item hstack position-relative overflow-hidden">
+                                            <div class="featured-item_avatar flex-shrink-0 overflow-hidden">
+                                                <img src="./assets/images/featured/1.webp"
+                                                     class="img-fluid transition-default" alt="">
+                                            </div>
+                                            <div class="featured-item_content w-100 flex-fill">
+                                                <div class="featured-item_title limit">
+                                                    Steam Wallet Code (VND)
+                                                </div>
+                                                <div class="featured-item_text">
+                                                    Global
+                                                </div>
+                                            </div>
+                                            <a href="" class="stretched-link"></a>
+                                        </div>
+                                        <div class="featured-item hstack position-relative overflow-hidden">
+                                            <div class="featured-item_avatar flex-shrink-0 overflow-hidden">
+                                                <img src="./assets/images/featured/2.webp"
+                                                     class="img-fluid transition-default" alt="">
+                                            </div>
+                                            <div class="featured-item_content w-100 flex-fill">
+                                                <div class="featured-item_title limit">
+                                                    Mobile Legends Diamonds
+                                                </div>
+                                                <div class="featured-item_text">
+                                                    Global
+                                                </div>
+                                            </div>
+                                            <a href="" class="stretched-link"></a>
+                                        </div>
+                                        <div class="featured-item hstack position-relative overflow-hidden">
+                                            <div class="featured-item_avatar flex-shrink-0 overflow-hidden">
+                                                <img src="./assets/images/featured/3.webp"
+                                                     class="img-fluid transition-default" alt="">
+                                            </div>
+                                            <div class="featured-item_content w-100 flex-fill">
+                                                <div class="featured-item_title limit">
+                                                    PUBG Mobile UC (Global)
+                                                </div>
+                                                <div class="featured-item_text">
+                                                    Global
+                                                </div>
+                                            </div>
+                                            <a href="" class="stretched-link"></a>
+                                        </div>
+                                        <div class="featured-item hstack position-relative overflow-hidden">
+                                            <div class="featured-item_avatar flex-shrink-0 overflow-hidden">
+                                                <img src="./assets/images/featured/4.webp"
+                                                     class="img-fluid transition-default" alt="">
+                                            </div>
+                                            <div class="featured-item_content w-100 flex-fill">
+                                                <div class="featured-item_title limit">
+                                                    Ragnarok Origin Global Nyan Berry
+                                                </div>
+                                                <div class="featured-item_text">
+                                                    Global
+                                                </div>
+                                            </div>
+                                            <a href="" class="stretched-link"></a>
+                                        </div>
+                                        <div class="featured-item hstack position-relative overflow-hidden">
+                                            <div class="featured-item_avatar flex-shrink-0 overflow-hidden">
+                                                <img src="./assets/images/featured/1.webp"
+                                                     class="img-fluid transition-default" alt="">
+                                            </div>
+                                            <div class="featured-item_content w-100 flex-fill">
+                                                <div class="featured-item_title limit">
+                                                    Steam Wallet Code (VND)
+                                                </div>
+                                                <div class="featured-item_text">
+                                                    Global
+                                                </div>
+                                            </div>
+                                            <a href="" class="stretched-link"></a>
+                                        </div>
+                                        <div class="featured-item hstack position-relative overflow-hidden">
+                                            <div class="featured-item_avatar flex-shrink-0 overflow-hidden">
+                                                <img src="./assets/images/featured/2.webp"
+                                                     class="img-fluid transition-default" alt="">
+                                            </div>
+                                            <div class="featured-item_content w-100 flex-fill">
+                                                <div class="featured-item_title limit">
+                                                    Mobile Legends Diamonds
+                                                </div>
+                                                <div class="featured-item_text">
+                                                    Global
+                                                </div>
+                                            </div>
+                                            <a href="" class="stretched-link"></a>
+                                        </div>
+                                        <div class="featured-item hstack position-relative overflow-hidden">
+                                            <div class="featured-item_avatar flex-shrink-0 overflow-hidden">
+                                                <img src="./assets/images/featured/3.webp"
+                                                     class="img-fluid transition-default" alt="">
+                                            </div>
+                                            <div class="featured-item_content w-100 flex-fill">
+                                                <div class="featured-item_title limit">
+                                                    PUBG Mobile UC (Global)
+                                                </div>
+                                                <div class="featured-item_text">
+                                                    Global
+                                                </div>
+                                            </div>
+                                            <a href="" class="stretched-link"></a>
+                                        </div>
+                                        <div class="featured-item hstack position-relative overflow-hidden">
+                                            <div class="featured-item_avatar flex-shrink-0 overflow-hidden">
+                                                <img src="./assets/images/featured/4.webp"
+                                                     class="img-fluid transition-default" alt="">
+                                            </div>
+                                            <div class="featured-item_content w-100 flex-fill">
+                                                <div class="featured-item_title limit">
+                                                    Ragnarok Origin Global Nyan Berry
+                                                </div>
+                                                <div class="featured-item_text">
+                                                    Global
+                                                </div>
+                                            </div>
+                                            <a href="" class="stretched-link"></a>
+                                        </div>
+                                        <div class="featured-item hstack position-relative overflow-hidden">
+                                            <div class="featured-item_avatar flex-shrink-0 overflow-hidden">
+                                                <img src="./assets/images/featured/1.webp"
+                                                     class="img-fluid transition-default" alt="">
+                                            </div>
+                                            <div class="featured-item_content w-100 flex-fill">
+                                                <div class="featured-item_title limit">
+                                                    Steam Wallet Code (VND)
+                                                </div>
+                                                <div class="featured-item_text">
+                                                    Global
+                                                </div>
+                                            </div>
+                                            <a href="" class="stretched-link"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide h-auto">
+                            <div class="featured-card card bg-white vstack">
+                                <div class="section-heading hstack justify-content-between mb-0">
+                                    <div class="section-heading_title">
+                                        NEW GAME TOP-UP
+                                    </div>
+                                </div>
+                                <div class="card-body p-0">
+                                    <div class="featured-list hstack flex-wrap">
+                                        <div class="featured-item hstack position-relative overflow-hidden">
+                                            <div class="featured-item_avatar flex-shrink-0 overflow-hidden">
+                                                <img src="./assets/images/featured/1.webp"
+                                                     class="img-fluid transition-default" alt="">
+                                            </div>
+                                            <div class="featured-item_content w-100 flex-fill">
+                                                <div class="featured-item_title limit">
+                                                    Steam Wallet Code (VND)
+                                                </div>
+                                                <div class="featured-item_text">
+                                                    Global
+                                                </div>
+                                            </div>
+                                            <a href="" class="stretched-link"></a>
+                                        </div>
+                                        <div class="featured-item hstack position-relative overflow-hidden">
+                                            <div class="featured-item_avatar flex-shrink-0 overflow-hidden">
+                                                <img src="./assets/images/featured/2.webp"
+                                                     class="img-fluid transition-default" alt="">
+                                            </div>
+                                            <div class="featured-item_content w-100 flex-fill">
+                                                <div class="featured-item_title limit">
+                                                    Mobile Legends Diamonds
+                                                </div>
+                                                <div class="featured-item_text">
+                                                    Global
+                                                </div>
+                                            </div>
+                                            <a href="" class="stretched-link"></a>
+                                        </div>
+                                        <div class="featured-item hstack position-relative overflow-hidden">
+                                            <div class="featured-item_avatar flex-shrink-0 overflow-hidden">
+                                                <img src="./assets/images/featured/3.webp"
+                                                     class="img-fluid transition-default" alt="">
+                                            </div>
+                                            <div class="featured-item_content w-100 flex-fill">
+                                                <div class="featured-item_title limit">
+                                                    PUBG Mobile UC (Global)
+                                                </div>
+                                                <div class="featured-item_text">
+                                                    Global
+                                                </div>
+                                            </div>
+                                            <a href="" class="stretched-link"></a>
+                                        </div>
+                                        <div class="featured-item hstack position-relative overflow-hidden">
+                                            <div class="featured-item_avatar flex-shrink-0 overflow-hidden">
+                                                <img src="./assets/images/featured/4.webp"
+                                                     class="img-fluid transition-default" alt="">
+                                            </div>
+                                            <div class="featured-item_content w-100 flex-fill">
+                                                <div class="featured-item_title limit">
+                                                    Ragnarok Origin Global Nyan Berry
+                                                </div>
+                                                <div class="featured-item_text">
+                                                    Global
+                                                </div>
+                                            </div>
+                                            <a href="" class="stretched-link"></a>
+                                        </div>
+                                        <div class="featured-item hstack position-relative overflow-hidden">
+                                            <div class="featured-item_avatar flex-shrink-0 overflow-hidden">
+                                                <img src="./assets/images/featured/1.webp"
+                                                     class="img-fluid transition-default" alt="">
+                                            </div>
+                                            <div class="featured-item_content w-100 flex-fill">
+                                                <div class="featured-item_title limit">
+                                                    Steam Wallet Code (VND)
+                                                </div>
+                                                <div class="featured-item_text">
+                                                    Global
+                                                </div>
+                                            </div>
+                                            <a href="" class="stretched-link"></a>
+                                        </div>
+                                        <div class="featured-item hstack position-relative overflow-hidden">
+                                            <div class="featured-item_avatar flex-shrink-0 overflow-hidden">
+                                                <img src="./assets/images/featured/2.webp"
+                                                     class="img-fluid transition-default" alt="">
+                                            </div>
+                                            <div class="featured-item_content w-100 flex-fill">
+                                                <div class="featured-item_title limit">
+                                                    Mobile Legends Diamonds
+                                                </div>
+                                                <div class="featured-item_text">
+                                                    Global
+                                                </div>
+                                            </div>
+                                            <a href="" class="stretched-link"></a>
+                                        </div>
+                                        <div class="featured-item hstack position-relative overflow-hidden">
+                                            <div class="featured-item_avatar flex-shrink-0 overflow-hidden">
+                                                <img src="./assets/images/featured/3.webp"
+                                                     class="img-fluid transition-default" alt="">
+                                            </div>
+                                            <div class="featured-item_content w-100 flex-fill">
+                                                <div class="featured-item_title limit">
+                                                    PUBG Mobile UC (Global)
+                                                </div>
+                                                <div class="featured-item_text">
+                                                    Global
+                                                </div>
+                                            </div>
+                                            <a href="" class="stretched-link"></a>
+                                        </div>
+                                        <div class="featured-item hstack position-relative overflow-hidden">
+                                            <div class="featured-item_avatar flex-shrink-0 overflow-hidden">
+                                                <img src="./assets/images/featured/4.webp"
+                                                     class="img-fluid transition-default" alt="">
+                                            </div>
+                                            <div class="featured-item_content w-100 flex-fill">
+                                                <div class="featured-item_title limit">
+                                                    Ragnarok Origin Global Nyan Berry
+                                                </div>
+                                                <div class="featured-item_text">
+                                                    Global
+                                                </div>
+                                            </div>
+                                            <a href="" class="stretched-link"></a>
+                                        </div>
+                                        <div class="featured-item hstack position-relative overflow-hidden">
+                                            <div class="featured-item_avatar flex-shrink-0 overflow-hidden">
+                                                <img src="./assets/images/featured/1.webp"
+                                                     class="img-fluid transition-default" alt="">
+                                            </div>
+                                            <div class="featured-item_content w-100 flex-fill">
+                                                <div class="featured-item_title limit">
+                                                    Steam Wallet Code (VND)
+                                                </div>
+                                                <div class="featured-item_text">
+                                                    Global
+                                                </div>
+                                            </div>
+                                            <a href="" class="stretched-link"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-learning section-gap section-light pt-0">
+        <div class="container">
+            <div class="section-heading">
+                <div class="section-heading_title">
+                    Học tập
+                </div>
+                <div class="section-heading_button">
+                    <a href="" class="button-theme button-theme_small button-theme_primary">
+                        Khám phá
+                    </a>
+                </div>
+            </div>
+            <div class="row row-cols-2 row-cols-sm-3 row-cols-lg-4 g-3 g-lg-4">
+                <div class="col">
+                    <div class="learning-card card bg-transparent border-0 rounded-0 h-100">
+                        <div class="card-image position-relative overflow-hidden">
+                            <div class="ratio ratio-21x9">
+                                <img src="./assets/images/learning/1.jpg" class="img-fluid transition-default" alt="">
+                            </div>
+                        </div>
+                        <div class="card-title limit">
+                            Tài khoản Grammarly Premium 1 năm
+                        </div>
+                        <div class="card-price hstack flex-wrap gap-10px">
+                            <div class="price-current">
+                                490.000đ
+                            </div>
+                            <div class="price-cost">
+                                1.500.000đ
+                            </div>
+                            <div class="price-percent">-67%</div>
+                        </div>
+                        <a href="" class="stretched-link"></a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="learning-card card bg-transparent border-0 rounded-0 h-100">
+                        <div class="card-image position-relative overflow-hidden">
+                            <div class="ratio ratio-21x9">
+                                <img src="./assets/images/learning/2.png" class="img-fluid transition-default" alt="">
+                            </div>
+                        </div>
+                        <div class="card-title limit">
+                            Tài khoản Grammarly Premium 1 năm
+                        </div>
+                        <div class="card-price hstack flex-wrap gap-10px">
+                            <div class="price-current">
+                                290.000đ
+                            </div>
+                            <div class="price-cost">
+                                1.500.000đ
+                            </div>
+                            <div class="price-percent">-67%</div>
+                        </div>
+                        <a href="" class="stretched-link"></a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="learning-card card bg-transparent border-0 rounded-0 h-100">
+                        <div class="card-image position-relative overflow-hidden">
+                            <div class="ratio ratio-21x9">
+                                <img src="./assets/images/learning/3.jpg" class="img-fluid transition-default" alt="">
+                            </div>
+                        </div>
+                        <div class="card-title limit">
+                            Tài khoản Skillshare premium 2 tháng
+                        </div>
+                        <div class="card-price hstack flex-wrap gap-10px">
+                            <div class="price-current">
+                                59.000đ
+                            </div>
+                            <div class="price-cost">
+                                320.000đ
+                            </div>
+                            <div class="price-percent">-67%</div>
+                        </div>
+                        <a href="" class="stretched-link"></a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="learning-card card bg-transparent border-0 rounded-0 h-100">
+                        <div class="card-image position-relative overflow-hidden">
+                            <div class="ratio ratio-21x9">
+                                <img src="./assets/images/learning/3.jpg" class="img-fluid transition-default" alt="">
+                            </div>
+                        </div>
+                        <div class="card-title limit">
+                            Khóa học Coursera
+                        </div>
+                        <div class="card-price hstack flex-wrap gap-10px">
+                            <div class="price-current">
+                                150.000đ
+                            </div>
+                        </div>
+                        <a href="" class="stretched-link"></a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="learning-card card bg-transparent border-0 rounded-0 h-100">
+                        <div class="card-image position-relative overflow-hidden">
+                            <div class="ratio ratio-21x9">
+                                <img src="./assets/images/learning/5.jpg" class="img-fluid transition-default" alt="">
+                            </div>
+                        </div>
+                        <div class="card-title limit">
+                            Tài khoản học ngoại ngữ Busuu Premium Plus 1 Tháng Tài khoản học ngoại ngữ Busuu Premium
+                            Plus 1 Tháng
+                        </div>
+                        <div class="card-price hstack flex-wrap gap-10px">
+                            <div class="price-current">
+                                150.000đ
+                            </div>
+                        </div>
+                        <a href="" class="stretched-link"></a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="learning-card learning-card_ofs card bg-transparent border-0 rounded-0 h-100">
+                        <div class="card-image position-relative overflow-hidden">
+                            <div class="ratio ratio-21x9">
+                                <img src="./assets/images/learning/6.png" class="img-fluid transition-default" alt="">
+                            </div>
+                            <div class="card-ofs">
+                                Hết hàng
+                            </div>
+                        </div>
+                        <div class="card-title limit">
+                            Tài khoản học ngoại ngữ Duolingo 1 năm
+                        </div>
+                        <div class="card-price hstack flex-wrap gap-10px">
+                            <div class="price-current">
+                                150.000đ
+                            </div>
+                        </div>
+                        <a href="" class="stretched-link"></a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="learning-card learning-card_ofs card bg-transparent border-0 rounded-0 h-100">
+                        <div class="card-image position-relative overflow-hidden">
+                            <div class="ratio ratio-21x9">
+                                <img src="./assets/images/learning/3.jpg" class="img-fluid transition-default" alt="">
+                            </div>
+                            <div class="card-ofs">
+                                Hết hàng
+                            </div>
+                        </div>
+                        <div class="card-title limit">
+                            Tài khoản học ngoại ngữ Duolingo 1 năm
+                        </div>
+                        <div class="card-price hstack flex-wrap gap-10px">
+                            <div class="price-current">
+                                150.000đ
+                            </div>
+                        </div>
+                        <a href="" class="stretched-link"></a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="learning-card learning-card_ofs card bg-transparent border-0 rounded-0 h-100">
+                        <div class="card-image position-relative overflow-hidden">
+                            <div class="ratio ratio-21x9">
+                                <img src="./assets/images/learning/2.png" class="img-fluid transition-default" alt="">
+                            </div>
+                            <div class="card-ofs">
+                                Hết hàng
+                            </div>
+                        </div>
+                        <div class="card-title limit">
+                            Tài khoản học ngoại ngữ Duolingo 1 năm
+                        </div>
+                        <div class="card-price hstack flex-wrap gap-10px">
+                            <div class="price-current">
+                                150.000đ
+                            </div>
+                        </div>
+                        <a href="" class="stretched-link"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-3">
+                <a href="" class="d-inline-flex link-default button-link">
+                    Xem thêm
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="section-game section-gap">
+        <div class="container">
+            <div class="section-heading">
+                <div class="section-heading_title">
+                    LIST GAME
+                </div>
+                <div class="section-heading_button">
+                    <a href="" class="button-theme button-theme_small button-theme_primary">
+                        Khám phá
+                    </a>
+                </div>
+            </div>
+            <div class="row g-3 g-lg-4 row-cols-xl-8">
+                <div class="col">
+                    <div class="game-card card bg-transparent border-0 rounded-0 h-100">
+                        <div class="card-image position-relative overflow-hidden">
+                            <div class="ratio ratio-10x13">
+                                <img src="./assets/images/game/1.webp" class="img-fluid transition-default" alt="">
+                            </div>
+                        </div>
+                        <div class="card-title limit">
+                            Garena Undawn
+                        </div>
+                        <div class="card-meta">
+                            <div class="card-meta_item limit">English</div>
+                            <div class="card-meta_item limit">South East Asia</div>
+                        </div>
+                        <a href="" class="stretched-link"></a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="game-card card bg-transparent border-0 rounded-0 h-100">
+                        <div class="card-image position-relative overflow-hidden">
+                            <div class="ratio ratio-10x13">
+                                <img src="./assets/images/game/2.webp" class="img-fluid transition-default" alt="">
+                            </div>
+                        </div>
+                        <div class="card-title limit">
+                            Honor of Kings Global
+                        </div>
+                        <div class="card-meta">
+                            <div class="card-meta_item limit">English</div>
+                            <div class="card-meta_item limit">Global</div>
+                        </div>
+                        <a href="" class="stretched-link"></a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="game-card card bg-transparent border-0 rounded-0 h-100">
+                        <div class="card-image position-relative overflow-hidden">
+                            <div class="ratio ratio-10x13">
+                                <img src="./assets/images/game/3.webp" class="img-fluid transition-default" alt="">
+                            </div>
+                        </div>
+                        <div class="card-title limit">
+                            Genshin Impact
+                        </div>
+                        <div class="card-meta">
+                            <div class="card-meta_item limit">English</div>
+                            <div class="card-meta_item limit">Global</div>
+                        </div>
+                        <a href="" class="stretched-link"></a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="game-card card bg-transparent border-0 rounded-0 h-100">
+                        <div class="card-image position-relative overflow-hidden">
+                            <div class="ratio ratio-10x13">
+                                <img src="./assets/images/game/4.webp" class="img-fluid transition-default" alt="">
+                            </div>
+                        </div>
+                        <div class="card-title limit">
+                            Call of Duty Mobile (Garena)
+                        </div>
+                        <div class="card-meta">
+                            <div class="card-meta_item limit">English</div>
+                            <div class="card-meta_item limit">South East Asia</div>
+                        </div>
+                        <a href="" class="stretched-link"></a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="game-card card bg-transparent border-0 rounded-0 h-100">
+                        <div class="card-image position-relative overflow-hidden">
+                            <div class="ratio ratio-10x13">
+                                <img src="./assets/images/game/5.webp" class="img-fluid transition-default" alt="">
+                            </div>
+                        </div>
+                        <div class="card-title limit">
+                            Apex Legends (Global)
+                        </div>
+                        <div class="card-meta">
+                            <div class="card-meta_item limit">English</div>
+                            <div class="card-meta_item limit">Global</div>
+                        </div>
+                        <a href="" class="stretched-link"></a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="game-card card bg-transparent border-0 rounded-0 h-100">
+                        <div class="card-image position-relative overflow-hidden">
+                            <div class="ratio ratio-10x13">
+                                <img src="./assets/images/game/6.webp" class="img-fluid transition-default" alt="">
+                            </div>
+                        </div>
+                        <div class="card-title limit">
+                            Fortnite
+                        </div>
+                        <div class="card-meta">
+                            <div class="card-meta_item limit">English</div>
+                            <div class="card-meta_item limit">Global</div>
+                        </div>
+                        <a href="" class="stretched-link"></a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="game-card card bg-transparent border-0 rounded-0 h-100">
+                        <div class="card-image position-relative overflow-hidden">
+                            <div class="ratio ratio-10x13">
+                                <img src="./assets/images/game/7.webp" class="img-fluid transition-default" alt="">
+                            </div>
+                        </div>
+                        <div class="card-title limit">
+                            Fortnite
+                        </div>
+                        <div class="card-meta">
+                            <div class="card-meta_item limit">English</div>
+                            <div class="card-meta_item limit">Global</div>
+                        </div>
+                        <a href="" class="stretched-link"></a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="game-card card bg-transparent border-0 rounded-0 h-100">
+                        <div class="card-image position-relative overflow-hidden">
+                            <div class="ratio ratio-10x13">
+                                <img src="./assets/images/game/8.webp" class="img-fluid transition-default" alt="">
+                            </div>
+                        </div>
+                        <div class="card-title limit">
+                            Fortnite
+                        </div>
+                        <div class="card-meta">
+                            <div class="card-meta_item limit">English</div>
+                            <div class="card-meta_item limit">Global</div>
+                        </div>
+                        <a href="" class="stretched-link"></a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="game-card card bg-transparent border-0 rounded-0 h-100">
+                        <div class="card-image position-relative overflow-hidden">
+                            <div class="ratio ratio-10x13">
+                                <img src="./assets/images/game/1.webp" class="img-fluid transition-default" alt="">
+                            </div>
+                        </div>
+                        <div class="card-title limit">
+                            Garena Undawn
+                        </div>
+                        <div class="card-meta">
+                            <div class="card-meta_item limit">English</div>
+                            <div class="card-meta_item limit">South East Asia</div>
+                        </div>
+                        <a href="" class="stretched-link"></a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="game-card card bg-transparent border-0 rounded-0 h-100">
+                        <div class="card-image position-relative overflow-hidden">
+                            <div class="ratio ratio-10x13">
+                                <img src="./assets/images/game/2.webp" class="img-fluid transition-default" alt="">
+                            </div>
+                        </div>
+                        <div class="card-title limit">
+                            Honor of Kings Global
+                        </div>
+                        <div class="card-meta">
+                            <div class="card-meta_item limit">English</div>
+                            <div class="card-meta_item limit">Global</div>
+                        </div>
+                        <a href="" class="stretched-link"></a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="game-card card bg-transparent border-0 rounded-0 h-100">
+                        <div class="card-image position-relative overflow-hidden">
+                            <div class="ratio ratio-10x13">
+                                <img src="./assets/images/game/3.webp" class="img-fluid transition-default" alt="">
+                            </div>
+                        </div>
+                        <div class="card-title limit">
+                            Genshin Impact
+                        </div>
+                        <div class="card-meta">
+                            <div class="card-meta_item limit">English</div>
+                            <div class="card-meta_item limit">Global</div>
+                        </div>
+                        <a href="" class="stretched-link"></a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="game-card card bg-transparent border-0 rounded-0 h-100">
+                        <div class="card-image position-relative overflow-hidden">
+                            <div class="ratio ratio-10x13">
+                                <img src="./assets/images/game/4.webp" class="img-fluid transition-default" alt="">
+                            </div>
+                        </div>
+                        <div class="card-title limit">
+                            Call of Duty Mobile (Garena)
+                        </div>
+                        <div class="card-meta">
+                            <div class="card-meta_item limit">English</div>
+                            <div class="card-meta_item limit">South East Asia</div>
+                        </div>
+                        <a href="" class="stretched-link"></a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="game-card card bg-transparent border-0 rounded-0 h-100">
+                        <div class="card-image position-relative overflow-hidden">
+                            <div class="ratio ratio-10x13">
+                                <img src="./assets/images/game/5.webp" class="img-fluid transition-default" alt="">
+                            </div>
+                        </div>
+                        <div class="card-title limit">
+                            Apex Legends (Global)
+                        </div>
+                        <div class="card-meta">
+                            <div class="card-meta_item limit">English</div>
+                            <div class="card-meta_item limit">Global</div>
+                        </div>
+                        <a href="" class="stretched-link"></a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="game-card card bg-transparent border-0 rounded-0 h-100">
+                        <div class="card-image position-relative overflow-hidden">
+                            <div class="ratio ratio-10x13">
+                                <img src="./assets/images/game/6.webp" class="img-fluid transition-default" alt="">
+                            </div>
+                        </div>
+                        <div class="card-title limit">
+                            Fortnite
+                        </div>
+                        <div class="card-meta">
+                            <div class="card-meta_item limit">English</div>
+                            <div class="card-meta_item limit">Global</div>
+                        </div>
+                        <a href="" class="stretched-link"></a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="game-card card bg-transparent border-0 rounded-0 h-100">
+                        <div class="card-image position-relative overflow-hidden">
+                            <div class="ratio ratio-10x13">
+                                <img src="./assets/images/game/7.webp" class="img-fluid transition-default" alt="">
+                            </div>
+                        </div>
+                        <div class="card-title limit">
+                            Fortnite
+                        </div>
+                        <div class="card-meta">
+                            <div class="card-meta_item limit">English</div>
+                            <div class="card-meta_item limit">Global</div>
+                        </div>
+                        <a href="" class="stretched-link"></a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="game-card card bg-transparent border-0 rounded-0 h-100">
+                        <div class="card-image position-relative overflow-hidden">
+                            <div class="ratio ratio-10x13">
+                                <img src="./assets/images/game/8.webp" class="img-fluid transition-default" alt="">
+                            </div>
+                        </div>
+                        <div class="card-title limit">
+                            Fortnite
+                        </div>
+                        <div class="card-meta">
+                            <div class="card-meta_item limit">English</div>
+                            <div class="card-meta_item limit">Global</div>
+                        </div>
+                        <a href="" class="stretched-link"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <footer id="footer" class="footer">

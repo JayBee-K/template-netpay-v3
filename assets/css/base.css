@@ -195,7 +195,15 @@ input[type='number'] {
     --bs-aspect-ratio: calc(2 / 3 * 100%);
 }
 
+.ratio-10x13 {
+    --bs-aspect-ratio: calc(13 / 10 * 100%);
+}
+
 .gap-5px {
+    gap: 5px;
+}
+
+.gap-8px {
     gap: 5px;
 }
 
@@ -315,4 +323,16 @@ input[type='number'] {
 
 .mw-100px {
     min-width: 100px !important;
+}
+
+@media screen and (min-width: 1400px) {
+    .row-cols-xl-8 > * {
+        flex: 0 0 auto;
+        width: calc(100% / 8)
+    }
+
+    .row-cols-xl-10 > * {
+        flex: 0 0 auto;
+        width: 10%
+    }
 }
