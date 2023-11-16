@@ -866,7 +866,7 @@
 	color: #9ba1a8;
 	display: flex;
 	align-items: center;
-	gap: 6px;
+	gap: 3px;
 }
 
 .document-card .card-meta .card-meta_item > i {
