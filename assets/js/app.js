@@ -241,6 +241,15 @@ const handleSlideFeatured = function () {
     }
 }
 
+const handleWrapTable = function () {
+	if ($('#article-content table').length > 0) {
+		$('#article-content table').map(function () {
+			$(this).addClass('table table-bordered');
+			$(this).wrap('<div class="table-responsive"></div>');
+		})
+	}
+}
+
 $(function () {
     handleApplyCollapse($('#header-navigation > ul'), true, true);
     handleCallMenu();
@@ -255,4 +264,6 @@ $(function () {
 
     handleSlideHero();
     handleSlideFeatured();
+
+	handleWrapTable();
 });
