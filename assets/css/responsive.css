@@ -1,0 +1,205 @@
+@media screen and (max-width: 991px) {
+	.header-top {
+		display: none;
+	}
+
+	.header.is-scroll {
+		top: 0;
+	}
+
+	.header-main {
+		padding: 5px 0;
+	}
+
+	.header-main .header-logo img {
+		height: 40px;
+		max-width: 100%;
+		object-fit: contain;
+	}
+
+	.header-main .header-search .header-search_hint a {
+		margin-right: 4px;
+		margin-top: 3px;
+	}
+
+	.header-main .header-language .header-language_btn {
+		padding-left: 10px;
+		-webkit-transition: var(--transition-default);
+		-o-transition: var(--transition-default);
+		transition: var(--transition-default);
+	}
+
+	.header-main .header-language .header-language_btn .header-language_btn__item {
+		-webkit-box-shadow: 0 0 0.75em 0 rgba(0, 0, 0, 0.25);
+		box-shadow: 0 0 0.75em 0 rgba(0, 0, 0, 0.25);
+		border-radius: 50%;
+	}
+
+	.header-main .header-language .header-language_btn .header-language_btn__item img {
+		height: 24px;
+		width: 24px;
+	}
+
+	.header-main .header-language .header-language_list {
+		background-color: var(--bs-white);
+		min-width: 155px;
+		-webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+		box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+		-webkit-transition: var(--transition-default);
+		-o-transition: var(--transition-default);
+		transition: var(--transition-default);
+		border-radius: 8px;
+		opacity: 0;
+		overflow: hidden;
+		visibility: hidden;
+		pointer-events: none;
+		top: calc(100% + 10px);
+		right: 15px;
+	}
+
+	.header-main .header-language .header-language_list:before {
+		position: absolute;
+		content: "";
+		display: block;
+		top: -10px;
+		background-color: var(--bs-white);
+		left: 0;
+		width: 100%;
+		height: 10px;
+	}
+
+	.header-main .header-language:hover .header-language_list {
+		opacity: 1;
+		visibility: visible;
+		pointer-events: auto;
+		top: calc(100% + 10px);
+		right: 0;
+	}
+
+	.header-main .header-language .header-language_list .language-item {
+		padding: 8px 15px;
+		color: var(--bs-dark);
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		gap: 8px;
+	}
+
+	.header-main .header-language .header-language_list .language-item img {
+		height: 20px;
+		width: 20px;
+	}
+
+	.header-main .header-language .header-language_list .language-item:hover {
+		background: #f4f4f4;
+	}
+
+	.header-main .header-language .header-language_list .language-item.language-item_active {
+		color: var(--primary-color);
+		background: #f4f4f4;
+	}
+
+	.section-heading .heading-title {
+		font-size: 1.15em;
+	}
+
+	.hero-slider {
+		flex: 1 1 100%;
+	}
+
+	.hero-slider .slider-pagination {
+		bottom: 5px;
+	}
+
+	.hero-slider .slider-pagination .swiper-pagination-bullet {
+		width: 8px;
+		height: 8px;
+	}
+
+	.featured-card {
+		padding: 12px;
+	}
+
+	.featured-card .section-heading .heading-link > a > span {
+		display: none
+	}
+
+	.featured-card .featured-list {
+		flex-direction: column;
+	}
+
+	.featured-card .featured-list .featured-item {
+		width: 100%;
+	}
+
+	.login-wrapper .login-inner {
+		padding: 45px 30px;
+	}
+
+	.login-wrapper .login-image .login-protected {
+		width: calc(100% - 30px);
+		left: 15px;
+		right: 15px;
+		gap: 10px;
+	}
+
+	.login-wrapper .login-image .login-protected .protected-icon {
+		width: 50px;
+	}
+
+	.login-wrapper .login-image .login-protected .protected-content .protected-title {
+		font-size: 1.075em;
+	}
+
+	.login-wrapper .login-inner .section-heading .heading-title {
+		font-size: 1.3em;
+	}
+
+	.article-detail .article-content {
+		font-size: 1.075em;
+	}
+
+	.article-detail .article-content h2 {
+		font-size: 1.3em;
+	}
+
+	.article-detail .article-content h3 {
+		font-size: 1.225em;
+	}
+
+	.article-detail .article-content h4 {
+		font-size: 1.15em;
+	}
+
+	.article-detail .article-content h5 {
+		font-size: 1.075em;
+	}
+
+	.article-detail .article-content h6 {
+		font-size: 1em;
+	}
+}
+
+@media screen and (max-width: 575px) {
+	.header-main .header-actions .header-users .header-user_item .link-default {
+		font-size: .925em;
+	}
+
+	.header-main .header-actions .header-users .header-user_item + .header-user_item {
+		margin-left: 6px;
+		padding-left: 6px;
+	}
+
+	.header-main .header-actions .header-users .header-user_item + .header-user_item:before {
+		font-size: 1em;
+		line-height: 1;
+		top: calc(50% - 2px);
+	}
+
+	.header-main .header-actions .header-users .header-user_item .link-default > i {
+		display: none;
+	}
+}
