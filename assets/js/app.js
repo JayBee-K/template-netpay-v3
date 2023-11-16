@@ -109,13 +109,13 @@ let handleCallMenu = function () {
 }
 
 const handleStickHeader = function () {
-    $(window).scroll(function (e) {
+    if ($('body').height() / $(window).height() > 1.3) {
         if ($(document).scrollTop() > $('#header').innerHeight()) {
             $('#header').addClass('is-scroll');
         } else {
             $('#header').removeClass('is-scroll');
         }
-    });
+    }
 }
 
 const handleCopyValue = function () {
@@ -217,16 +217,16 @@ const handleSlideFeatured = function () {
                     slidesPerView: 1.5,
                     spaceBetween: 10,
                     grid: {
-	                    rows: 1,
-	                    fill: "column",
+                        rows: 1,
+                        fill: "column",
                     },
                 },
                 768: {
                     slidesPerView: 1.5,
                     spaceBetween: 10,
                     grid: {
-	                    rows: 2,
-	                    fill: "row",
+                        rows: 2,
+                        fill: "row",
                     },
                 },
                 1200: {
@@ -242,12 +242,12 @@ const handleSlideFeatured = function () {
 }
 
 const handleWrapTable = function () {
-	if ($('#article-content table').length > 0) {
-		$('#article-content table').map(function () {
-			$(this).addClass('table table-bordered');
-			$(this).wrap('<div class="table-responsive"></div>');
-		})
-	}
+    if ($('#article-content table').length > 0) {
+        $('#article-content table').map(function () {
+            $(this).addClass('table table-bordered');
+            $(this).wrap('<div class="table-responsive"></div>');
+        })
+    }
 }
 
 $(function () {
@@ -265,5 +265,5 @@ $(function () {
     handleSlideHero();
     handleSlideFeatured();
 
-	handleWrapTable();
+    handleWrapTable();
 });
