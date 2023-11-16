@@ -136,6 +136,17 @@
 
 .header {
 	background-color: var(--primary-color);
+	position: sticky;
+	top: 0;
+	z-index: 10;
+	left: 0;
+	right: 0;
+	transition: var(--transition-default);
+}
+
+.header.is-scroll {
+	box-shadow: rgba(0, 0, 0, 0.05) 0 0 12px;
+	top: -36px;
 }
 
 .header-top .header-links .header-links_item {
@@ -1780,6 +1791,10 @@
 @media screen and (max-width: 991px) {
 	.header-top {
 		display: none;
+	}
+
+	.header.is-scroll {
+		top: 0;
 	}
 
 	.header-main {
