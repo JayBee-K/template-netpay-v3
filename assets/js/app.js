@@ -242,13 +242,66 @@ const handleSlideFeatured = function () {
 }
 
 const handleWrapTable = function () {
-    if ($('#article-content table').length > 0) {
-        $('#article-content table').map(function () {
+    if ($('#detail-content table').length > 0) {
+        $('#detail-content table').map(function () {
             $(this).addClass('table table-bordered');
             $(this).wrap('<div class="table-responsive"></div>');
         })
     }
 }
+
+const handleSliderImagesLearning = function () {
+	const handleFancyBoxProduct = function (elm, initSliderAvatar, initSliderThumb) {
+		let i = 0;
+		elm.click(function () {
+			i = 0;
+		});
+
+		Fancybox.bind(('[data-fancybox=learning-images]'), {
+			touch: true,
+			beforeShow: function (instance, current) {
+				let index = elm.find(`[data-fancybox='learning-images'][href='${current.src}']`).attr('data-index');
+				initSliderAvatar.slideTo(index - 1);
+				if (typeof initSliderThumb !== 'undefined') {
+					initSliderThumb.slideTo(index - 1);
+				}
+			},
+		});
+	}
+
+	let sliderAvatar = $('#learning-avatar');
+	let sliderThumb = $('#learning-thumb');
+
+	if (sliderAvatar.length > 0) {
+		let initSliderThumb;
+		if (sliderThumb.length) {
+			initSliderThumb = new Swiper('#learning-thumb .swiper', {
+				loop: false,
+				speed: 1000,
+				slidesPerView: 3.5,
+				spaceBetween: 8,
+				autoplay: false,
+			});
+		}
+
+		let initSliderAvatar = new Swiper('#learning-avatar .swiper', {
+			loop: false,
+			speed: 1000,
+			spaceBetween: 8,
+			autoplay: {
+				delay: 5000,
+				disableOnInteraction: true,
+			},
+			slidesPerView: 1,
+			thumbs: {
+				swiper: initSliderThumb,
+			},
+		});
+
+		handleFancyBoxProduct(sliderAvatar, initSliderAvatar, initSliderThumb);
+	}
+}
+
 
 $(function () {
     handleApplyCollapse($('#header-navigation > ul'), true, true);
@@ -266,4 +319,5 @@ $(function () {
     handleSlideFeatured();
 
     handleWrapTable();
+	handleSliderImagesLearning();
 });

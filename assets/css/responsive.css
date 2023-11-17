@@ -158,27 +158,125 @@
 		font-size: 1.3em;
 	}
 
-	.article-detail .article-content {
+	.detail-content {
 		font-size: 1.075em;
 	}
 
-	.article-detail .article-content h2 {
+	.detail-content h2 {
 		font-size: 1.3em;
 	}
 
-	.article-detail .article-content h3 {
+	.detail-content h3 {
 		font-size: 1.225em;
 	}
 
-	.article-detail .article-content h4 {
+	.detail-content h4 {
 		font-size: 1.15em;
 	}
 
-	.article-detail .article-content h5 {
+	.detail-content h5 {
 		font-size: 1.075em;
 	}
 
-	.article-detail .article-content h6 {
+	.detail-content h6 {
+		font-size: 1em;
+	}
+
+	.topup-header .topup-header_content {
+		padding-bottom: 30px;
+	}
+
+	.topup-header .topup-header_title {
+		font-size: 1.5em;
+	}
+
+	.topup-header .topup-header_description {
+		font-size: 1em;
+	}
+
+	.topup-choose .topup-choose_content {
+		flex-wrap: wrap;
+		padding: 10px;
+		gap: 2px;
+	}
+
+	.topup-choose .topup-choose_content .topup-choose_text {
+		width: calc(100% - 20px);
+		padding-left: 8px;
+	}
+
+	.topup-choose .topup-choose_content .topup-choose_price {
+		margin-left: 28px;
+	}
+
+	.topup-sidebar .sidebar-form .sidebar-form_item .sidebar-form_item__text,
+	.topup-sidebar .sidebar-form .sidebar-form_item .sidebar-form_item__wrapper > .form-control, .topup-sidebar .sidebar-form .sidebar-form_item .sidebar-form_item__wrapper > .form-select,
+	.learning-page .learning-sidebar .sidebar-form .sidebar-form_item .sidebar-form_item__text,
+	.learning-page .learning-sidebar .sidebar-form .sidebar-form_item .sidebar-form_item__wrapper > .form-control, .learning-page .learning-sidebar .sidebar-form .sidebar-form_item .sidebar-form_item__wrapper > .form-select,
+	.document-page .document-form .document-form_inner .document-form_wrapper .document-form_item .document-form_item__text,
+	.document-page .document-form .document-form_inner .document-form_wrapper .document-form_item .document-form_item__wrapper > .form-control, .document-page .document-form .document-form_inner .document-form_wrapper .document-form_item .document-form_item__wrapper > .form-select {
+		font-size: 1em;
+	}
+
+	.topup-sidebar .sidebar-total .sidebar-total_title,
+	.learning-page .learning-sidebar .sidebar-total .sidebar-total_title,
+	.document-page .document-form .document-form_inner .document-form_total__title {
+		font-size: 1.15em;
+	}
+
+	.topup-sidebar .sidebar-total .sidebar-total_value,
+	.learning-page .learning-sidebar .sidebar-total .sidebar-total_value,
+	.document-page .document-form .document-form_inner .document-form_total__value {
+		font-size: 1.3em;
+	}
+
+	.learning-page .learning-content .learning-title,
+	.document-page .document-content .document-title {
+		font-size: 1.45em;
+	}
+
+	.learning-page .learning-content .learning-meta .learning-meta_item .learning-meta_item__icon,
+	.document-page .document-content .document-meta .document-meta_item .document-meta_item__icon {
+		font-size: 1.15em;
+	}
+
+	.learning-page .learning-content .learning-options .learning-options_item .learning-options_item__title {
+		font-size: 1.15em;
+	}
+
+	.learning-page .learning-content .learning-options .learning-options_item .learning-options_item__choose .learning-options_item__text {
+		font-size: 1em;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.topup-header_inner {
+		flex-direction: column;
+		padding: 30px 0;
+		gap: 15px;
+	}
+
+	.topup-header .topup-header_content {
+		max-width: 100%;
+		padding-top: 0;
+		padding-bottom: 0;
+		text-align: center;
+	}
+
+	.topup-header .topup-header_description i {
+		display: none;
+	}
+
+	.topup-header .topup-header_image {
+		transform: none;
+		width: 100px;
+	}
+
+	.topup-body {
+		padding: 20px 0;
+	}
+
+	.topup-choose .topup-choose_content {
 		font-size: 1em;
 	}
 }
