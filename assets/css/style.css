@@ -1712,6 +1712,24 @@
 	border-color: var(--bs-gray-200);
 	transform: unset !important;
 	padding: 0 15px;
+	max-height: 355px;
+	overflow-y: auto;
+}
+
+.section-sidebar .sidebar-item .sidebar-dropdown .dropdown-menu::-webkit-scrollbar {
+	width: 5px;
+}
+
+.section-sidebar .sidebar-item .sidebar-dropdown .dropdown-menu::-webkit-scrollbar-track {
+	background: #eeeeee;
+}
+
+.section-sidebar .sidebar-item .sidebar-dropdown .dropdown-menu::-webkit-scrollbar-thumb {
+	background: #d7d7d7;
+}
+
+.section-sidebar .sidebar-item .sidebar-dropdown .dropdown-menu::-webkit-scrollbar-thumb:hover {
+	background: #b9b9b9;
 }
 
 .section-sidebar .sidebar-item .sidebar-dropdown .dropdown-menu[data-popper-placement=top-start] {
