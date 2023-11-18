@@ -251,37 +251,126 @@
 				<div class="col-lg-4 col-xl-3">
 					<div class="section-sidebar">
 						<div class="sidebar-item">
-							<div class="sidebar-header p-3 pb-2">
-								<div class="sidebar-title">
-									Bộ lọc tìm kiếm
+							<div class="sidebar-item_wrapper">
+								<div class="sidebar-header p-3 pb-2">
+									<div class="sidebar-title">
+										Bộ lọc tìm kiếm
+									</div>
+								</div>
+								<div class="sidebar-body px-3">
+									<div class="sidebar-list">
+										<div class="sidebar-list_item sidebar-ratio">
+											<label for="create_desc" class="sidebar-ratio_item">
+												<input type="radio" name="category-sort" id="create_desc"
+												       value="create_desc">
+												<span>Sản phẩm mới</span>
+											</label>
+										</div>
+										<div class="sidebar-list_item sidebar-ratio">
+											<label for="create_asc" class="sidebar-ratio_item">
+												<input type="radio" name="category-sort" id="create_asc"
+												       value="create_asc">
+												<span>Sản phẩm cũ</span>
+											</label>
+										</div>
+										<div class="sidebar-list_item sidebar-ratio">
+											<label for="price_asc" class="sidebar-ratio_item">
+												<input type="radio" name="category-sort" id="price_asc"
+												       value="price_asc">
+												<span>Giá thấp đến cao</span>
+											</label>
+										</div>
+										<div class="sidebar-list_item sidebar-ratio">
+											<label for="price_desc" class="sidebar-ratio_item">
+												<input type="radio" name="category-sort" id="price_desc"
+												       value="price_desc">
+												<span>Giá cao đến cao</span>
+											</label>
+										</div>
+									</div>
 								</div>
 							</div>
-							<div class="sidebar-body px-3">
-								<div class="sidebar-list">
-									<div class="sidebar-list_item sidebar-ratio">
-										<label for="create_desc" class="sidebar-ratio_item">
-											<input type="radio" name="category-sort" id="create_desc"
-											       value="create_desc">
-											<span>Sản phẩm mới</span>
-										</label>
+							<div class="sidebar-item_wrapper">
+								<div class="sidebar-header p-3 pb-2">
+									<div class="sidebar-title">
+										Bộ lọc Dropdown
 									</div>
-									<div class="sidebar-list_item sidebar-ratio">
-										<label for="create_asc" class="sidebar-ratio_item">
-											<input type="radio" name="category-sort" id="create_asc" value="create_asc">
-											<span>Sản phẩm cũ</span>
-										</label>
-									</div>
-									<div class="sidebar-list_item sidebar-ratio">
-										<label for="price_asc" class="sidebar-ratio_item">
-											<input type="radio" name="category-sort" id="price_asc" value="price_asc">
-											<span>Giá thấp đến cao</span>
-										</label>
-									</div>
-									<div class="sidebar-list_item sidebar-ratio">
-										<label for="price_desc" class="sidebar-ratio_item">
-											<input type="radio" name="category-sort" id="price_desc" value="price_desc">
-											<span>Giá cao đến cao</span>
-										</label>
+								</div>
+								<div class="sidebar-body px-3">
+									<div class="sidebar-dropdown" id="dropdown-checkbox">
+										<ul class="dropdown-menu sidebar-list">
+											<li class="sidebar-list_item sidebar-ratio">
+												<label for="dropdown-option-1" class="sidebar-ratio_item">
+													<input type="checkbox" class="checkbox-item" name="dropdown-option"
+													       id="dropdown-option-1"
+													       value="dropdown-option-1">
+													<span>Dropdown option 1</span>
+												</label>
+											</li>
+											<li class="sidebar-list_item sidebar-ratio">
+												<label for="dropdown-option-2" class="sidebar-ratio_item">
+													<input type="checkbox" class="checkbox-item" name="dropdown-option"
+													       id="dropdown-option-2"
+													       value="dropdown-option-2">
+													<span>Dropdown option 2</span>
+												</label>
+											</li>
+											<li class="sidebar-list_item sidebar-ratio">
+												<label for="dropdown-option-3" class="sidebar-ratio_item">
+													<input type="checkbox" class="checkbox-item" name="dropdown-option"
+													       id="dropdown-option-3"
+													       value="dropdown-option-3">
+													<span>Dropdown option 3</span>
+												</label>
+											</li>
+											<li class="sidebar-list_item sidebar-ratio">
+												<label for="dropdown-option-4" class="sidebar-ratio_item">
+													<input type="checkbox" class="checkbox-item" name="dropdown-option"
+													       id="dropdown-option-4"
+													       value="dropdown-option-4">
+													<span>Dropdown option 4</span>
+												</label>
+											</li>
+											<li class="sidebar-list_item sidebar-ratio">
+												<label for="dropdown-option-5" class="sidebar-ratio_item">
+													<input type="checkbox" class="checkbox-item" name="dropdown-option"
+													       id="dropdown-option-5"
+													       value="dropdown-option-5">
+													<span>Dropdown option 5</span>
+												</label>
+											</li>
+											<li class="sidebar-list_item sidebar-ratio">
+												<label for="dropdown-option-6" class="sidebar-ratio_item">
+													<input type="checkbox" class="checkbox-item" name="dropdown-option"
+													       id="dropdown-option-6"
+													       value="dropdown-option-6">
+													<span>Dropdown option 6</span>
+												</label>
+											</li>
+											<li class="sidebar-list_item sidebar-ratio">
+												<label for="dropdown-option-7" class="sidebar-ratio_item">
+													<input type="checkbox" class="checkbox-item" name="dropdown-option"
+													       id="dropdown-option-7"
+													       value="dropdown-option-7">
+													<span>Dropdown option 7</span>
+												</label>
+											</li>
+											<li class="sidebar-list_item sidebar-ratio">
+												<label for="dropdown-option-8" class="sidebar-ratio_item">
+													<input type="checkbox" class="checkbox-item" name="dropdown-option"
+													       id="dropdown-option-8"
+													       value="dropdown-option-8">
+													<span>Dropdown option 8</span>
+												</label>
+											</li>
+										</ul>
+										<button type="button" class="sidebar-dropdown_btn" data-bs-auto-close="outside"
+										        data-bs-toggle="dropdown">
+											<span class="limit" id="checkbox-result">
+												--- Chọn bộ lọc dropdown ---
+											</span>
+											<i class="fal fa-angle-down"></i>
+										</button>
 									</div>
 								</div>
 							</div>
