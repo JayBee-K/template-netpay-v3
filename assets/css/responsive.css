@@ -1,4 +1,14 @@
 @media screen and (max-width: 991px) {
+	.button-theme.button-theme_large {
+		font-size: 1.15em;
+		padding: 10px 25px;
+	}
+
+	.button-theme.button-theme_medium {
+		font-size: 1.075em;
+		padding: 8px 25px;
+	}
+
 	.header-top {
 		display: none;
 	}
@@ -213,20 +223,20 @@
 	.topup-sidebar .sidebar-form .sidebar-form_item .sidebar-form_item__wrapper > .form-control, .topup-sidebar .sidebar-form .sidebar-form_item .sidebar-form_item__wrapper > .form-select,
 	.learning-page .learning-sidebar .sidebar-form .sidebar-form_item .sidebar-form_item__text,
 	.learning-page .learning-sidebar .sidebar-form .sidebar-form_item .sidebar-form_item__wrapper > .form-control, .learning-page .learning-sidebar .sidebar-form .sidebar-form_item .sidebar-form_item__wrapper > .form-select,
-	.document-page .document-form .document-form_inner .document-form_wrapper .document-form_item .document-form_item__text,
-	.document-page .document-form .document-form_inner .document-form_wrapper .document-form_item .document-form_item__wrapper > .form-control, .document-page .document-form .document-form_inner .document-form_wrapper .document-form_item .document-form_item__wrapper > .form-select {
+	.section-form .section-form_inner .section-form_wrapper .section-form_item .section-form_item__text,
+	.section-form .section-form_inner .section-form_wrapper .section-form_item .section-form_item__wrapper > .form-control, .section-form .section-form_inner .section-form_wrapper .section-form_item .section-form_item__wrapper > .form-select {
 		font-size: 1em;
 	}
 
 	.topup-sidebar .sidebar-total .sidebar-total_title,
 	.learning-page .learning-sidebar .sidebar-total .sidebar-total_title,
-	.document-page .document-form .document-form_inner .document-form_total__title {
+	.section-form .section-form_inner .section-form_total__title {
 		font-size: 1.15em;
 	}
 
 	.topup-sidebar .sidebar-total .sidebar-total_value,
 	.learning-page .learning-sidebar .sidebar-total .sidebar-total_value,
-	.document-page .document-form .document-form_inner .document-form_total__value {
+	.section-form .section-form_inner .section-form_total__value {
 		font-size: 1.3em;
 	}
 
