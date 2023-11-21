@@ -212,15 +212,8 @@
 
 	.topup-choose .topup-choose_content .topup-choose_text {
 		width: calc(100% - 20px);
-		padding-left: 8px;
 	}
 
-	.topup-choose .topup-choose_content .topup-choose_price {
-		margin-left: 28px;
-	}
-
-	.topup-sidebar .sidebar-form .sidebar-form_item .sidebar-form_item__text,
-	.topup-sidebar .sidebar-form .sidebar-form_item .sidebar-form_item__wrapper > .form-control, .topup-sidebar .sidebar-form .sidebar-form_item .sidebar-form_item__wrapper > .form-select,
 	.learning-page .learning-sidebar .sidebar-form .sidebar-form_item .sidebar-form_item__text,
 	.learning-page .learning-sidebar .sidebar-form .sidebar-form_item .sidebar-form_item__wrapper > .form-control, .learning-page .learning-sidebar .sidebar-form .sidebar-form_item .sidebar-form_item__wrapper > .form-select,
 	.section-form .section-form_inner .section-form_wrapper .section-form_item .section-form_item__text,
@@ -228,13 +221,11 @@
 		font-size: 1em;
 	}
 
-	.topup-sidebar .sidebar-total .sidebar-total_title,
 	.learning-page .learning-sidebar .sidebar-total .sidebar-total_title,
 	.section-form .section-form_inner .section-form_total__title {
 		font-size: 1.15em;
 	}
 
-	.topup-sidebar .sidebar-total .sidebar-total_value,
 	.learning-page .learning-sidebar .sidebar-total .sidebar-total_value,
 	.section-form .section-form_inner .section-form_total__value {
 		font-size: 1.3em;
