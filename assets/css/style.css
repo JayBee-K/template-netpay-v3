@@ -482,6 +482,7 @@
 	width: 35px;
 	height: 60px;
 	opacity: 0;
+	border: none;
 }
 
 .hero-slider .slider-button_next {
