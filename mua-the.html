@@ -170,7 +170,7 @@
 							<!--
 							<div class="header-user_item position-relative">
 								<div class="user-dropdown">
-									<button type="button" class="link-default">
+									<button type="button"  data-bs-toggle="tab" data-bs-target="#class="link-default">
 										<i class="fal fa-user-alt"></i>
 										<span>
 											Tài khoản
@@ -245,31 +245,11 @@
 </div>
 
 <div id="main" class="main">
-	<div class="topup-header" style="background-color: var(--secondary-color)">
-		<div class="container">
-			<div class="topup-header_inner hstack gap-30px">
-				<div class="topup-header_image flex-shrink-0">
-					<img src="./assets/images/topup/topup-page-1.webp" class="img-fluid w-100" alt="">
-				</div>
-				<div class="topup-header_content">
-					<div class="topup-header_title">
-						(VN)
-					</div>
-					<div class="topup-header_description">
-						<i class="fas fa-lightbulb-exclamation"></i>
-						Lưu ý quan trọng: Code (Việt Nam) do SEAGM bán ra là sản phẩm bị khóa khu vực. Nó
-						chỉ có hiệu lực đối với tài khoản Garena được đăng ký tại khu vực VIỆT NAM. Tất cả các giao dịch
-						mua đều KHÔNG ĐƯỢC HOÀN LẠI và KHÔNG THỂ TRẢ LẠI.
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
 	<div class="topup-body">
 		<div class="container">
 			<div class="row g-3">
 				<div class="col-lg-3 order-lg-1 order-3">
-					<div class="section-sidebar">
+					<div class="section-sidebar sidebar-recharge">
 						<div class="sidebar-item">
 							<div class="sidebar-header p-3 pb-2">
 								<div class="sidebar-title">
@@ -278,91 +258,92 @@
 							</div>
 							<div class="sidebar-body px-3">
 								<div class="sidebar-list">
-									<ul class="list-unstyled mb-0" id="sidebar-category">
+									<ul class="list-unstyled mb-0 nav nav-tabs border-bottom-0" id="sidebar-category">
 										<li>
-											<div class="topup-card card border-0 rounded-0 bg-transparent transition-default p-0">
+											<button type="button" data-bs-toggle="tab" data-bs-target="#the-viettel"
+											        class="topup-card card border-0 rounded-0 bg-transparent transition-default p-0 active">
 												<div class="card-image hstack position-relative overflow-hidden transition-default pseudo">
-													<div class="ratio ratio-1x1">
-														<img src="./assets/images/topup/1.jpg"
+													<div class="ratio ratio-16x9">
+														<img src="./assets/images/mua-the/the-viettel.png"
 														     class="img-fluid transition-default"
 														     alt="Mua mã thẻ">
 													</div>
 												</div>
 												<div class="card-title text-center">
-													Mua mã thẻ
+													Thẻ Viettel
 												</div>
-												<a href="" class="stretched-link"></a>
-											</div>
+											</button>
 										</li>
 										<li>
-											<div class="topup-card card border-0 rounded-0 bg-transparent transition-default p-0">
+											<button type="button" data-bs-toggle="tab" data-bs-target="#the-vinaphone"
+											        class="topup-card card border-0 rounded-0 bg-transparent transition-default p-0">
 												<div class="card-image hstack position-relative overflow-hidden transition-default pseudo">
-													<div class="ratio ratio-1x1">
-														<img src="./assets/images/topup/2.jpg"
+													<div class="ratio ratio-16x9">
+														<img src="./assets/images/mua-the/the-vinaphone.jpeg"
 														     class="img-fluid transition-default" alt="Mua mã thẻ">
 													</div>
 												</div>
 												<div class="card-title text-center">
-													Nạp tiền điện thoại
+													Thẻ Vinaphone
 												</div>
-												<a href="" class="stretched-link"></a>
-											</div>
+											</button>
 										</li>
 										<li>
-											<div class="topup-card card border-0 rounded-0 bg-transparent transition-default p-0">
+											<button type="button" data-bs-toggle="tab" data-bs-target="#the-mobifone"
+											        class="topup-card card border-0 rounded-0 bg-transparent transition-default p-0">
 												<div class="card-image hstack position-relative overflow-hidden transition-default pseudo">
-													<div class="ratio ratio-1x1">
-														<img src="./assets/images/topup/3.png"
+													<div class="ratio ratio-16x9">
+														<img src="./assets/images/mua-the/the-mobifone.jpeg"
 														     class="img-fluid transition-default" alt="Mua mã thẻ">
 													</div>
 												</div>
 												<div class="card-title text-center">
-													Data Internet
+													Thẻ Mobifone
 												</div>
-												<a href="" class="stretched-link"></a>
-											</div>
+											</button>
 										</li>
 										<li>
-											<div class="topup-card card border-0 rounded-0 bg-transparent transition-default p-0">
+											<button type="button" data-bs-toggle="tab"
+											        data-bs-target="#the-vietnammobile"
+											        class="topup-card card border-0 rounded-0 bg-transparent transition-default p-0">
 												<div class="card-image hstack position-relative overflow-hidden transition-default pseudo">
-													<div class="ratio ratio-1x1">
-														<img src="./assets/images/topup/4.jpg"
+													<div class="ratio ratio-16x9">
+														<img src="./assets/images/mua-the/the-vietnamobile.jpeg"
 														     class="img-fluid transition-default" alt="Mua mã thẻ">
 													</div>
 												</div>
 												<div class="card-title text-center">
-													Nạp carot
+													Thẻ VietnamMobile
 												</div>
-												<a href="" class="stretched-link"></a>
-											</div>
+											</button>
 										</li>
 										<li>
-											<div class="topup-card card border-0 rounded-0 bg-transparent transition-default p-0">
+											<button type="button" data-bs-toggle="tab" data-bs-target="#the-sohacoin"
+											        class="topup-card card border-0 rounded-0 bg-transparent transition-default p-0">
 												<div class="card-image hstack position-relative overflow-hidden transition-default pseudo">
-													<div class="ratio ratio-1x1">
-														<img src="./assets/images/topup/5.jpg"
+													<div class="ratio ratio-16x9">
+														<img src="./assets/images/mua-the/the-sohacoin.png"
 														     class="img-fluid transition-default" alt="Mua mã thẻ">
 													</div>
 												</div>
 												<div class="card-title text-center">
-													Nạp Zing Game
+													Thẻ Soha Coin
 												</div>
-												<a href="" class="stretched-link"></a>
-											</div>
+											</button>
 										</li>
 										<li>
-											<div class="topup-card card border-0 rounded-0 bg-transparent transition-default p-0">
+											<button type="button" data-bs-toggle="tab" data-bs-target="#the-oncash"
+											        class="topup-card card border-0 rounded-0 bg-transparent transition-default p-0">
 												<div class="card-image hstack position-relative overflow-hidden transition-default pseudo">
-													<div class="ratio ratio-1x1">
-														<img src="./assets/images/topup/6.jpg"
+													<div class="ratio ratio-16x9">
+														<img src="./assets/images/mua-the/the-oncash.png"
 														     class="img-fluid transition-default" alt="Mua mã thẻ">
 													</div>
 												</div>
 												<div class="card-title text-center">
-													Nạp Game SMS
+													Thẻ OnCash
 												</div>
-												<a href="" class="stretched-link"></a>
-											</div>
+											</button>
 										</li>
 									</ul>
 								</div>
@@ -371,174 +352,1043 @@
 					</div>
 				</div>
 				<div class="col-lg-6 order-lg-2 order-1">
-					<div class="row g-2 g-lg-3 row-cols-2 row-cols-md-3">
-						<div class="col">
-							<label for="topup-1" class="topup-choose hstack w-100">
-								<input type="radio" id="topup-1" name="topup"
-								       class="topup-choose_input opacity-0 visually-hidden">
-								<div class="topup-choose_content vstack transition-default w-100 position-relative">
-									<span class="topup-choose_text">
-										10,000VNĐ
-									</span>
-									<span class="topup-choose_price">
-										9,800VNĐ
-									</span>
-								</div>
-							</label>
+					<div class="section-heading mb-2">
+						<div class="heading-title text-start mb-0">
+							Mua mã thẻ
 						</div>
-						<div class="col">
-							<label for="topup-2" class="topup-choose hstack w-100">
-								<input type="radio" id="topup-2" name="topup"
-								       class="topup-choose_input opacity-0 visually-hidden">
-								<div class="topup-choose_content vstack transition-default w-100 position-relative">
-									<span class="topup-choose_text">
-										20,000VNĐ
-									</span>
-									<span class="topup-choose_price">
-										19,600VNĐ
-									</span>
+					</div>
+					<div class="tab-content">
+						<div class="tab-pane fade active show" id="the-viettel">
+							<div class="row g-2 g-lg-3 row-cols-2 row-cols-md-3">
+								<div class="col">
+									<label for="topup-1" class="topup-choose hstack w-100">
+										<input type="radio" id="topup-1" name="topup"
+										       class="topup-choose_input opacity-0 visually-hidden">
+										<div class="topup-choose_content vstack transition-default w-100 position-relative">
+											<span class="topup-choose_text">
+												10,000VNĐ
+											</span>
+											<span class="topup-choose_price">
+												9,800VNĐ
+											</span>
+										</div>
+									</label>
 								</div>
-							</label>
+								<div class="col">
+									<label for="topup-2" class="topup-choose hstack w-100">
+										<input type="radio" id="topup-2" name="topup"
+										       class="topup-choose_input opacity-0 visually-hidden">
+										<div class="topup-choose_content vstack transition-default w-100 position-relative">
+											<span class="topup-choose_text">
+												20,000VNĐ
+											</span>
+											<span class="topup-choose_price">
+												19,600VNĐ
+											</span>
+										</div>
+									</label>
+								</div>
+								<div class="col">
+									<label for="topup-3" class="topup-choose hstack w-100">
+										<input type="radio" id="topup-3" name="topup"
+										       class="topup-choose_input opacity-0 visually-hidden">
+										<div class="topup-choose_content vstack transition-default w-100 position-relative">
+											<span class="topup-choose_text">
+												50,000VNĐ
+											</span>
+											<span class="topup-choose_price">
+												49,000VNĐ
+											</span>
+										</div>
+									</label>
+								</div>
+								<div class="col">
+									<label for="topup-4" class="topup-choose hstack w-100">
+										<input type="radio" id="topup-4" name="topup"
+										       class="topup-choose_input opacity-0 visually-hidden">
+										<div class="topup-choose_content vstack transition-default w-100 position-relative">
+											<span class="topup-choose_text">
+												100,000VNĐ
+											</span>
+											<span class="topup-choose_price">
+												98,000VNĐ
+											</span>
+										</div>
+									</label>
+								</div>
+								<div class="col">
+									<label for="topup-5" class="topup-choose hstack w-100">
+										<input type="radio" id="topup-5" name="topup"
+										       class="topup-choose_input opacity-0 visually-hidden">
+										<div class="topup-choose_content vstack transition-default w-100 position-relative">
+											<span class="topup-choose_text">
+												200,000VNĐ
+											</span>
+											<span class="topup-choose_price">
+												196,000VNĐ
+											</span>
+										</div>
+									</label>
+								</div>
+								<div class="col">
+									<label for="topup-6" class="topup-choose hstack w-100">
+										<input type="radio" id="topup-6" name="topup"
+										       class="topup-choose_input opacity-0 visually-hidden">
+										<div class="topup-choose_content vstack transition-default w-100 position-relative">
+											<span class="topup-choose_text">
+												300,000VNĐ
+											</span>
+											<span class="topup-choose_price">
+												294,000VNĐ
+											</span>
+										</div>
+									</label>
+								</div>
+								<div class="col">
+									<label for="topup-7" class="topup-choose hstack w-100">
+										<input type="radio" id="topup-7" name="topup"
+										       class="topup-choose_input opacity-0 visually-hidden">
+										<div class="topup-choose_content vstack transition-default w-100 position-relative">
+											<span class="topup-choose_text">
+												500,000VNĐ
+											</span>
+											<span class="topup-choose_price">
+												490,000VNĐ
+											</span>
+										</div>
+									</label>
+								</div>
+								<div class="col">
+									<label for="topup-8" class="topup-choose hstack w-100">
+										<input type="radio" id="topup-8" name="topup"
+										       class="topup-choose_input opacity-0 visually-hidden">
+										<div class="topup-choose_content vstack transition-default w-100 position-relative">
+											<span class="topup-choose_text">
+												1,000,000VNĐ
+											</span>
+											<span class="topup-choose_price">
+												980,000VNĐ
+											</span>
+										</div>
+									</label>
+								</div>
+								<div class="col">
+									<label for="topup-7" class="topup-choose hstack w-100">
+										<input type="radio" id="topup-7" name="topup"
+										       class="topup-choose_input opacity-0 visually-hidden">
+										<div class="topup-choose_content vstack transition-default w-100 position-relative">
+											<span class="topup-choose_text">
+												500,000VNĐ
+											</span>
+											<span class="topup-choose_price">
+												490,000VNĐ
+											</span>
+										</div>
+									</label>
+								</div>
+								<div class="col">
+									<label for="topup-8" class="topup-choose hstack w-100">
+										<input type="radio" id="topup-8" name="topup"
+										       class="topup-choose_input opacity-0 visually-hidden">
+										<div class="topup-choose_content vstack transition-default w-100 position-relative">
+											<span class="topup-choose_text">
+												1,000,000VNĐ
+											</span>
+											<span class="topup-choose_price">
+												980,000VNĐ
+											</span>
+										</div>
+									</label>
+								</div>
+								<div class="col">
+									<label for="topup-7" class="topup-choose hstack w-100">
+										<input type="radio" id="topup-7" name="topup"
+										       class="topup-choose_input opacity-0 visually-hidden">
+										<div class="topup-choose_content vstack transition-default w-100 position-relative">
+											<span class="topup-choose_text">
+												500,000VNĐ
+											</span>
+											<span class="topup-choose_price">
+												490,000VNĐ
+											</span>
+										</div>
+									</label>
+								</div>
+								<div class="col">
+									<label for="topup-8" class="topup-choose hstack w-100">
+										<input type="radio" id="topup-8" name="topup"
+										       class="topup-choose_input opacity-0 visually-hidden">
+										<div class="topup-choose_content vstack transition-default w-100 position-relative">
+											<span class="topup-choose_text">
+												1,000,000VNĐ
+											</span>
+											<span class="topup-choose_price">
+												980,000VNĐ
+											</span>
+										</div>
+									</label>
+								</div>
+							</div>
 						</div>
-						<div class="col">
-							<label for="topup-3" class="topup-choose hstack w-100">
-								<input type="radio" id="topup-3" name="topup"
-								       class="topup-choose_input opacity-0 visually-hidden">
-								<div class="topup-choose_content vstack transition-default w-100 position-relative">
-									<span class="topup-choose_text">
-										50,000VNĐ
-									</span>
-									<span class="topup-choose_price">
-										49,000VNĐ
-									</span>
+						<div class="tab-pane fade" id="the-vinaphone">
+							<div class="row g-2 g-lg-3 row-cols-2 row-cols-md-3">
+								<div class="col">
+									<label for="topup-1" class="topup-choose hstack w-100">
+										<input type="radio" id="topup-1" name="topup"
+										       class="topup-choose_input opacity-0 visually-hidden">
+										<div class="topup-choose_content vstack transition-default w-100 position-relative">
+											<span class="topup-choose_text">
+												10,000VNĐ
+											</span>
+											<span class="topup-choose_price">
+												9,800VNĐ
+											</span>
+										</div>
+									</label>
 								</div>
-							</label>
+								<div class="col">
+									<label for="topup-2" class="topup-choose hstack w-100">
+										<input type="radio" id="topup-2" name="topup"
+										       class="topup-choose_input opacity-0 visually-hidden">
+										<div class="topup-choose_content vstack transition-default w-100 position-relative">
+											<span class="topup-choose_text">
+												20,000VNĐ
+											</span>
+											<span class="topup-choose_price">
+												19,600VNĐ
+											</span>
+										</div>
+									</label>
+								</div>
+								<div class="col">
+									<label for="topup-3" class="topup-choose hstack w-100">
+										<input type="radio" id="topup-3" name="topup"
+										       class="topup-choose_input opacity-0 visually-hidden">
+										<div class="topup-choose_content vstack transition-default w-100 position-relative">
+											<span class="topup-choose_text">
+												50,000VNĐ
+											</span>
+											<span class="topup-choose_price">
+												49,000VNĐ
+											</span>
+										</div>
+									</label>
+								</div>
+								<div class="col">
+									<label for="topup-4" class="topup-choose hstack w-100">
+										<input type="radio" id="topup-4" name="topup"
+										       class="topup-choose_input opacity-0 visually-hidden">
+										<div class="topup-choose_content vstack transition-default w-100 position-relative">
+											<span class="topup-choose_text">
+												100,000VNĐ
+											</span>
+											<span class="topup-choose_price">
+												98,000VNĐ
+											</span>
+										</div>
+									</label>
+								</div>
+								<div class="col">
+									<label for="topup-5" class="topup-choose hstack w-100">
+										<input type="radio" id="topup-5" name="topup"
+										       class="topup-choose_input opacity-0 visually-hidden">
+										<div class="topup-choose_content vstack transition-default w-100 position-relative">
+											<span class="topup-choose_text">
+												200,000VNĐ
+											</span>
+											<span class="topup-choose_price">
+												196,000VNĐ
+											</span>
+										</div>
+									</label>
+								</div>
+								<div class="col">
+									<label for="topup-6" class="topup-choose hstack w-100">
+										<input type="radio" id="topup-6" name="topup"
+										       class="topup-choose_input opacity-0 visually-hidden">
+										<div class="topup-choose_content vstack transition-default w-100 position-relative">
+											<span class="topup-choose_text">
+												300,000VNĐ
+											</span>
+											<span class="topup-choose_price">
+												294,000VNĐ
+											</span>
+										</div>
+									</label>
+								</div>
+								<div class="col">
+									<label for="topup-7" class="topup-choose hstack w-100">
+										<input type="radio" id="topup-7" name="topup"
+										       class="topup-choose_input opacity-0 visually-hidden">
+										<div class="topup-choose_content vstack transition-default w-100 position-relative">
+											<span class="topup-choose_text">
+												500,000VNĐ
+											</span>
+											<span class="topup-choose_price">
+												490,000VNĐ
+											</span>
+										</div>
+									</label>
+								</div>
+								<div class="col">
+									<label for="topup-8" class="topup-choose hstack w-100">
+										<input type="radio" id="topup-8" name="topup"
+										       class="topup-choose_input opacity-0 visually-hidden">
+										<div class="topup-choose_content vstack transition-default w-100 position-relative">
+											<span class="topup-choose_text">
+												1,000,000VNĐ
+											</span>
+											<span class="topup-choose_price">
+												980,000VNĐ
+											</span>
+										</div>
+									</label>
+								</div>
+								<div class="col">
+									<label for="topup-7" class="topup-choose hstack w-100">
+										<input type="radio" id="topup-7" name="topup"
+										       class="topup-choose_input opacity-0 visually-hidden">
+										<div class="topup-choose_content vstack transition-default w-100 position-relative">
+											<span class="topup-choose_text">
+												500,000VNĐ
+											</span>
+											<span class="topup-choose_price">
+												490,000VNĐ
+											</span>
+										</div>
+									</label>
+								</div>
+								<div class="col">
+									<label for="topup-8" class="topup-choose hstack w-100">
+										<input type="radio" id="topup-8" name="topup"
+										       class="topup-choose_input opacity-0 visually-hidden">
+										<div class="topup-choose_content vstack transition-default w-100 position-relative">
+											<span class="topup-choose_text">
+												1,000,000VNĐ
+											</span>
+											<span class="topup-choose_price">
+												980,000VNĐ
+											</span>
+										</div>
+									</label>
+								</div>
+								<div class="col">
+									<label for="topup-7" class="topup-choose hstack w-100">
+										<input type="radio" id="topup-7" name="topup"
+										       class="topup-choose_input opacity-0 visually-hidden">
+										<div class="topup-choose_content vstack transition-default w-100 position-relative">
+											<span class="topup-choose_text">
+												500,000VNĐ
+											</span>
+											<span class="topup-choose_price">
+												490,000VNĐ
+											</span>
+										</div>
+									</label>
+								</div>
+								<div class="col">
+									<label for="topup-8" class="topup-choose hstack w-100">
+										<input type="radio" id="topup-8" name="topup"
+										       class="topup-choose_input opacity-0 visually-hidden">
+										<div class="topup-choose_content vstack transition-default w-100 position-relative">
+											<span class="topup-choose_text">
+												1,000,000VNĐ
+											</span>
+											<span class="topup-choose_price">
+												980,000VNĐ
+											</span>
+										</div>
+									</label>
+								</div>
+							</div>
 						</div>
-						<div class="col">
-							<label for="topup-4" class="topup-choose hstack w-100">
-								<input type="radio" id="topup-4" name="topup"
-								       class="topup-choose_input opacity-0 visually-hidden">
-								<div class="topup-choose_content vstack transition-default w-100 position-relative">
-									<span class="topup-choose_text">
-										100,000VNĐ
-									</span>
-									<span class="topup-choose_price">
-										98,000VNĐ
-									</span>
+						<div class="tab-pane fade" id="the-mobifone">
+							<div class="row g-2 g-lg-3 row-cols-2 row-cols-md-3">
+								<div class="col">
+									<label for="topup-1" class="topup-choose hstack w-100">
+										<input type="radio" id="topup-1" name="topup"
+										       class="topup-choose_input opacity-0 visually-hidden">
+										<div class="topup-choose_content vstack transition-default w-100 position-relative">
+											<span class="topup-choose_text">
+												10,000VNĐ
+											</span>
+											<span class="topup-choose_price">
+												9,800VNĐ
+											</span>
+										</div>
+									</label>
 								</div>
-							</label>
+								<div class="col">
+									<label for="topup-2" class="topup-choose hstack w-100">
+										<input type="radio" id="topup-2" name="topup"
+										       class="topup-choose_input opacity-0 visually-hidden">
+										<div class="topup-choose_content vstack transition-default w-100 position-relative">
+											<span class="topup-choose_text">
+												20,000VNĐ
+											</span>
+											<span class="topup-choose_price">
+												19,600VNĐ
+											</span>
+										</div>
+									</label>
+								</div>
+								<div class="col">
+									<label for="topup-3" class="topup-choose hstack w-100">
+										<input type="radio" id="topup-3" name="topup"
+										       class="topup-choose_input opacity-0 visually-hidden">
+										<div class="topup-choose_content vstack transition-default w-100 position-relative">
+											<span class="topup-choose_text">
+												50,000VNĐ
+											</span>
+											<span class="topup-choose_price">
+												49,000VNĐ
+											</span>
+										</div>
+									</label>
+								</div>
+								<div class="col">
+									<label for="topup-4" class="topup-choose hstack w-100">
+										<input type="radio" id="topup-4" name="topup"
+										       class="topup-choose_input opacity-0 visually-hidden">
+										<div class="topup-choose_content vstack transition-default w-100 position-relative">
+											<span class="topup-choose_text">
+												100,000VNĐ
+											</span>
+											<span class="topup-choose_price">
+												98,000VNĐ
+											</span>
+										</div>
+									</label>
+								</div>
+								<div class="col">
+									<label for="topup-5" class="topup-choose hstack w-100">
+										<input type="radio" id="topup-5" name="topup"
+										       class="topup-choose_input opacity-0 visually-hidden">
+										<div class="topup-choose_content vstack transition-default w-100 position-relative">
+											<span class="topup-choose_text">
+												200,000VNĐ
+											</span>
+											<span class="topup-choose_price">
+												196,000VNĐ
+											</span>
+										</div>
+									</label>
+								</div>
+								<div class="col">
+									<label for="topup-6" class="topup-choose hstack w-100">
+										<input type="radio" id="topup-6" name="topup"
+										       class="topup-choose_input opacity-0 visually-hidden">
+										<div class="topup-choose_content vstack transition-default w-100 position-relative">
+											<span class="topup-choose_text">
+												300,000VNĐ
+											</span>
+											<span class="topup-choose_price">
+												294,000VNĐ
+											</span>
+										</div>
+									</label>
+								</div>
+								<div class="col">
+									<label for="topup-7" class="topup-choose hstack w-100">
+										<input type="radio" id="topup-7" name="topup"
+										       class="topup-choose_input opacity-0 visually-hidden">
+										<div class="topup-choose_content vstack transition-default w-100 position-relative">
+											<span class="topup-choose_text">
+												500,000VNĐ
+											</span>
+											<span class="topup-choose_price">
+												490,000VNĐ
+											</span>
+										</div>
+									</label>
+								</div>
+								<div class="col">
+									<label for="topup-8" class="topup-choose hstack w-100">
+										<input type="radio" id="topup-8" name="topup"
+										       class="topup-choose_input opacity-0 visually-hidden">
+										<div class="topup-choose_content vstack transition-default w-100 position-relative">
+											<span class="topup-choose_text">
+												1,000,000VNĐ
+											</span>
+											<span class="topup-choose_price">
+												980,000VNĐ
+											</span>
+										</div>
+									</label>
+								</div>
+								<div class="col">
+									<label for="topup-7" class="topup-choose hstack w-100">
+										<input type="radio" id="topup-7" name="topup"
+										       class="topup-choose_input opacity-0 visually-hidden">
+										<div class="topup-choose_content vstack transition-default w-100 position-relative">
+											<span class="topup-choose_text">
+												500,000VNĐ
+											</span>
+											<span class="topup-choose_price">
+												490,000VNĐ
+											</span>
+										</div>
+									</label>
+								</div>
+								<div class="col">
+									<label for="topup-8" class="topup-choose hstack w-100">
+										<input type="radio" id="topup-8" name="topup"
+										       class="topup-choose_input opacity-0 visually-hidden">
+										<div class="topup-choose_content vstack transition-default w-100 position-relative">
+											<span class="topup-choose_text">
+												1,000,000VNĐ
+											</span>
+											<span class="topup-choose_price">
+												980,000VNĐ
+											</span>
+										</div>
+									</label>
+								</div>
+								<div class="col">
+									<label for="topup-7" class="topup-choose hstack w-100">
+										<input type="radio" id="topup-7" name="topup"
+										       class="topup-choose_input opacity-0 visually-hidden">
+										<div class="topup-choose_content vstack transition-default w-100 position-relative">
+											<span class="topup-choose_text">
+												500,000VNĐ
+											</span>
+											<span class="topup-choose_price">
+												490,000VNĐ
+											</span>
+										</div>
+									</label>
+								</div>
+								<div class="col">
+									<label for="topup-8" class="topup-choose hstack w-100">
+										<input type="radio" id="topup-8" name="topup"
+										       class="topup-choose_input opacity-0 visually-hidden">
+										<div class="topup-choose_content vstack transition-default w-100 position-relative">
+											<span class="topup-choose_text">
+												1,000,000VNĐ
+											</span>
+											<span class="topup-choose_price">
+												980,000VNĐ
+											</span>
+										</div>
+									</label>
+								</div>
+							</div>
 						</div>
-						<div class="col">
-							<label for="topup-5" class="topup-choose hstack w-100">
-								<input type="radio" id="topup-5" name="topup"
-								       class="topup-choose_input opacity-0 visually-hidden">
-								<div class="topup-choose_content vstack transition-default w-100 position-relative">
-									<span class="topup-choose_text">
-										200,000VNĐ
-									</span>
-									<span class="topup-choose_price">
-										196,000VNĐ
-									</span>
+						<div class="tab-pane fade" id="the-vietnammobile">
+							<div class="row g-2 g-lg-3 row-cols-2 row-cols-md-3">
+								<div class="col">
+									<label for="topup-1" class="topup-choose hstack w-100">
+										<input type="radio" id="topup-1" name="topup"
+										       class="topup-choose_input opacity-0 visually-hidden">
+										<div class="topup-choose_content vstack transition-default w-100 position-relative">
+											<span class="topup-choose_text">
+												10,000VNĐ
+											</span>
+											<span class="topup-choose_price">
+												9,800VNĐ
+											</span>
+										</div>
+									</label>
 								</div>
-							</label>
+								<div class="col">
+									<label for="topup-2" class="topup-choose hstack w-100">
+										<input type="radio" id="topup-2" name="topup"
+										       class="topup-choose_input opacity-0 visually-hidden">
+										<div class="topup-choose_content vstack transition-default w-100 position-relative">
+											<span class="topup-choose_text">
+												20,000VNĐ
+											</span>
+											<span class="topup-choose_price">
+												19,600VNĐ
+											</span>
+										</div>
+									</label>
+								</div>
+								<div class="col">
+									<label for="topup-3" class="topup-choose hstack w-100">
+										<input type="radio" id="topup-3" name="topup"
+										       class="topup-choose_input opacity-0 visually-hidden">
+										<div class="topup-choose_content vstack transition-default w-100 position-relative">
+											<span class="topup-choose_text">
+												50,000VNĐ
+											</span>
+											<span class="topup-choose_price">
+												49,000VNĐ
+											</span>
+										</div>
+									</label>
+								</div>
+								<div class="col">
+									<label for="topup-4" class="topup-choose hstack w-100">
+										<input type="radio" id="topup-4" name="topup"
+										       class="topup-choose_input opacity-0 visually-hidden">
+										<div class="topup-choose_content vstack transition-default w-100 position-relative">
+											<span class="topup-choose_text">
+												100,000VNĐ
+											</span>
+											<span class="topup-choose_price">
+												98,000VNĐ
+											</span>
+										</div>
+									</label>
+								</div>
+								<div class="col">
+									<label for="topup-5" class="topup-choose hstack w-100">
+										<input type="radio" id="topup-5" name="topup"
+										       class="topup-choose_input opacity-0 visually-hidden">
+										<div class="topup-choose_content vstack transition-default w-100 position-relative">
+											<span class="topup-choose_text">
+												200,000VNĐ
+											</span>
+											<span class="topup-choose_price">
+												196,000VNĐ
+											</span>
+										</div>
+									</label>
+								</div>
+								<div class="col">
+									<label for="topup-6" class="topup-choose hstack w-100">
+										<input type="radio" id="topup-6" name="topup"
+										       class="topup-choose_input opacity-0 visually-hidden">
+										<div class="topup-choose_content vstack transition-default w-100 position-relative">
+											<span class="topup-choose_text">
+												300,000VNĐ
+											</span>
+											<span class="topup-choose_price">
+												294,000VNĐ
+											</span>
+										</div>
+									</label>
+								</div>
+								<div class="col">
+									<label for="topup-7" class="topup-choose hstack w-100">
+										<input type="radio" id="topup-7" name="topup"
+										       class="topup-choose_input opacity-0 visually-hidden">
+										<div class="topup-choose_content vstack transition-default w-100 position-relative">
+											<span class="topup-choose_text">
+												500,000VNĐ
+											</span>
+											<span class="topup-choose_price">
+												490,000VNĐ
+											</span>
+										</div>
+									</label>
+								</div>
+								<div class="col">
+									<label for="topup-8" class="topup-choose hstack w-100">
+										<input type="radio" id="topup-8" name="topup"
+										       class="topup-choose_input opacity-0 visually-hidden">
+										<div class="topup-choose_content vstack transition-default w-100 position-relative">
+											<span class="topup-choose_text">
+												1,000,000VNĐ
+											</span>
+											<span class="topup-choose_price">
+												980,000VNĐ
+											</span>
+										</div>
+									</label>
+								</div>
+								<div class="col">
+									<label for="topup-7" class="topup-choose hstack w-100">
+										<input type="radio" id="topup-7" name="topup"
+										       class="topup-choose_input opacity-0 visually-hidden">
+										<div class="topup-choose_content vstack transition-default w-100 position-relative">
+											<span class="topup-choose_text">
+												500,000VNĐ
+											</span>
+											<span class="topup-choose_price">
+												490,000VNĐ
+											</span>
+										</div>
+									</label>
+								</div>
+								<div class="col">
+									<label for="topup-8" class="topup-choose hstack w-100">
+										<input type="radio" id="topup-8" name="topup"
+										       class="topup-choose_input opacity-0 visually-hidden">
+										<div class="topup-choose_content vstack transition-default w-100 position-relative">
+											<span class="topup-choose_text">
+												1,000,000VNĐ
+											</span>
+											<span class="topup-choose_price">
+												980,000VNĐ
+											</span>
+										</div>
+									</label>
+								</div>
+								<div class="col">
+									<label for="topup-7" class="topup-choose hstack w-100">
+										<input type="radio" id="topup-7" name="topup"
+										       class="topup-choose_input opacity-0 visually-hidden">
+										<div class="topup-choose_content vstack transition-default w-100 position-relative">
+											<span class="topup-choose_text">
+												500,000VNĐ
+											</span>
+											<span class="topup-choose_price">
+												490,000VNĐ
+											</span>
+										</div>
+									</label>
+								</div>
+								<div class="col">
+									<label for="topup-8" class="topup-choose hstack w-100">
+										<input type="radio" id="topup-8" name="topup"
+										       class="topup-choose_input opacity-0 visually-hidden">
+										<div class="topup-choose_content vstack transition-default w-100 position-relative">
+											<span class="topup-choose_text">
+												1,000,000VNĐ
+											</span>
+											<span class="topup-choose_price">
+												980,000VNĐ
+											</span>
+										</div>
+									</label>
+								</div>
+							</div>
 						</div>
-						<div class="col">
-							<label for="topup-6" class="topup-choose hstack w-100">
-								<input type="radio" id="topup-6" name="topup"
-								       class="topup-choose_input opacity-0 visually-hidden">
-								<div class="topup-choose_content vstack transition-default w-100 position-relative">
-									<span class="topup-choose_text">
-										300,000VNĐ
-									</span>
-									<span class="topup-choose_price">
-										294,000VNĐ
-									</span>
+						<div class="tab-pane fade" id="the-sohacoin">
+							<div class="row g-2 g-lg-3 row-cols-2 row-cols-md-3">
+								<div class="col">
+									<label for="topup-1" class="topup-choose hstack w-100">
+										<input type="radio" id="topup-1" name="topup"
+										       class="topup-choose_input opacity-0 visually-hidden">
+										<div class="topup-choose_content vstack transition-default w-100 position-relative">
+											<span class="topup-choose_text">
+												10,000VNĐ
+											</span>
+											<span class="topup-choose_price">
+												9,800VNĐ
+											</span>
+										</div>
+									</label>
 								</div>
-							</label>
+								<div class="col">
+									<label for="topup-2" class="topup-choose hstack w-100">
+										<input type="radio" id="topup-2" name="topup"
+										       class="topup-choose_input opacity-0 visually-hidden">
+										<div class="topup-choose_content vstack transition-default w-100 position-relative">
+											<span class="topup-choose_text">
+												20,000VNĐ
+											</span>
+											<span class="topup-choose_price">
+												19,600VNĐ
+											</span>
+										</div>
+									</label>
+								</div>
+								<div class="col">
+									<label for="topup-3" class="topup-choose hstack w-100">
+										<input type="radio" id="topup-3" name="topup"
+										       class="topup-choose_input opacity-0 visually-hidden">
+										<div class="topup-choose_content vstack transition-default w-100 position-relative">
+											<span class="topup-choose_text">
+												50,000VNĐ
+											</span>
+											<span class="topup-choose_price">
+												49,000VNĐ
+											</span>
+										</div>
+									</label>
+								</div>
+								<div class="col">
+									<label for="topup-4" class="topup-choose hstack w-100">
+										<input type="radio" id="topup-4" name="topup"
+										       class="topup-choose_input opacity-0 visually-hidden">
+										<div class="topup-choose_content vstack transition-default w-100 position-relative">
+											<span class="topup-choose_text">
+												100,000VNĐ
+											</span>
+											<span class="topup-choose_price">
+												98,000VNĐ
+											</span>
+										</div>
+									</label>
+								</div>
+								<div class="col">
+									<label for="topup-5" class="topup-choose hstack w-100">
+										<input type="radio" id="topup-5" name="topup"
+										       class="topup-choose_input opacity-0 visually-hidden">
+										<div class="topup-choose_content vstack transition-default w-100 position-relative">
+											<span class="topup-choose_text">
+												200,000VNĐ
+											</span>
+											<span class="topup-choose_price">
+												196,000VNĐ
+											</span>
+										</div>
+									</label>
+								</div>
+								<div class="col">
+									<label for="topup-6" class="topup-choose hstack w-100">
+										<input type="radio" id="topup-6" name="topup"
+										       class="topup-choose_input opacity-0 visually-hidden">
+										<div class="topup-choose_content vstack transition-default w-100 position-relative">
+											<span class="topup-choose_text">
+												300,000VNĐ
+											</span>
+											<span class="topup-choose_price">
+												294,000VNĐ
+											</span>
+										</div>
+									</label>
+								</div>
+								<div class="col">
+									<label for="topup-7" class="topup-choose hstack w-100">
+										<input type="radio" id="topup-7" name="topup"
+										       class="topup-choose_input opacity-0 visually-hidden">
+										<div class="topup-choose_content vstack transition-default w-100 position-relative">
+											<span class="topup-choose_text">
+												500,000VNĐ
+											</span>
+											<span class="topup-choose_price">
+												490,000VNĐ
+											</span>
+										</div>
+									</label>
+								</div>
+								<div class="col">
+									<label for="topup-8" class="topup-choose hstack w-100">
+										<input type="radio" id="topup-8" name="topup"
+										       class="topup-choose_input opacity-0 visually-hidden">
+										<div class="topup-choose_content vstack transition-default w-100 position-relative">
+											<span class="topup-choose_text">
+												1,000,000VNĐ
+											</span>
+											<span class="topup-choose_price">
+												980,000VNĐ
+											</span>
+										</div>
+									</label>
+								</div>
+								<div class="col">
+									<label for="topup-7" class="topup-choose hstack w-100">
+										<input type="radio" id="topup-7" name="topup"
+										       class="topup-choose_input opacity-0 visually-hidden">
+										<div class="topup-choose_content vstack transition-default w-100 position-relative">
+											<span class="topup-choose_text">
+												500,000VNĐ
+											</span>
+											<span class="topup-choose_price">
+												490,000VNĐ
+											</span>
+										</div>
+									</label>
+								</div>
+								<div class="col">
+									<label for="topup-8" class="topup-choose hstack w-100">
+										<input type="radio" id="topup-8" name="topup"
+										       class="topup-choose_input opacity-0 visually-hidden">
+										<div class="topup-choose_content vstack transition-default w-100 position-relative">
+											<span class="topup-choose_text">
+												1,000,000VNĐ
+											</span>
+											<span class="topup-choose_price">
+												980,000VNĐ
+											</span>
+										</div>
+									</label>
+								</div>
+								<div class="col">
+									<label for="topup-7" class="topup-choose hstack w-100">
+										<input type="radio" id="topup-7" name="topup"
+										       class="topup-choose_input opacity-0 visually-hidden">
+										<div class="topup-choose_content vstack transition-default w-100 position-relative">
+											<span class="topup-choose_text">
+												500,000VNĐ
+											</span>
+											<span class="topup-choose_price">
+												490,000VNĐ
+											</span>
+										</div>
+									</label>
+								</div>
+								<div class="col">
+									<label for="topup-8" class="topup-choose hstack w-100">
+										<input type="radio" id="topup-8" name="topup"
+										       class="topup-choose_input opacity-0 visually-hidden">
+										<div class="topup-choose_content vstack transition-default w-100 position-relative">
+											<span class="topup-choose_text">
+												1,000,000VNĐ
+											</span>
+											<span class="topup-choose_price">
+												980,000VNĐ
+											</span>
+										</div>
+									</label>
+								</div>
+							</div>
 						</div>
-						<div class="col">
-							<label for="topup-7" class="topup-choose hstack w-100">
-								<input type="radio" id="topup-7" name="topup"
-								       class="topup-choose_input opacity-0 visually-hidden">
-								<div class="topup-choose_content vstack transition-default w-100 position-relative">
-									<span class="topup-choose_text">
-										500,000VNĐ
-									</span>
-									<span class="topup-choose_price">
-										490,000VNĐ
-									</span>
+						<div class="tab-pane fade" id="the-oncash">
+							<div class="row g-2 g-lg-3 row-cols-2 row-cols-md-3">
+								<div class="col">
+									<label for="topup-1" class="topup-choose hstack w-100">
+										<input type="radio" id="topup-1" name="topup"
+										       class="topup-choose_input opacity-0 visually-hidden">
+										<div class="topup-choose_content vstack transition-default w-100 position-relative">
+											<span class="topup-choose_text">
+												10,000VNĐ
+											</span>
+											<span class="topup-choose_price">
+												9,800VNĐ
+											</span>
+										</div>
+									</label>
 								</div>
-							</label>
-						</div>
-						<div class="col">
-							<label for="topup-8" class="topup-choose hstack w-100">
-								<input type="radio" id="topup-8" name="topup"
-								       class="topup-choose_input opacity-0 visually-hidden">
-								<div class="topup-choose_content vstack transition-default w-100 position-relative">
-									<span class="topup-choose_text">
-										1,000,000VNĐ
-									</span>
-									<span class="topup-choose_price">
-										980,000VNĐ
-									</span>
+								<div class="col">
+									<label for="topup-2" class="topup-choose hstack w-100">
+										<input type="radio" id="topup-2" name="topup"
+										       class="topup-choose_input opacity-0 visually-hidden">
+										<div class="topup-choose_content vstack transition-default w-100 position-relative">
+											<span class="topup-choose_text">
+												20,000VNĐ
+											</span>
+											<span class="topup-choose_price">
+												19,600VNĐ
+											</span>
+										</div>
+									</label>
 								</div>
-							</label>
-						</div>
-						<div class="col">
-							<label for="topup-7" class="topup-choose hstack w-100">
-								<input type="radio" id="topup-7" name="topup"
-								       class="topup-choose_input opacity-0 visually-hidden">
-								<div class="topup-choose_content vstack transition-default w-100 position-relative">
-									<span class="topup-choose_text">
-										500,000VNĐ
-									</span>
-									<span class="topup-choose_price">
-										490,000VNĐ
-									</span>
+								<div class="col">
+									<label for="topup-3" class="topup-choose hstack w-100">
+										<input type="radio" id="topup-3" name="topup"
+										       class="topup-choose_input opacity-0 visually-hidden">
+										<div class="topup-choose_content vstack transition-default w-100 position-relative">
+											<span class="topup-choose_text">
+												50,000VNĐ
+											</span>
+											<span class="topup-choose_price">
+												49,000VNĐ
+											</span>
+										</div>
+									</label>
 								</div>
-							</label>
-						</div>
-						<div class="col">
-							<label for="topup-8" class="topup-choose hstack w-100">
-								<input type="radio" id="topup-8" name="topup"
-								       class="topup-choose_input opacity-0 visually-hidden">
-								<div class="topup-choose_content vstack transition-default w-100 position-relative">
-									<span class="topup-choose_text">
-										1,000,000VNĐ
-									</span>
-									<span class="topup-choose_price">
-										980,000VNĐ
-									</span>
+								<div class="col">
+									<label for="topup-4" class="topup-choose hstack w-100">
+										<input type="radio" id="topup-4" name="topup"
+										       class="topup-choose_input opacity-0 visually-hidden">
+										<div class="topup-choose_content vstack transition-default w-100 position-relative">
+											<span class="topup-choose_text">
+												100,000VNĐ
+											</span>
+											<span class="topup-choose_price">
+												98,000VNĐ
+											</span>
+										</div>
+									</label>
 								</div>
-							</label>
-						</div>
-						<div class="col">
-							<label for="topup-7" class="topup-choose hstack w-100">
-								<input type="radio" id="topup-7" name="topup"
-								       class="topup-choose_input opacity-0 visually-hidden">
-								<div class="topup-choose_content vstack transition-default w-100 position-relative">
-									<span class="topup-choose_text">
-										500,000VNĐ
-									</span>
-									<span class="topup-choose_price">
-										490,000VNĐ
-									</span>
+								<div class="col">
+									<label for="topup-5" class="topup-choose hstack w-100">
+										<input type="radio" id="topup-5" name="topup"
+										       class="topup-choose_input opacity-0 visually-hidden">
+										<div class="topup-choose_content vstack transition-default w-100 position-relative">
+											<span class="topup-choose_text">
+												200,000VNĐ
+											</span>
+											<span class="topup-choose_price">
+												196,000VNĐ
+											</span>
+										</div>
+									</label>
 								</div>
-							</label>
-						</div>
-						<div class="col">
-							<label for="topup-8" class="topup-choose hstack w-100">
-								<input type="radio" id="topup-8" name="topup"
-								       class="topup-choose_input opacity-0 visually-hidden">
-								<div class="topup-choose_content vstack transition-default w-100 position-relative">
-									<span class="topup-choose_text">
-										1,000,000VNĐ
-									</span>
-									<span class="topup-choose_price">
-										980,000VNĐ
-									</span>
+								<div class="col">
+									<label for="topup-6" class="topup-choose hstack w-100">
+										<input type="radio" id="topup-6" name="topup"
+										       class="topup-choose_input opacity-0 visually-hidden">
+										<div class="topup-choose_content vstack transition-default w-100 position-relative">
+											<span class="topup-choose_text">
+												300,000VNĐ
+											</span>
+											<span class="topup-choose_price">
+												294,000VNĐ
+											</span>
+										</div>
+									</label>
 								</div>
-							</label>
+								<div class="col">
+									<label for="topup-7" class="topup-choose hstack w-100">
+										<input type="radio" id="topup-7" name="topup"
+										       class="topup-choose_input opacity-0 visually-hidden">
+										<div class="topup-choose_content vstack transition-default w-100 position-relative">
+											<span class="topup-choose_text">
+												500,000VNĐ
+											</span>
+											<span class="topup-choose_price">
+												490,000VNĐ
+											</span>
+										</div>
+									</label>
+								</div>
+								<div class="col">
+									<label for="topup-8" class="topup-choose hstack w-100">
+										<input type="radio" id="topup-8" name="topup"
+										       class="topup-choose_input opacity-0 visually-hidden">
+										<div class="topup-choose_content vstack transition-default w-100 position-relative">
+											<span class="topup-choose_text">
+												1,000,000VNĐ
+											</span>
+											<span class="topup-choose_price">
+												980,000VNĐ
+											</span>
+										</div>
+									</label>
+								</div>
+								<div class="col">
+									<label for="topup-7" class="topup-choose hstack w-100">
+										<input type="radio" id="topup-7" name="topup"
+										       class="topup-choose_input opacity-0 visually-hidden">
+										<div class="topup-choose_content vstack transition-default w-100 position-relative">
+											<span class="topup-choose_text">
+												500,000VNĐ
+											</span>
+											<span class="topup-choose_price">
+												490,000VNĐ
+											</span>
+										</div>
+									</label>
+								</div>
+								<div class="col">
+									<label for="topup-8" class="topup-choose hstack w-100">
+										<input type="radio" id="topup-8" name="topup"
+										       class="topup-choose_input opacity-0 visually-hidden">
+										<div class="topup-choose_content vstack transition-default w-100 position-relative">
+											<span class="topup-choose_text">
+												1,000,000VNĐ
+											</span>
+											<span class="topup-choose_price">
+												980,000VNĐ
+											</span>
+										</div>
+									</label>
+								</div>
+								<div class="col">
+									<label for="topup-7" class="topup-choose hstack w-100">
+										<input type="radio" id="topup-7" name="topup"
+										       class="topup-choose_input opacity-0 visually-hidden">
+										<div class="topup-choose_content vstack transition-default w-100 position-relative">
+											<span class="topup-choose_text">
+												500,000VNĐ
+											</span>
+											<span class="topup-choose_price">
+												490,000VNĐ
+											</span>
+										</div>
+									</label>
+								</div>
+								<div class="col">
+									<label for="topup-8" class="topup-choose hstack w-100">
+										<input type="radio" id="topup-8" name="topup"
+										       class="topup-choose_input opacity-0 visually-hidden">
+										<div class="topup-choose_content vstack transition-default w-100 position-relative">
+											<span class="topup-choose_text">
+												1,000,000VNĐ
+											</span>
+											<span class="topup-choose_price">
+												980,000VNĐ
+											</span>
+										</div>
+									</label>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
