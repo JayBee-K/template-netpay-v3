@@ -2220,6 +2220,10 @@
 	padding: 6px 12px;
 }
 
+.learning-page .learning-sidebar .sidebar-form .sidebar-form_item .sidebar-form_item__wrapper > .form-select {
+	padding-right: 35px;
+}
+
 .learning-page .learning-sidebar .sidebar-total {
 	display: flex;
 	align-items: center;
@@ -2364,6 +2368,10 @@
 	font-size: 1.075em;
 	min-height: 40px;
 	padding: 6px 12px;
+}
+
+.section-form .section-form_inner .section-form_wrapper .section-form_item .section-form_item__wrapper > .form-select {
+	padding-right: 35px;
 }
 
 .section-form .section-form_inner .section-form_total {
