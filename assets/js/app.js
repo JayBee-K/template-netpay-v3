@@ -332,6 +332,21 @@ const handleCheckboxInDropdown = function () {
 	}
 }
 
+const handleRatioTablePrice = function () {
+	if ($('.ratio-table_price').length) {
+		const dropdownRatio = $('.ratio-table_price');
+
+		dropdownRatio.find('.ratio-item').change(function () {
+			const ratioChecked = $(this);
+			let renderResult = ratioChecked.parent().find('span').html();
+
+			$(this).closest('.ratio-table_price').find('.card-value_btn .ratio-result').html(renderResult);
+
+			$(this).closest('.ratio-table_price').find('.card-value_btn').trigger('click')
+		});
+	}
+}
+
 
 $(function () {
 	handleApplyCollapse($('#header-navigation > ul'), true, true);
@@ -352,4 +367,6 @@ $(function () {
 	handleSliderImagesLearning();
 
 	handleCheckboxInDropdown();
+
+	handleRatioTablePrice();
 });
