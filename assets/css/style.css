@@ -2886,12 +2886,12 @@
 }
 
 .card-table_price .card-header {
-	background: var(--primary-color) !important;
+	background: #e5e5e5 !important;
 	padding: 15px 10px;
 }
 
 .card-table_price .card-header .card-title {
-	color: var(--bs-white);
+	color: var(--bs-black);
 	font-weight: 700;
 	font-size: 1.45em;
 	padding-left: 30px;
