@@ -3357,3 +3357,27 @@
 	font-weight: 700;
 	color: var(--bs-danger);
 }
+
+.learning-page .topup-choose .topup-choose_content {
+	border: 1px solid var(--bs-gray-200);
+	box-shadow: none;
+}
+
+.section-sidebar .featured-card {
+	border: 0;
+	border-radius: 0;
+}
+
+.section-sidebar .featured-card .featured-list .featured-item {
+	width: 100%;
+}
+
+.learning-page .section-sidebar .sidebar-item {
+	border: 1px solid var(--bs-gray-200);
+	box-shadow: none;
+	overflow: hidden;
+}
+
+.learning-page .section-sidebar .sidebar-item .sidebar-title{
+	font-size: 1.3em;
+}
