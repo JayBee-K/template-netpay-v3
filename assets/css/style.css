@@ -1750,6 +1750,10 @@
     padding-bottom: 10px;
 }
 
+.section-sidebar.sidebar-recharge .sidebar-body .sidebar-list.sidebar-recharge > ul {
+	padding-bottom: 10px;
+}
+
 .section-sidebar.sidebar-recharge .sidebar-body .sidebar-list > ul > li {
     border-top: 0 !important;
     width: 100%;
@@ -1760,7 +1764,7 @@
     align-items: center;
     gap: 8px;
     width: 100%;
-    padding: 15px 20px 15px 0 !important;
+    padding: 8px 20px 8px 0 !important;
     transition: var(--transition-default);
     border-radius: 5px !important;
     position: relative;
