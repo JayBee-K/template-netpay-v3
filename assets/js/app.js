@@ -347,6 +347,57 @@ const handleRatioTablePrice = function () {
 	}
 }
 
+const handleSliderImagesWebsite = function () {
+	const handleFancyBoxProduct = function (elm, initSliderAvatar, initSliderThumb) {
+		let i = 0;
+		elm.click(function () {
+			i = 0;
+		});
+
+		Fancybox.bind(('[data-fancybox=website-images]'), {
+			touch: true,
+			beforeShow: function (instance, current) {
+				let index = elm.find(`[data-fancybox='website-images'][href='${current.src}']`).attr('data-index');
+				initSliderAvatar.slideTo(index - 1);
+				if (typeof initSliderThumb !== 'undefined') {
+					initSliderThumb.slideTo(index - 1);
+				}
+			},
+		});
+	}
+
+	let sliderAvatar = $('#website-avatar');
+	let sliderThumb = $('#website-thumb');
+
+	if (sliderAvatar.length > 0) {
+		let initSliderThumb;
+		if (sliderThumb.length) {
+			initSliderThumb = new Swiper('#website-thumb .swiper', {
+				loop: false,
+				speed: 1000,
+				slidesPerView: 3.5,
+				spaceBetween: 8,
+				autoplay: false,
+			});
+		}
+
+		let initSliderAvatar = new Swiper('#website-avatar .swiper', {
+			loop: false,
+			speed: 1000,
+			spaceBetween: 8,
+			autoplay: {
+				delay: 500000,
+				disableOnInteraction: true,
+			},
+			slidesPerView: 1,
+			thumbs: {
+				swiper: initSliderThumb,
+			},
+		});
+
+		handleFancyBoxProduct(sliderAvatar, initSliderAvatar, initSliderThumb);
+	}
+}
 
 $(function () {
 	handleApplyCollapse($('#header-navigation > ul'), true, true);
@@ -369,4 +420,6 @@ $(function () {
 	handleCheckboxInDropdown();
 
 	handleRatioTablePrice();
+
+	handleSliderImagesWebsite();
 });

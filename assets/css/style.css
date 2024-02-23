@@ -4144,3 +4144,109 @@ p {
 .website-card:hover .card-body .card-title {
 	color: var(--primary-color);
 }
+
+.website-page .website-images {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.website-page .website-images .website-image {
+	border-radius: 4px;
+}
+
+.website-page .website-images .website-image .website-image_inner {
+	overflow: hidden;
+	border-radius: 4px;
+	border: solid 1px #e1e1e1;
+	background-color: #ccc;
+	max-height: 400px;
+	position: relative;
+	-webkit-box-shadow: 0 0 0.75em 0 rgba(0, 0, 0, 0.15);
+	box-shadow: 0 0 0.75em 0 rgba(0, 0, 0, 0.15);
+}
+
+.website-page .website-images .website-image .website-image_inner > img {
+	-webkit-transition: all 5s ease-in-out;
+	-moz-transition: all 5s ease-in-out;
+	-o-transition: all 5s ease-in-out;
+	-ms-transition: all 5s ease-in-out;
+	transition: all 5s ease-in-out;
+	width: 100%;
+}
+
+.website-page .website-images .website-image:hover .website-image_inner > img {
+	transform: translate(0, calc(-100% + 400px));
+	-webkit-transform: translate(0, calc(-100% + 400px));
+}
+
+.website-page .website-images .website-thumb .website-image {
+	opacity: .7;
+	transition: var(--transition-default);
+	cursor: pointer;
+	border: 1px solid var(--bs-gray-400);
+}
+
+.website-page .website-images .website-thumb .swiper-slide.swiper-slide-thumb-active .website-image {
+	opacity: 1;
+	border: 1px solid var(--primary-color);
+}
+
+.website-page .website-content .website-title {
+	font-size: 1.7em;
+	color: var(--bs-black);
+	font-weight: 700;
+	line-height: 1.3;
+}
+
+.website-page .website-content .website-meta {
+	margin-top: 12px;
+}
+
+.website-page .website-content .website-meta .website-meta_item {
+	align-items: flex-start;
+}
+
+.website-page .website-content .website-meta .website-meta_item .website-meta_item__icon {
+	font-size: 1.3em;
+	position: relative;
+}
+
+.website-page .website-content .website-meta .website-meta_item .website-meta_item__text {
+	font-size: 1.075em;
+}
+
+.website-page .website-content .website-meta .website-meta_item .website-meta_item__text > a {
+	color: var(--primary-color);
+	font-weight: 500;
+}
+
+.website-page .website-content .website-meta .website-meta_item .website-meta_item__text > a:hover {
+	text-decoration: underline;
+}
+
+.website-page .website-content .website-price {
+	margin-top: 12px;
+}
+
+.website-page .website-content .website-price .website-price_current {
+	font-weight: 600;
+	color: var(--bs-black);
+	font-size: 1.3em;
+}
+
+.website-page .website-content .website-price .website-price_cost {
+	text-decoration: line-through;
+	font-weight: 500;
+	color: #9ba1a8;
+	font-size: 1.3em;
+}
+
+.website-page .website-content .website-price .website-price_percent {
+	font-weight: 500;
+	color: var(--bs-white);
+	border-radius: 5px;
+	background: var(--bs-danger);
+	font-size: .925em;
+	padding: 3px 6px;
+}
