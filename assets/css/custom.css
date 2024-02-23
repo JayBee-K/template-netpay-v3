@@ -1,0 +1,21 @@
+.badge-module {
+    padding: 0.45em 0.6em;
+    border-radius: 3px;
+    font-size: 11px;
+}
+
+.badge-module > .badge,
+.badge-circle > .badge {
+    font-size: 80%;
+    padding-top: 4px;
+}
+
+.badge-module_sm {
+    padding: 0.35em 0.5em;
+    border-radius: 3px;
+    font-size: 11px;
+}
+.table-module td, .table-module th {
+    padding: 0.5rem;
+    vertical-align: middle;
+}

@@ -139,10 +139,10 @@ const handleCopyValue = function () {
 				document.body.removeChild(textareaElm);
 
 				if (copyButton.getAttribute('data-bs-toggle') === 'tooltip') {
-					copyButton.setAttribute('title', 'Đã sao chép');
+					copyButton.setAttribute('title', 'ÄĂ£ sao chĂ©p');
 
 					const tooltip = bootstrap.Tooltip.getInstance(copyButton);
-					tooltip.setContent({'.tooltip-inner': 'Đã sao chép'})
+					tooltip.setContent({'.tooltip-inner': 'ÄĂ£ sao chĂ©p'})
 				}
 			});
 		})
@@ -317,13 +317,13 @@ const handleCheckboxInDropdown = function () {
 			let renderResult = '';
 			switch (checkboxCheckedLength) {
 				case 0:
-					renderResult = '--- Chọn bộ lọc dropdown ---';
+					renderResult = '--- Chá»n bá»™ lá»c dropdown ---';
 					break;
 				case 1:
 					renderResult = checkboxChecked.parent().find('span').html();
 					break;
 				default:
-					renderResult = `Đã chọn <b>${checkboxCheckedLength}</b> bộ lọc`;
+					renderResult = `ÄĂ£ chá»n <b>${checkboxCheckedLength}</b> bá»™ lá»c`;
 					break
 			}
 
