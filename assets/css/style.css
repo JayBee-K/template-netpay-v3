@@ -4210,6 +4210,7 @@ p {
 .website-page .website-content .website-meta .website-meta_item .website-meta_item__icon {
 	font-size: 1.3em;
 	position: relative;
+	width: 22px;
 }
 
 .website-page .website-content .website-meta .website-meta_item .website-meta_item__text {
@@ -4249,4 +4250,95 @@ p {
 	background: var(--bs-danger);
 	font-size: .925em;
 	padding: 3px 6px;
+}
+
+.website-page .website-content .website-feature {
+	padding: 12px;
+	border-radius: 8px;
+	border: 1px solid var(--primary-color);
+	background-color: #f3fcf7;
+	margin-top: 15px;
+}
+
+.website-page .website-content .website-feature .website-feature_title {
+	font-weight: 700;
+	font-size: 1.15em;
+	margin-bottom: 4px;
+}
+
+.website-page .website-content .website-feature .website-feature_list ul,
+.website-page .website-content .website-feature .website-feature_list ol {
+	margin-bottom: 0;
+	padding-left: 0;
+	font-size: 1.075em;
+	list-style-type: none;
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.website-page .website-content .website-feature .website-feature_list ul li:before,
+.website-page .website-content .website-feature .website-feature_list ol li:before {
+	display: inline-block;
+	content: "";
+	border-radius: 50%;
+	background-color: var(--primary-color);
+	width: 4px;
+	height: 4px;
+	margin-right: 4px;
+	position: relative;
+	top: -3px;
+}
+
+.theme-collapse {
+	margin-bottom: 15px;
+}
+
+.theme-collapse .collapse-item .collapse-item_header {
+	font-size: 1.075em;
+	font-weight: 700;
+	color: #232323;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.theme-collapse .collapse-item .collapse-item_header i {
+	transition: 0.3s all ease;
+	font-size: 1.1em;
+}
+
+.theme-collapse .collapse-item .collapse-item_header[aria-expanded="true"] {
+	color: var(--primary-color);
+}
+
+.theme-collapse .collapse-item .collapse-item_header[aria-expanded="true"] i {
+	transform: rotate(180deg);
+}
+
+.theme-collapse .collapse-item .collapse-item_body {
+	padding-top: 8px;
+}
+
+.theme-collapse .collapse-item .collapse-item_body p:last-child {
+	margin-bottom: 0;
+}
+
+.theme-collapse .collapse-item + .collapse-item {
+	padding-top: 8px;
+	margin-top: 8px;
+	border-top: 1px solid #e9e9e9;
+}
+
+.website-sidebar {
+	padding: 21px 18px;
+	background: #fff;
+	border: 1px solid var(--bs-gray-200);
+	border-radius: 12px;
+}
+
+.website-sidebar .sidebar-title{
+	color: var(--primary-color);
+	font-weight: 700;
+	font-size: 1.075em;
 }
