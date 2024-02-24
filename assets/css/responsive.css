@@ -536,12 +536,14 @@
 	}
 
 	.learning-page .learning-content .learning-title,
-	.document-page .document-content .document-title {
+	.document-page .document-content .document-title,
+	.website-page .website-content .website-title{
 		font-size: 1.45em;
 	}
 
 	.learning-page .learning-content .learning-meta .learning-meta_item .learning-meta_item__icon,
-	.document-page .document-content .document-meta .document-meta_item .document-meta_item__icon {
+	.document-page .document-content .document-meta .document-meta_item .document-meta_item__icon,
+	.website-page .website-content .website-meta .website-meta_item .website-meta_item__icon{
 		font-size: 1.15em;
 	}
 

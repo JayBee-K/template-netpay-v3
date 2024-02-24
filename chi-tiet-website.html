@@ -1,1328 +1,1422 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport"
-	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
-	<title>Template Netpay</title>
-	<meta name="description" content="Template Netpay">
-	<meta name="author" content="">
+    <title>Template Netpay</title>
+    <meta name="description" content="Template Netpay">
+    <meta name="author" content="">
 
-	<meta property="og:title" content="Template Netpay">
-	<meta property="og:type" content="website">
-	<meta property="og:url" content="">
-	<meta property="og:description" content="Template Netpay">
-	<meta property="og:image" content="">
+    <meta property="og:title" content="Template Netpay">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:description" content="Template Netpay">
+    <meta property="og:image" content="">
 
-	<link rel="icon" href="./assets/images/favicon.png">
-	<link rel="apple-touch-icon" href="./assets/images/favicon.png">
-	<link rel="stylesheet" href="./assets/plugins/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href="./assets/plugins/swiper/swiper-bundle.min.css">
-	<link rel="stylesheet" href="./assets/plugins/fancybox/fancybox.min.css">
-	<link rel="stylesheet" href="./assets/fonts/fontawesome/css/all.min.css">
-	<link rel="stylesheet" href="./assets/css/base.css">
-	<link rel="stylesheet" href="./assets/css/style.css">
-	<link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="icon" href="./assets/images/favicon.png">
+    <link rel="apple-touch-icon" href="./assets/images/favicon.png">
+    <link rel="stylesheet" href="./assets/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/plugins/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./assets/plugins/fancybox/fancybox.min.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
 
-	<style>
-		:root {
-			--primary-color: #118c55;
-			--primary-hover: #e99005;
-			--primary-rgb: 37, 141, 242;
-			--secondary-color: #ee4d2d;
-			--secondary-hover: #ef3f1c;
-			--secondary-rgb: 238, 77, 45;
-		}
-	</style>
+    <style>
+        :root {
+            --primary-color: #118c55;
+            --primary-hover: #e99005;
+            --primary-rgb: 37, 141, 242;
+            --secondary-color: #ee4d2d;
+            --secondary-hover: #ef3f1c;
+            --secondary-rgb: 238, 77, 45;
+        }
+    </style>
 </head>
 <body>
 
 <div id="header" class="header">
-	<div class="header-main py-3">
-		<div class="container">
-			<div class="row g-3 g-lg-4">
-				<div class="col-lg-3 col-xl-3 col-5 order-1 order-lg-1">
-					<div class="header-logo">
-						<a href="./" aria-label="" class="hstack align-items-center">
-							<img src="./assets/images/logo-white.png" class="" alt="">
-						</a>
-					</div>
-				</div>
-				<div class="col-lg-6 col-xl-6 order-3 order-lg-2">
-					<div class="header-search">
-						<form action="">
-							<div class="header-search_inner">
-								<input type="text" class="form-control" placeholder="Nội dung tìm kiếm...">
-								<button type="submit" class="button-theme button-theme_primary">
-									<i class="fal fa-search"></i>
-								</button>
-							</div>
-							<div class="header-search_hint limit">
-								<a href="">Mobile Legends Diamond</a>
-								<a href="">Tiktok China Coin</a>
-								<a href="">Google Play</a>
-								<a href="">Pubg</a>
-								<a href="">Garena Shells</a>
-								<a href="">Itunes Gift Card</a>
-							</div>
-						</form>
-					</div>
-				</div>
-				<div class="col-lg-3 col-xl-3 col-7 order-2 order-lg-3 align-self-center">
-					<div class="header-actions hstack gap-8px justify-content-end">
-						<div class="header-users hstack gap-8px">
-							<div class="header-user_item position-relative">
-								<a href="" class="link-default" aria-label="Đăng nhập">
-									<i class="fal fa-user-alt"></i>
-									Đăng nhập
-								</a>
-							</div>
-							<div class="header-user_item position-relative">
-								<a href="" class="link-default" aria-label="Đăng ký">
-									<i class="fal fa-sign-in-alt"></i>
-									Đăng ký
-								</a>
-							</div>
-							<div class="header-user_item position-relative d-none">
-								<div class="user-dropdown">
-									<button type="button" class="link-default">
-										<i class="fal fa-user-alt"></i>
-										<span>
-											Tài khoản
-											<i class="fal fa-angle-down fz-16 ms-1"></i>
-										</span>
-									</button>
-									<ul>
-										<li>
-											<a href="">
-												<i class="fas fa-exclamation-circle"></i>Lịch sử tố cáo
-											</a>
-										</li>
-										<li>
-											<a href="">
-												<i class="fas fa-history"></i>Lịch sử giao dịch
-											</a>
-										</li>
-										<li>
-											<a href="">
-												<i class="fas fa-file-invoice-dollar"></i>Nạp tiền
-											</a>
-										</li>
-										<li>
-											<a href="">
-												<i class="fas fa-lock-alt"></i>Đổi mật khẩu
-											</a>
-										</li>
-										<li>
-											<a href="">
-												<i class="fas fa-sign-out-alt"></i>Đăng xuất
-											</a>
-										</li>
-										<li>
-											<a href="">
-												<i class="fas fa-exclamation-circle"></i>Lịch sử tố cáo
-											</a>
-										</li>
-										<li>
-											<a href="">
-												<i class="fas fa-history"></i>Lịch sử giao dịch
-											</a>
-										</li>
-										<li>
-											<a href="">
-												<i class="fas fa-file-invoice-dollar"></i>Nạp tiền
-											</a>
-										</li>
-										<li>
-											<a href="">
-												<i class="fas fa-lock-alt"></i>Đổi mật khẩu
-											</a>
-										</li>
-										<li>
-											<a href="">
-												<i class="fas fa-sign-out-alt"></i>Đăng xuất
-											</a>
-										</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="header-hamburger d-flex d-lg-none">
-							<button type="button" class="hamburger-button" id="hamburger-button">
-								<span></span>
-								<span></span>
-								<span></span>
-								<span></span>
-							</button>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="header-bottom">
-		<div class="container">
-			<div id="header-navigation" class="header-navigation">
-				<ul>
-					<li class="navigation-logo d-flex d-lg-none">
-						<a href="/" class="d-inline-flex align-middle" data-href="/">
-							<img src="./assets/images/logo-white.png" class="img-fluid">
-						</a>
-					</li>
-					<li>
-						<a href="">Trang chủ</a>
-					</li>
-					<li>
-						<a href="">
-							Danh sách item
-							<i class="fal fa-angle-down"></i>
-						</a>
-						<ul>
-							<li>
-								<a href="">Danh sách item 1</a>
-							</li>
-							<li>
-								<a href="">Danh sách item 2</a>
-							</li>
-							<li>
-								<a href="">Danh sách item 3</a>
-							</li>
-							<li>
-								<a href="">Danh sách item 4</a>
-							</li>
-						</ul>
-					</li>
-					<li>
-						<a href="">
-							Game
-							<i class="fal fa-angle-down"></i>
-						</a>
-						<ul>
-							<li>
-								<a href="">Danh sách game 1</a>
-							</li>
-							<li>
-								<a href="">Danh sách game 2</a>
-							</li>
-							<li>
-								<a href="">Danh sách game 3</a>
-							</li>
-							<li>
-								<a href="">Danh sách game 4</a>
-							</li>
-						</ul>
-					</li>
-					<li>
-						<a href="">
-							Học Tập
-						</a>
-					</li>
-					<li>
-						<a href="">
-							Tài liệu
-						</a>
-					</li>
-					<li>
-						<a href="">
-							Sản phẩm
-						</a>
-					</li>
-					<li>
-						<a href="">
-							Dịch vụ
-						</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</div>
-	<div class="header-overlay" id="header-overlay"></div>
+    <div class="header-main py-3">
+        <div class="container">
+            <div class="row g-3 g-lg-4">
+                <div class="col-lg-3 col-xl-3 col-5 order-1 order-lg-1">
+                    <div class="header-logo">
+                        <a href="./" aria-label="" class="hstack align-items-center">
+                            <img src="./assets/images/logo-white.png" class="" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-6 order-3 order-lg-2">
+                    <div class="header-search">
+                        <form action="">
+                            <div class="header-search_inner">
+                                <input type="text" class="form-control" placeholder="Nội dung tìm kiếm...">
+                                <button type="submit" class="button-theme button-theme_primary">
+                                    <i class="fal fa-search"></i>
+                                </button>
+                            </div>
+                            <div class="header-search_hint limit">
+                                <a href="">Mobile Legends Diamond</a>
+                                <a href="">Tiktok China Coin</a>
+                                <a href="">Google Play</a>
+                                <a href="">Pubg</a>
+                                <a href="">Garena Shells</a>
+                                <a href="">Itunes Gift Card</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-xl-3 col-7 order-2 order-lg-3 align-self-center">
+                    <div class="header-actions hstack gap-8px justify-content-end">
+                        <div class="header-users hstack gap-8px">
+                            <div class="header-user_item position-relative">
+                                <a href="" class="link-default" aria-label="Đăng nhập">
+                                    <i class="fal fa-user-alt"></i>
+                                    Đăng nhập
+                                </a>
+                            </div>
+                            <div class="header-user_item position-relative">
+                                <a href="" class="link-default" aria-label="Đăng ký">
+                                    <i class="fal fa-sign-in-alt"></i>
+                                    Đăng ký
+                                </a>
+                            </div>
+                            <div class="header-user_item position-relative d-none">
+                                <div class="user-dropdown">
+                                    <button type="button" class="link-default">
+                                        <i class="fal fa-user-alt"></i>
+                                        <span>
+                                            Tài khoản
+                                            <i class="fal fa-angle-down fz-16 ms-1"></i>
+                                        </span>
+                                    </button>
+                                    <ul>
+                                        <li>
+                                            <a href="">
+                                                <i class="fas fa-exclamation-circle"></i>Lịch sử tố cáo
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <i class="fas fa-history"></i>Lịch sử giao dịch
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <i class="fas fa-file-invoice-dollar"></i>Nạp tiền
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <i class="fas fa-lock-alt"></i>Đổi mật khẩu
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <i class="fas fa-sign-out-alt"></i>Đăng xuất
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <i class="fas fa-exclamation-circle"></i>Lịch sử tố cáo
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <i class="fas fa-history"></i>Lịch sử giao dịch
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <i class="fas fa-file-invoice-dollar"></i>Nạp tiền
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <i class="fas fa-lock-alt"></i>Đổi mật khẩu
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <i class="fas fa-sign-out-alt"></i>Đăng xuất
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header-hamburger d-flex d-lg-none">
+                            <button type="button" class="hamburger-button" id="hamburger-button">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-bottom">
+        <div class="container">
+            <div id="header-navigation" class="header-navigation">
+                <ul>
+                    <li class="navigation-logo d-flex d-lg-none">
+                        <a href="/" class="d-inline-flex align-middle" data-href="/">
+                            <img src="./assets/images/logo-white.png" class="img-fluid">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">Trang chủ</a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Danh sách item
+                            <i class="fal fa-angle-down"></i>
+                        </a>
+                        <ul>
+                            <li>
+                                <a href="">Danh sách item 1</a>
+                            </li>
+                            <li>
+                                <a href="">Danh sách item 2</a>
+                            </li>
+                            <li>
+                                <a href="">Danh sách item 3</a>
+                            </li>
+                            <li>
+                                <a href="">Danh sách item 4</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">
+                            Game
+                            <i class="fal fa-angle-down"></i>
+                        </a>
+                        <ul>
+                            <li>
+                                <a href="">Danh sách game 1</a>
+                            </li>
+                            <li>
+                                <a href="">Danh sách game 2</a>
+                            </li>
+                            <li>
+                                <a href="">Danh sách game 3</a>
+                            </li>
+                            <li>
+                                <a href="">Danh sách game 4</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">
+                            Học Tập
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Tài liệu
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Sản phẩm
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Dịch vụ
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="header-overlay" id="header-overlay"></div>
 </div>
 
 <div id="main" class="main">
-	<div class="website-page section-gap">
-		<div class="container">
-			<div class="row g-4">
-				<div class="col-xl-8">
-					<div class="row g-4">
-						<div class="col-xl-6">
-							<div class="website-images vstack">
-								<div class="position-relative slider-theme website-avatar" id="website-avatar">
-									<div class="swiper">
-										<div class="swiper-wrapper">
-											<div class="swiper-slide">
-												<div class="website-image">
-													<div class="website-image_inner">
-														<img src="./assets/images/website/1-330x1520.png"
-														     class="img-fluid">
-														<a href="./assets/images/website/1-330x1520.png"
-														   data-fancybox="website-images" data-index="1"
-														   class="stretched-link"></a>
-													</div>
-												</div>
-											</div>
-											<div class="swiper-slide">
-												<div class="website-image">
-													<div class="website-image_inner">
-														<img src="./assets/images/website/2-330x1830.png"
-														     class="img-fluid">
-														<a href="./assets/images/website/2-330x1830.png"
-														   data-fancybox="website-images" data-index="2"
-														   class="stretched-link"></a>
-													</div>
-												</div>
-											</div>
-											<div class="swiper-slide">
-												<div class="website-image">
-													<div class="website-image_inner">
-														<img src="./assets/images/website/3-330x1284.png"
-														     class="img-fluid">
-														<a href="./assets/images/website/3-330x1284.png"
-														   data-fancybox="website-images" data-index="3"
-														   class="stretched-link"></a>
-													</div>
-												</div>
-											</div>
-											<div class="swiper-slide">
-												<div class="website-image">
-													<div class="website-image_inner">
-														<img src="./assets/images/website/4-330x1208.png"
-														     class="img-fluid">
-														<a href="./assets/images/website/4-330x1208.png"
-														   data-fancybox="website-images" data-index="4"
-														   class="stretched-link"></a>
+    <div class="website-page section-gap">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-xl-4">
+                    <div class="website-images vstack">
+                        <div class="position-relative slider-theme website-avatar" id="website-avatar">
+                            <div class="swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="website-image">
+                                            <div class="website-image_inner">
+                                                <img src="./assets/images/website/1-330x1520.png"
+                                                     class="img-fluid">
+                                                <a href="./assets/images/website/1-330x1520.png"
+                                                   data-fancybox="website-images" data-index="1"
+                                                   class="stretched-link"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="website-image">
+                                            <div class="website-image_inner">
+                                                <img src="./assets/images/website/2-330x1830.png"
+                                                     class="img-fluid">
+                                                <a href="./assets/images/website/2-330x1830.png"
+                                                   data-fancybox="website-images" data-index="2"
+                                                   class="stretched-link"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="website-image">
+                                            <div class="website-image_inner">
+                                                <img src="./assets/images/website/3-330x1284.png"
+                                                     class="img-fluid">
+                                                <a href="./assets/images/website/3-330x1284.png"
+                                                   data-fancybox="website-images" data-index="3"
+                                                   class="stretched-link"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="website-image">
+                                            <div class="website-image_inner">
+                                                <img src="./assets/images/website/4-330x1208.png"
+                                                     class="img-fluid">
+                                                <a href="./assets/images/website/4-330x1208.png"
+                                                   data-fancybox="website-images" data-index="4"
+                                                   class="stretched-link"></a>
 
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="position-relative website-thumb" id="website-thumb">
-									<div class="swiper">
-										<div class="swiper-wrapper">
-											<div class="swiper-slide">
-												<div class="website-image">
-													<div class="ratio ratio-10x13">
-														<img src="./assets/images/website/1-330x1520.png"
-														     class="img-fluid w-100">
-													</div>
-												</div>
-											</div>
-											<div class="swiper-slide">
-												<div class="website-image">
-													<div class="ratio ratio-10x13">
-														<img src="./assets/images/website/2-330x1830.png"
-														     class="img-fluid w-100">
-													</div>
-												</div>
-											</div>
-											<div class="swiper-slide">
-												<div class="website-image">
-													<div class="ratio ratio-10x13">
-														<img src="./assets/images/website/3-330x1284.png"
-														     class="img-fluid w-100">
-													</div>
-												</div>
-											</div>
-											<div class="swiper-slide">
-												<div class="website-image">
-													<div class="ratio ratio-10x13">
-														<img src="./assets/images/website/4-330x1208.png"
-														     class="img-fluid w-100">
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-xl-6">
-							<div class="website-content">
-								<div class="website-title">
-									Mẫu Website Dịch Vụ Vận Chuyển Hàng Hóa Quốc Tế Linh Hoạt
-								</div>
-								<div class="website-meta vstack gap-5px">
-									<div class="website-meta_item hstack gap-10px text-black">
-										<span class="website-meta_item__icon">
-											<i class="fal fa-code"></i>
-										</span>
-										<span class="website-meta_item__text">
-											Version: <span>6.4.3</span>
-										</span>
-									</div>
-									<div class="website-meta_item hstack gap-10px text-black">
-										<span class="website-meta_item__icon">
-											<i class="fal fa-folder"></i>
-										</span>
-										<span class="website-meta_item__text">
-											Dung lượng: <span>62 MB</span>
-										</span>
-									</div>
-									<div class="website-meta_item hstack gap-10px text-black">
-										<span class="website-meta_item__icon">
-											<i class="fal fa-download"></i>
-										</span>
-										<span class="website-meta_item__text">
-											Lượt mua: <span>1,521</span>
-										</span>
-									</div>
-									<div class="website-meta_item hstack gap-10px text-black">
-										<span class="website-meta_item__icon">
-											<i class="fal fa-calendar-alt"></i>
-										</span>
-										<span class="website-meta_item__text">
-											Cập nhật: <span>23-02-2024</span>
-										</span>
-									</div>
-									<div class="website-meta_item hstack gap-10px text-black">
-										<span class="website-meta_item__icon">
-											<i class="fal fa-tag"></i>
-										</span>
-										<span class="website-meta_item__text">
-											Tag: <a href="">Cây cảnh</a>,
-											<a href="">Doanh nghiệp</a>,
-											<a href="">Bán hàng</a>,
-											<a href="">Dịch vụ</a>
-										</span>
-									</div>
-								</div>
-								<div class="website-price hstack flex-wrap gap-10px">
-									<div class="website-price_current">
-										499,999 VND
-									</div>
-									<div class="website-price_cost">
-										750,000 VND
-									</div>
-									<div class="website-price_percent">-37%</div>
-								</div>
-								<div class="website-feature">
-									<div class="website-feature_title">
-										Chức năng có sẵn:
-									</div>
-									<div class="website-feature_list">
-										<ul>
-											<li>
-												Hệ thống quản trị nội dung bằng WordPress
-											</li>
-											<li>
-												Website chuẩn SEO
-											</li>
-											<li>
-												Giao diện di động thân thiện
-											</li>
-											<li>
-												Tối ưu tốc độ tải nhanh nhất
-											</li>
-										</ul>
-									</div>
-								</div>
-								<div class="website-buttons mt-4 hstack gap-15px">
-									<a href="" class="button-theme button-theme_primary flex-fill">Chọn mẫu này</a>
-									<a href="" class="button-theme button-theme_secondary flex-fill">Tư vấn thêm</a>
-								</div>
-							</div>
-						</div>
-						<div class="col-12">
-							<hr>
-							<div class="detail-content" id="detail-content">
-								<p>
-									<strong>Nencer Software</strong> là một công ty chuyên về phát triển và thiết kế
-									                                 website, với nhiều năm
-									                                 kinh nghiệm trong thiết kế web và phần mềm quản lý.
-									                                 Chúng tôi tự hào là một trong những
-									                                 công ty hàng đầu trong việc cung cấp dịch vụ thiết
-									                                 kế
-									                                 website đổi thẻ hiện đại, đáng tin
-									                                 cậy, và phù hợp với mọi nhu cầu của khách hàng.
-								</p>
-								<div class="theme-collapse" id="theme-collapse">
-									<div class="collapse-item">
-										<div data-bs-toggle="collapse" data-bs-target="#tab1" role="button"
-										     class="collapse-item_header">
-											Công ngệ tốt, bảo mật cao
-											<span>
-												<i class="fal fa-angle-down"></i>
-											</span>
-										</div>
-										<div data-bs-parent="#theme-collapse" class="collapse" id="tab1">
-											<div class="collapse-item_body">
-												<p>
-													Khi có ý tưởng xây dựng các mẫu theme wordpress bán hàng chuyên
-													nghiệp, chúng tôi đã nghiên cứu và lựa chọn công nghệ tốt nhất, có
-													nhiều người trên thế giới sử dụng. Update, bảo mật, dễ sử dụng và
-													thân thiện với bộ máy tình kiếm ...
-												</p>
-												<p>
-													Giao diện được thiết kế mới nhất Thiết kế UX (User Experience) trải
-													nghiệm người dùng tốt nhất. Giúp tăng tỉ lệ chuyển tổi tối đa.
-												</p>
-											</div>
-										</div>
-									</div>
-									<div class="collapse-item">
-										<div data-bs-toggle="collapse" data-bs-target="#tab2" role="button"
-										     class="collapse-item_header">
-											Hỗ trợ tất c thiết bị di động
-											<span>
-												<i class="fal fa-angle-down"></i>
-											</span>
-										</div>
-										<div data-bs-parent="#theme-collapse" class="collapse" id="tab2">
-											<div class="collapse-item_body">
-												<p>
-													Hiện nay người dùng mobile để tìm hiểu sản phẩm, mua hàng online trở
-													nên phổ biến thì không có lý do gì website bạn lại không hỗ trợ giao
-													diện mobile. Vì vậy chúng tôi đã nhanh chóng áp dụng công nghệ
-													website responsive vào các sản phầm của chúng tôi ! Tỷ lệ người dùng
-													smartphone gia tăng mở ra cơ hội mới cho thương mại điện tử. Khác
-													với màn hình máy tính, điện thoại là vật 'bất ly thân' của người
-													dùng. Giờ đây, khách hàng có thể lướt web, tìm kiếm và mua sắm mọi
-													lúc mọi nơi.
-												</p>
-												<p>
-													Themeweb tự hào rằng : Chúng tôi là 1 trong những đơn vị thiết kế
-													web áp dụng tất cả các công nghệ mới vào website do dúng tôi làm ra
-													đều hỗ trợ tốt tất cả giao diện trên điện thoại, máy tính bảng,
-													laptop, máy tính để bàn....
-												</p>
-											</div>
-										</div>
-									</div>
-									<div class="collapse-item">
-										<div data-bs-toggle="collapse" data-bs-target="#tab3" role="button"
-										     class="collapse-item_header">
-											Quản trị website thật dễ dàng
-											<span>
-												<i class="fal fa-angle-down"></i>
-											</span>
-										</div>
-										<div data-bs-parent="#theme-collapse" class="collapse" id="tab3">
-											<div class="collapse-item_body">
-												<p>
-													Với thư viện ứng dụng khổng lồ và UX Builder, bạn có thể tự tay
-													thiết kế website của mình tùy ý mà không cần đến khả năng coding.
-													Chỉ cần hình dung ra ý tưởng của mình và Flatsome sẽ giúp bạn hoàn
-													thành phần việc còn lại.
-												</p>
-												<p>
-													Đây là phần mình ưa thích nhất ở Flastsome, kho ứng dụng có sẵn của
-													Flatsome có rất rất nhiều thứ: Từ Header, Footer,Banner, Portfolio,
-													Products, Buttons… Có thể nói với theme này bạn có thể tha hồ sáng
-													tạo một website theo phong cách của riêng mình.
-												</p>
-												<p>
-													Đặc biệt, với các theme của chúng tôi, bạn có thể tha hồ tùy chỉnh
-													mọi thứ với Live Theme Option Panel và Drag & Drop Header builder, 2
-													tính năng tuyệt vời cho phép bạn kéo thả và tùy chỉnh mọi ứng dụng
-													trong cửa hàng hoặc website của mình.
-												</p>
-												<p>
-													Với tính năng này bạn có thể chỉnh sửa một cách trựa tiếp theme của
-													mình mà không cần phải sử dụng code, giao diện rất trực quan điều
-													cần làm chỉ là KÉO và THẢ.
-												</p>
-											</div>
-										</div>
-									</div>
-								</div>
-								<blockquote>
-									Đây là nội dung trích dẫn ây là nội dung trích dẫn <strong>Nencer Software</strong>
-									là
-									một công ty chuyên về phát triển và thiết kế
-									website, với nhiều năm
-									kinh nghiệm trong thiết kế web và phần mềm quản lý. Chúng tôi tự hào là một trong
-									những
-									công ty hàng đầu trong việc cung cấp dịch vụ thiết kế website đổi thẻ hiện đại, đáng
-									tin
-									cậy, và phù hợp với mọi nhu cầu của khách hàng.
-								</blockquote>
-								<h2>
-									Tiêu đề này dùng thẻ heading h3
-								</h2>
-								<h3>
-									Tiêu đề này dùng thẻ heading h3
-								</h3>
-								<h4>
-									Tiêu đề này dùng thẻ heading h4
-								</h4>
-								<h5>
-									Tiêu đề này dùng thẻ heading h5
-								</h5>
-								<h6>
-									Tiêu đề này dùng thẻ heading h6 (kích thước chữ bằng với nội dung)
-								</h6>
-								<ul>
-									<li>
-										Đây là danh sách không có số thứ tự
-									</li>
-									<li>
-										Đây là danh sách không có số thứ tự
-									</li>
-									<li>
-										Đây là danh sách không có số thứ tự
-									</li>
-									<li>
-										Đây là danh sách không có số thứ tự
-									</li>
-									<li>
-										Đây là danh sách không có số thứ tự
-									</li>
-								</ul>
-								<ol>
-									<li>
-										Đây là danh sách có số thứ tự
-									</li>
-									<li>
-										Đây là danh sách có số thứ tự
-									</li>
-									<li>
-										Đây là danh sách có số thứ tự
-									</li>
-									<li>
-										Đây là danh sách có số thứ tự
-									</li>
-									<li>
-										Đây là danh sách có số thứ tự
-									</li>
-								</ol>
-								<p>
-									Dịch vụ <a href="">thiết kế website đổi thẻ</a> của Nencer Software mang đến cho bạn
-									một
-									giải pháp hoàn
-									hảo để xây dựng trang web đổi thẻ hiện đại, chuyên nghiệp và tối ưu hóa cho trải
-									nghiệm
-									người dùng tốt nhất. Với sự cam kết về chất lượng và sáng tạo, chúng tôi hy vọng có
-									cơ
-									hội hợp tác và giúp bạn đạt được mục tiêu trực tuyến của mình.
-								</p>
-								<p>
-									<img src="https://nencer.com/storage/userfiles/files/thiet-ke-website-doi-the-cao-thanh-tien-mat.JPG"
-									     alt="">
-								</p>
-								<h2>
-									Lợi ích của việc sử dụng dịch vụ thiết kế website đổi thẻ từ Nencer Software
-								</h2>
-								<p>
-									Khi bạn chọn dịch vụ thiết kế website đổi thẻ từ Nencer Software, bạn sẽ được hưởng
-									nhiều lợi ích quan trọng:
-								</p>
-								<h3>
-									1: Thiết kế chuyên nghiệp
-								</h3>
-								<p>
-									Chúng tôi có đội ngũ thiết kế chuyên nghiệp với nhiều năm kinh nghiệm trong việc tạo
-									ra
-									các trang web đổi thẻ chất lượng cao, phù hợp với mọi nhu cầu của bạn.
-								</p>
-								<h3>2: Công nghệ mới nhất</h3>
-								<p>
-									Nencer Software luôn cập nhật với công nghệ và xu hướng mới nhất trong <em>thiết kế
-									                                                                           website
-									                                                                           đổi
-									                                                                           thẻ</em>.
-									Chúng tôi sử dụng các công cụ và ngôn ngữ lập trình hiện đại như
-									HTML5, CSS3, JavaScript, và Responsive Web Design để đảm bảo trang web của bạn luôn
-									đẹp
-									và hiệu quả trên mọi thiết bị.
-								</p>
-								<p>
-									Các phần mềm của chúng tôi cung cấp đều được thiết kế rất chuyên nghiệp và tỉ mỉ.
-									Đối
-									với những khách hàng VIP, chúng tôi nhận hỗ trợ từ 24/7 không ngày nghỉ lễ. Chúng
-									tôi sẽ
-									giúp cho khách hàng tối ưu chi phí và nhân lực bằng việc tự động hóa sản phẩm. Quý
-									khách
-									muốn mua sản phẩm chỉ cần thanh toán trực tuyến. Hệ thống sẽ nhận và hỗ trợ 24/24.
-								</p>
-								<div class="table-responsive">
-									<table align="center" border="1" cellpadding="1" cellspacing="1"
-									       style="width: 100%;" class="table table-bordered">
-										<tbody>
-										<tr>
-											<td style="text-align: center;"><span style="font-size:18px;"><strong>Quy
-											                                                                      mô</strong></span>
-											</td>
-											<td style="text-align: center;"><span style="font-size:18px;"><strong>Tính
-											                                                                      năng&nbsp;
-											                                                                      phần
-											                                                                      mềm</strong></span>
-											</td>
-											<td style="text-align: center;"><span style="font-size:18px;"><strong>Báo
-											                                                                      giá
-											                                                                      phần
-											                                                                      mềm</strong></span>
-											</td>
-										</tr>
-										<tr>
-											<td style="text-align: center;"><strong><span style="font-size:16px;">Phòng
-											                                                                      khám
-											                                                                      chuyên
-											                                                                      khoa</span></strong>
-											</td>
-											<td>
-												<ul>
-													<li><span style="font-size:16px;">Quản lý tiếp đón</span></li>
-													<li><span style="font-size:16px;">Quản lý kế toán - Thu ngân</span>
-													</li>
-													<li><span style="font-size:16px;">Quản lý kho thuốc – vật tư y
-													                                  tế</span>
-													</li>
-													<li><span style="font-size:16px;">Quản lý đội ngũ y bác sĩ, nhân
-													                                  viên</span>
-													</li>
-													<li><span style="font-size:16px;">Quản lý và tạo lập đơn
-													                                  thuốc</span></li>
-													<li><span style="font-size:16px;">Kết nối máy ngoại vi</span></li>
-													<li><span style="font-size:16px;">Thống kê, báo cáo</span></li>
-													<li><span style="font-size:16px;">Lưu trữ lịch sử, hồ sơ khám
-													                                  bệnh</span>
-													</li>
-													<li><span style="font-size:16px;">Hẹn lịch khám, nhắc lịch
-													                                  khám</span></li>
-												</ul>
-											</td>
-											<td><span style="font-size:16px;">2.000.000 VNĐ</span></td>
-										</tr>
-										<tr>
-											<td style="text-align: center;"><strong><span style="font-size:16px;">Phòng
-											                                                                      khám
-											                                                                      đa
-											                                                                      khoa</span></strong>
-											</td>
-											<td>
-												<ul>
-													<li><span style="font-size:16px;">Quản lý tiếp đón</span></li>
-													<li><span style="font-size:16px;">Quản lý khoa phòng</span></li>
-													<li><span style="font-size:16px;">Quản lý bệnh nhân điều trị ngoại
-													                                  trú</span></li>
-													<li><span style="font-size:16px;">Quản lý kế toán - Thu ngân</span>
-													</li>
-													<li><span style="font-size:16px;">Quản lý kho thuốc – vật tư y
-													                                  tế</span>
-													</li>
-													<li><span style="font-size:16px;">Quản lý đội ngũ y bác sĩ, nhân
-													                                  viên</span>
-													</li>
-													<li><span style="font-size:16px;">Quản lý và tạo lập đơn
-													                                  thuốc</span></li>
-													<li><span style="font-size:16px;">Kết nối máy ngoại vi</span></li>
-													<li><span style="font-size:16px;">Thống kê, báo cáo</span></li>
-													<li><span style="font-size:16px;">Lưu trữ lịch sử, hồ sơ khám
-													                                  bệnh</span>
-													</li>
-													<li><span style="font-size:16px;">Hẹn lịch khám, nhắc lịch
-													                                  khám</span></li>
-													<li><span style="font-size:16px;">In tem bệnh nhân</span></li>
-													<li><span style="font-size:16px;">Quản lý viện phí</span></li>
-													<li><span style="font-size:16px;">Liên thông BHXH</span></li>
-													<li><span style="font-size:16px;">Quản lý khám sức khỏe</span></li>
-													<li><span style="font-size:16px;">Quản lý cấp cứu</span></li>
-													<li><span style="font-size:16px;">Đặt lịch khám bệnh trực
-													                                  tuyến</span></li>
-												</ul>
-											</td>
-											<td><span style="font-size:16px;">10.000.000 VNĐ</span></td>
-										</tr>
-										<tr>
-											<td style="text-align: center;"><strong><span style="font-size:16px;">Bệnh
-											                                                                      viện</span></strong>
-											</td>
-											<td>
-												<ul>
-													<li><span style="font-size:16px;">Quản lý tiếp đón</span></li>
-													<li><span style="font-size:16px;">Quản lý khoa phòng</span></li>
-													<li><span style="font-size:16px;">Quản lý bệnh nhân điều trị ngoại
-													                                  trú</span></li>
-													<li><span style="font-size:16px;">Quản lý bệnh nhân điều trị nội
-													                                  trú</span>
-													</li>
-													<li><span style="font-size:16px;">Quản lý kế toán - Thu ngân</span>
-													</li>
-													<li><span style="font-size:16px;">Quản lý kho thuốc – vật tư y
-													                                  tế</span>
-													</li>
-													<li><span style="font-size:16px;">Quản lý đội ngũ y bác sĩ, nhân
-													                                  viên</span>
-													</li>
-													<li><span style="font-size:16px;">Quản lý và tạo lập đơn
-													                                  thuốc</span></li>
-													<li><span style="font-size:16px;">Kết nối máy ngoại vi</span></li>
-													<li><span style="font-size:16px;">Thống kê, báo cáo</span></li>
-													<li><span style="font-size:16px;">Lưu trữ lịch sử, hồ sơ khám
-													                                  bệnh</span>
-													</li>
-													<li><span style="font-size:16px;">Hẹn lịch khám, nhắc lịch
-													                                  khám</span></li>
-													<li><span style="font-size:16px;">In tem bệnh nhân</span></li>
-													<li><span style="font-size:16px;">Quản lý viện phí</span></li>
-													<li><span style="font-size:16px;">Liên thông BHXH</span></li>
-													<li><span style="font-size:16px;">Quản lý khám sức khỏe</span></li>
-													<li><span style="font-size:16px;">Đặt lịch khám bệnh trực
-													                                  tuyến</span></li>
-													<li><span style="font-size:16px;">Quản lý cấp cứu</span></li>
-													<li><span style="font-size:16px;">Quản lý đấu thầu</span></li>
-													<li><span style="font-size:16px;">Quản lý quá trình đào tạo
-													                                  tuyến</span>
-													</li>
-													<li><span style="font-size:16px;">Quản lý chương trình y tế</span>
-													</li>
-													<li><span style="font-size:16px;">Tích hợp thêm modun nâng
-													                                  cao</span></li>
-												</ul>
-											</td>
-											<td><span style="font-size:16px;">25.000.000 VNĐ</span></td>
-										</tr>
-										</tbody>
-									</table>
-								</div>
-								<p>
-									Công ty phần mềm trực tuyến Nencer Software là đơn vị hàng đầu chuyên thiết kế web
-									đổi
-									thẻ cào, làm web bán thẻ cào, làm web gạch thẻ tự động, web gạch cước tự động uy tín
-									chuyên nghiệp trên toàn quốc, đã thực hiện rất nhiều dự án thiết kế website gạch thẻ
-									cào, web nạp cước thành công cho khách hàng.
-								</p>
-								<p>
-									Với kinh nghiệm hơn 10 năm trong lĩnh vực lập trình web và đội ngũ kỹ thuật giỏi
-									chuyên
-									môn, chuyên nghiệp trong công việc Nencer Software sẽ đáp ứng tất cả các yêu cầu của
-									khách hàng. Ngoài ra chúng tôi sẽ hỗ trợ, hướng dẫn khách hàng vận hành, khai thác
-									hệ
-									thống với hiệu quả tốt nhất và tư vấn miễn phí khách hàng về marketing online.
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-xl-4">
-					<div class="website-sidebar">
-						<div class="sidebar-item">
-							<div class="sidebar-title">
-								<i class="far fa-box"></i>MUA KÈM DỊCH VỤ
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="section-gap section-page section-light">
-		<div class="container">
-			<div class="section-heading">
-				<div class="heading-title text-start mb-0">
-					Các mẫu website liên quan
-				</div>
-			</div>
-			<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-3">
-				<div class="col">
-					<div class="website-card card border-0 h-100">
-						<a href="" class="card-header border-0 p-0 bg-transparent">
-							<img src="./assets/images/website/1-330x1520.png"
-							     class="img-fluid" alt="">
-						</a>
-						<div class="card-body px-0 pb-0">
-							<a href="" class="card-title limit">
-								Mẫu Website bán cây cảnh đẹp
-							</a>
-							<div class="card-price hstack flex-wrap justify-content-start gap-10px">
-								<div class="price-current">
-									Giá chỉ: 499,999 VND
-								</div>
-								<div class="price-cost">
-									750,000 VND
-								</div>
-							</div>
-							<div class="card-tag hstack flex-wrap justify-content-start gap-5px">
-								<strong>TAG:</strong>
-								<a href="">Cây cảnh</a>
-								<a href="">Doanh nghiệp</a>
-								<a href="">Bán hàng</a>
-								<a href="">Dịch vụ</a>
-							</div>
-							<div class="card-buttons hstack gap-8px">
-								<a href="" class="button-theme button-theme_primary button-theme_small flex-fill">
-									Xem demo
-								</a>
-								<a href="" class="button-theme button-theme_secondary button-theme_small flex-fill">
-									Xem chi tiết
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="website-card card border-0 h-100">
-						<a href="" class="card-header border-0 p-0 bg-transparent">
-							<img src="./assets/images/website/2-330x1830.png"
-							     class="img-fluid" alt="">
-						</a>
-						<div class="card-body px-0 pb-0">
-							<a href="" class="card-title limit">
-								Mẫu Website Dịch Vụ Vận Chuyển Hàng Hóa Quốc Tế Linh Hoạt
-							</a>
-							<div class="card-price hstack flex-wrap justify-content-start gap-10px">
-								<div class="price-current">
-									Giá chỉ: 499,999 VND
-								</div>
-								<div class="price-cost">
-									750,000 VND
-								</div>
-							</div>
-							<div class="card-tag hstack flex-wrap justify-content-start gap-5px">
-								<strong>TAG:</strong>
-								<a href="">Cây cảnh</a>
-								<a href="">Doanh nghiệp</a>
-								<a href="">Bán hàng</a>
-								<a href="">Dịch vụ</a>
-							</div>
-							<div class="card-buttons hstack gap-8px">
-								<a href="" class="button-theme button-theme_primary button-theme_small flex-fill">
-									Xem demo
-								</a>
-								<a href="" class="button-theme button-theme_secondary button-theme_small flex-fill">
-									Xem chi tiết
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="website-card card border-0 h-100">
-						<a href="" class="card-header border-0 p-0 bg-transparent">
-							<img src="./assets/images/website/3-330x1284.png"
-							     class="img-fluid" alt="">
-						</a>
-						<div class="card-body px-0 pb-0">
-							<a href="" class="card-title limit">
-								Mẫu Website Dịch Vụ Vận Chuyển Hàng Hóa Quốc Tế Linh Hoạt
-							</a>
-							<div class="card-price hstack flex-wrap justify-content-start gap-10px">
-								<div class="price-current">
-									Giá chỉ: 499,999 VND
-								</div>
-								<div class="price-cost">
-									750,000 VND
-								</div>
-							</div>
-							<div class="card-tag hstack flex-wrap justify-content-start gap-5px">
-								<strong>TAG:</strong>
-								<a href="">Cây cảnh</a>
-								<a href="">Doanh nghiệp</a>
-								<a href="">Bán hàng</a>
-								<a href="">Dịch vụ</a>
-							</div>
-							<div class="card-buttons hstack gap-8px">
-								<a href="" class="button-theme button-theme_primary button-theme_small flex-fill">
-									Xem demo
-								</a>
-								<a href="" class="button-theme button-theme_secondary button-theme_small flex-fill">
-									Xem chi tiết
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="website-card card border-0 h-100">
-						<a href="" class="card-header border-0 p-0 bg-transparent">
-							<img src="./assets/images/website/4-330x1208.png"
-							     class="img-fluid" alt="">
-						</a>
-						<div class="card-body px-0 pb-0">
-							<a href="" class="card-title limit">
-								Mẫu Website bán cây cảnh đẹp
-							</a>
-							<div class="card-price hstack flex-wrap justify-content-start gap-10px">
-								<div class="price-current">
-									Giá chỉ: 499,999 VND
-								</div>
-								<div class="price-cost">
-									750,000 VND
-								</div>
-							</div>
-							<div class="card-tag hstack flex-wrap justify-content-start gap-5px">
-								<strong>TAG:</strong>
-								<a href="">Cây cảnh</a>
-								<a href="">Doanh nghiệp</a>
-								<a href="">Bán hàng</a>
-								<a href="">Dịch vụ</a>
-							</div>
-							<div class="card-buttons hstack gap-8px">
-								<a href="" class="button-theme button-theme_primary button-theme_small flex-fill">
-									Xem demo
-								</a>
-								<a href="" class="button-theme button-theme_secondary button-theme_small flex-fill">
-									Xem chi tiết
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="website-card card border-0 h-100">
-						<a href="" class="card-header border-0 p-0 bg-transparent">
-							<img src="./assets/images/website/1-330x1520.png"
-							     class="img-fluid" alt="">
-						</a>
-						<div class="card-body px-0 pb-0">
-							<a href="" class="card-title limit">
-								Mẫu Website bán cây cảnh đẹp
-							</a>
-							<div class="card-price hstack flex-wrap justify-content-start gap-10px">
-								<div class="price-current">
-									Giá chỉ: 499,999 VND
-								</div>
-								<div class="price-cost">
-									750,000 VND
-								</div>
-							</div>
-							<div class="card-tag hstack flex-wrap justify-content-start gap-5px">
-								<strong>TAG:</strong>
-								<a href="">Cây cảnh</a>
-								<a href="">Doanh nghiệp</a>
-								<a href="">Bán hàng</a>
-								<a href="">Dịch vụ</a>
-							</div>
-							<div class="card-buttons hstack gap-8px">
-								<a href="" class="button-theme button-theme_primary button-theme_small flex-fill">
-									Xem demo
-								</a>
-								<a href="" class="button-theme button-theme_secondary button-theme_small flex-fill">
-									Xem chi tiết
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="website-card card border-0 h-100">
-						<a href="" class="card-header border-0 p-0 bg-transparent">
-							<img src="./assets/images/website/2-330x1830.png"
-							     class="img-fluid" alt="">
-						</a>
-						<div class="card-body px-0 pb-0">
-							<a href="" class="card-title limit">
-								Mẫu Website Dịch Vụ Vận Chuyển Hàng Hóa Quốc Tế Linh Hoạt
-							</a>
-							<div class="card-price hstack flex-wrap justify-content-start gap-10px">
-								<div class="price-current">
-									Giá chỉ: 499,999 VND
-								</div>
-								<div class="price-cost">
-									750,000 VND
-								</div>
-							</div>
-							<div class="card-tag hstack flex-wrap justify-content-start gap-5px">
-								<strong>TAG:</strong>
-								<a href="">Cây cảnh</a>
-								<a href="">Doanh nghiệp</a>
-								<a href="">Bán hàng</a>
-								<a href="">Dịch vụ</a>
-							</div>
-							<div class="card-buttons hstack gap-8px">
-								<a href="" class="button-theme button-theme_primary button-theme_small flex-fill">
-									Xem demo
-								</a>
-								<a href="" class="button-theme button-theme_secondary button-theme_small flex-fill">
-									Xem chi tiết
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="website-card card border-0 h-100">
-						<a href="" class="card-header border-0 p-0 bg-transparent">
-							<img src="./assets/images/website/3-330x1284.png"
-							     class="img-fluid" alt="">
-						</a>
-						<div class="card-body px-0 pb-0">
-							<a href="" class="card-title limit">
-								Mẫu Website Dịch Vụ Vận Chuyển Hàng Hóa Quốc Tế Linh Hoạt
-							</a>
-							<div class="card-price hstack flex-wrap justify-content-start gap-10px">
-								<div class="price-current">
-									Giá chỉ: 499,999 VND
-								</div>
-								<div class="price-cost">
-									750,000 VND
-								</div>
-							</div>
-							<div class="card-tag hstack flex-wrap justify-content-start gap-5px">
-								<strong>TAG:</strong>
-								<a href="">Cây cảnh</a>
-								<a href="">Doanh nghiệp</a>
-								<a href="">Bán hàng</a>
-								<a href="">Dịch vụ</a>
-							</div>
-							<div class="card-buttons hstack gap-8px">
-								<a href="" class="button-theme button-theme_primary button-theme_small flex-fill">
-									Xem demo
-								</a>
-								<a href="" class="button-theme button-theme_secondary button-theme_small flex-fill">
-									Xem chi tiết
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="website-card card border-0 h-100">
-						<a href="" class="card-header border-0 p-0 bg-transparent">
-							<img src="./assets/images/website/4-330x1208.png"
-							     class="img-fluid" alt="">
-						</a>
-						<div class="card-body px-0 pb-0">
-							<a href="" class="card-title limit">
-								Mẫu Website bán cây cảnh đẹp
-							</a>
-							<div class="card-price hstack flex-wrap justify-content-start gap-10px">
-								<div class="price-current">
-									Giá chỉ: 499,999 VND
-								</div>
-								<div class="price-cost">
-									750,000 VND
-								</div>
-							</div>
-							<div class="card-tag hstack flex-wrap justify-content-start gap-5px">
-								<strong>TAG:</strong>
-								<a href="">Cây cảnh</a>
-								<a href="">Doanh nghiệp</a>
-								<a href="">Bán hàng</a>
-								<a href="">Dịch vụ</a>
-							</div>
-							<div class="card-buttons hstack gap-8px">
-								<a href="" class="button-theme button-theme_primary button-theme_small flex-fill">
-									Xem demo
-								</a>
-								<a href="" class="button-theme button-theme_secondary button-theme_small flex-fill">
-									Xem chi tiết
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="position-relative website-thumb" id="website-thumb">
+                            <div class="swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="website-image">
+                                            <div class="ratio ratio-10x13">
+                                                <img src="./assets/images/website/1-330x1520.png"
+                                                     class="img-fluid w-100">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="website-image">
+                                            <div class="ratio ratio-10x13">
+                                                <img src="./assets/images/website/2-330x1830.png"
+                                                     class="img-fluid w-100">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="website-image">
+                                            <div class="ratio ratio-10x13">
+                                                <img src="./assets/images/website/3-330x1284.png"
+                                                     class="img-fluid w-100">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="website-image">
+                                            <div class="ratio ratio-10x13">
+                                                <img src="./assets/images/website/4-330x1208.png"
+                                                     class="img-fluid w-100">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="website-content">
+                        <div class="website-title">
+                            Mẫu Website Dịch Vụ Vận Chuyển Hàng Hóa Quốc Tế Linh Hoạt
+                        </div>
+                        <div class="website-meta vstack gap-5px">
+                            <div class="website-meta_item hstack gap-10px text-black">
+                                <span class="website-meta_item__icon">
+                                    <i class="fal fa-code"></i>
+                                </span>
+                                <span class="website-meta_item__text">
+                                    Version: <span>6.4.3</span>
+                                </span>
+                            </div>
+                            <div class="website-meta_item hstack gap-10px text-black">
+                                <span class="website-meta_item__icon">
+                                    <i class="fal fa-folder"></i>
+                                </span>
+                                <span class="website-meta_item__text">
+                                    Dung lượng: <span>62 MB</span>
+                                </span>
+                            </div>
+                            <div class="website-meta_item hstack gap-10px text-black">
+                                <span class="website-meta_item__icon">
+                                    <i class="fal fa-download"></i>
+                                </span>
+                                <span class="website-meta_item__text">
+                                    Lượt mua: <span>1,521</span>
+                                </span>
+                            </div>
+                            <div class="website-meta_item hstack gap-10px text-black">
+                                <span class="website-meta_item__icon">
+                                    <i class="fal fa-calendar-alt"></i>
+                                </span>
+                                <span class="website-meta_item__text">
+                                    Cập nhật: <span>23-02-2024</span>
+                                </span>
+                            </div>
+                            <div class="website-meta_item hstack gap-10px text-black">
+                                <span class="website-meta_item__icon">
+                                    <i class="fal fa-tag"></i>
+                                </span>
+                                <span class="website-meta_item__text">
+                                    Tag: <a href="">Cây cảnh</a>,
+                                    <a href="">Doanh nghiệp</a>,
+                                    <a href="">Bán hàng</a>,
+                                    <a href="">Dịch vụ</a>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="website-price hstack flex-wrap gap-10px">
+                            <div class="website-price_current">
+                                499,999 VND
+                            </div>
+                            <div class="website-price_cost">
+                                750,000 VND
+                            </div>
+                            <div class="website-price_percent">-37%</div>
+                        </div>
+                        <div class="website-feature">
+                            <div class="website-feature_title">
+                                Chức năng có sẵn:
+                            </div>
+                            <div class="website-feature_list">
+                                <ul>
+                                    <li>
+                                        Hệ thống quản trị nội dung bằng WordPress
+                                    </li>
+                                    <li>
+                                        Website chuẩn SEO
+                                    </li>
+                                    <li>
+                                        Giao diện di động thân thiện
+                                    </li>
+                                    <li>
+                                        Tối ưu tốc độ tải nhanh nhất
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="website-buttons mt-4 hstack gap-15px">
+                            <a href="" class="button-theme button-theme_primary flex-fill">Chọn mẫu này</a>
+                            <a href="" class="button-theme button-theme_secondary flex-fill">Tư vấn thêm</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="website-sidebar section-sidebar">
+                        <div class="sidebar-item">
+                            <div class="sidebar-item_wrapper">
+                                <div class="sidebar-header p-3 pb-1">
+                                    <div class="sidebar-title">
+                                        <i class="far fa-box me-1"></i>Mua kèm dịch vụ
+                                    </div>
+                                    <div class="sidebar-desc">
+                                        Miễn phí tên miền quốc tế .com .net khi mua theme kèm hosting trong năm đầu sử
+                                        dụng dịch vụ hosting
+                                    </div>
+                                </div>
+                                <div class="sidebar-body px-3">
+                                    <div class="sidebar-list">
+                                        <div class="sidebar-list_item sidebar-ratio">
+                                            <label for="service-1" class="sidebar-ratio_item">
+                                                <input type="checkbox" name="example-service" id="service-1"
+                                                       value="1">
+                                                <span>Chỉ mua theme, không sử dụng hosting</span>
+                                            </label>
+                                        </div>
+                                        <div class="sidebar-list_item sidebar-ratio">
+                                            <label for="service-2" class="sidebar-ratio_item">
+                                                <input type="checkbox" name="example-service" id="service-2"
+                                                       value="2">
+                                                <span>
+                                                    Hosting SSD 1GB (+1.200.000 VND)
+                                                </span>
+                                            </label>
+                                        </div>
+                                        <div class="sidebar-list_item sidebar-ratio">
+                                            <label for="service-3" class="sidebar-ratio_item">
+                                                <input type="checkbox" name="example-service" id="service-3"
+                                                       value="3">
+                                                <span>
+                                                    Hosting SSD 2GB (+1.700.000 VND)
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sidebar-item_wrapper">
+                                <div class="sidebar-header p-3 pb-1">
+                                    <div class="sidebar-title">
+                                        <i class="far fa-globe me-1"></i>Mua kèm tên miền
+                                    </div>
+                                </div>
+                                <div class="sidebar-body px-3">
+                                    <div class="sidebar-list">
+                                        <div class="sidebar-list_item sidebar-ratio">
+                                            <label for="domain-1" class="sidebar-ratio_item">
+                                                <input type="checkbox" name="example-domain" id="domain-1"
+                                                       value="1">
+                                                <span>Tên miền Quốc tế (+350.000 VND)</span>
+                                            </label>
+                                        </div>
+                                        <div class="sidebar-list_item sidebar-ratio">
+                                            <label for="domain-2" class="sidebar-ratio_item">
+                                                <input type="checkbox" name="example-domain" id="domain-2"
+                                                       value="2">
+                                                <span>
+                                                    Tên miền Việt Nam (+700.000 VND)
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sidebar-item_wrapper">
+                                <div class="sidebar-header p-3 pb-1">
+                                    <div class="sidebar-title">
+                                        <i class="far fa-edit me-1"></i>Cài đặt và cấu hình plugins
+                                    </div>
+                                </div>
+                                <div class="sidebar-body px-3">
+                                    <div class="sidebar-list">
+                                        <div class="sidebar-list_item sidebar-ratio">
+                                            <label for="plugins-1" class="sidebar-ratio_item">
+                                                <input type="checkbox" name="example-plugins" id="plugins-1"
+                                                       value="1">
+                                                <span>Cài thêm plugin theo yêu cầu (+100.000 VND)</span>
+                                            </label>
+                                        </div>
+                                        <div class="sidebar-list_item sidebar-ratio">
+                                            <label for="plugins-2" class="sidebar-ratio_item">
+                                                <input type="checkbox" name="example-plugins" id="plugins-2"
+                                                       value="2">
+                                                <span>
+                                                    Cài plugin xử lý thanh toán tự động qua ngân hàng vietcombank,
+                                                    techcombank, Zalopay, QR code... (+1.500.000 VND)
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-gap section-light">
+        <div class="container">
+            <div class="section-heading">
+                <div class="heading-title text-start mb-0">
+                    Thông tin chi tiết
+                </div>
+            </div>
+            <div class="detail-content" id="detail-content">
+                <p>
+                    <strong>Nencer Software</strong> là một công ty chuyên về phát triển và thiết kế
+                    website, với nhiều năm
+                    kinh nghiệm trong thiết kế web và phần mềm quản lý.
+                    Chúng tôi tự hào là một trong những
+                    công ty hàng đầu trong việc cung cấp dịch vụ thiết
+                    kế
+                    website đổi thẻ hiện đại, đáng tin
+                    cậy, và phù hợp với mọi nhu cầu của khách hàng.
+                </p>
+                <div class="theme-collapse" id="theme-collapse">
+                    <div class="collapse-item">
+                        <div data-bs-toggle="collapse" data-bs-target="#tab1" role="button"
+                             class="collapse-item_header">
+                            Công ngệ tốt, bảo mật cao
+                            <span>
+                                <i class="fal fa-angle-down"></i>
+                            </span>
+                        </div>
+                        <div data-bs-parent="#theme-collapse" class="collapse" id="tab1">
+                            <div class="collapse-item_body">
+                                <p>
+                                    Khi có ý tưởng xây dựng các mẫu theme wordpress bán hàng chuyên
+                                    nghiệp, chúng tôi đã nghiên cứu và lựa chọn công nghệ tốt nhất, có
+                                    nhiều người trên thế giới sử dụng. Update, bảo mật, dễ sử dụng và
+                                    thân thiện với bộ máy tình kiếm ...
+                                </p>
+                                <p>
+                                    Giao diện được thiết kế mới nhất Thiết kế UX (User Experience) trải
+                                    nghiệm người dùng tốt nhất. Giúp tăng tỉ lệ chuyển tổi tối đa.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collapse-item">
+                        <div data-bs-toggle="collapse" data-bs-target="#tab2" role="button"
+                             class="collapse-item_header">
+                            Hỗ trợ tất c thiết bị di động
+                            <span>
+                                <i class="fal fa-angle-down"></i>
+                            </span>
+                        </div>
+                        <div data-bs-parent="#theme-collapse" class="collapse" id="tab2">
+                            <div class="collapse-item_body">
+                                <p>
+                                    Hiện nay người dùng mobile để tìm hiểu sản phẩm, mua hàng online trở
+                                    nên phổ biến thì không có lý do gì website bạn lại không hỗ trợ giao
+                                    diện mobile. Vì vậy chúng tôi đã nhanh chóng áp dụng công nghệ
+                                    website responsive vào các sản phầm của chúng tôi ! Tỷ lệ người dùng
+                                    smartphone gia tăng mở ra cơ hội mới cho thương mại điện tử. Khác
+                                    với màn hình máy tính, điện thoại là vật 'bất ly thân' của người
+                                    dùng. Giờ đây, khách hàng có thể lướt web, tìm kiếm và mua sắm mọi
+                                    lúc mọi nơi.
+                                </p>
+                                <p>
+                                    Themeweb tự hào rằng : Chúng tôi là 1 trong những đơn vị thiết kế
+                                    web áp dụng tất cả các công nghệ mới vào website do dúng tôi làm ra
+                                    đều hỗ trợ tốt tất cả giao diện trên điện thoại, máy tính bảng,
+                                    laptop, máy tính để bàn....
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collapse-item">
+                        <div data-bs-toggle="collapse" data-bs-target="#tab3" role="button"
+                             class="collapse-item_header">
+                            Quản trị website thật dễ dàng
+                            <span>
+                                <i class="fal fa-angle-down"></i>
+                            </span>
+                        </div>
+                        <div data-bs-parent="#theme-collapse" class="collapse" id="tab3">
+                            <div class="collapse-item_body">
+                                <p>
+                                    Với thư viện ứng dụng khổng lồ và UX Builder, bạn có thể tự tay
+                                    thiết kế website của mình tùy ý mà không cần đến khả năng coding.
+                                    Chỉ cần hình dung ra ý tưởng của mình và Flatsome sẽ giúp bạn hoàn
+                                    thành phần việc còn lại.
+                                </p>
+                                <p>
+                                    Đây là phần mình ưa thích nhất ở Flastsome, kho ứng dụng có sẵn của
+                                    Flatsome có rất rất nhiều thứ: Từ Header, Footer,Banner, Portfolio,
+                                    Products, Buttons… Có thể nói với theme này bạn có thể tha hồ sáng
+                                    tạo một website theo phong cách của riêng mình.
+                                </p>
+                                <p>
+                                    Đặc biệt, với các theme của chúng tôi, bạn có thể tha hồ tùy chỉnh
+                                    mọi thứ với Live Theme Option Panel và Drag & Drop Header builder, 2
+                                    tính năng tuyệt vời cho phép bạn kéo thả và tùy chỉnh mọi ứng dụng
+                                    trong cửa hàng hoặc website của mình.
+                                </p>
+                                <p>
+                                    Với tính năng này bạn có thể chỉnh sửa một cách trựa tiếp theme của
+                                    mình mà không cần phải sử dụng code, giao diện rất trực quan điều
+                                    cần làm chỉ là KÉO và THẢ.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <blockquote>
+                    Đây là nội dung trích dẫn ây là nội dung trích dẫn <strong>Nencer Software</strong>
+                    là
+                    một công ty chuyên về phát triển và thiết kế
+                    website, với nhiều năm
+                    kinh nghiệm trong thiết kế web và phần mềm quản lý. Chúng tôi tự hào là một trong
+                    những
+                    công ty hàng đầu trong việc cung cấp dịch vụ thiết kế website đổi thẻ hiện đại, đáng
+                    tin
+                    cậy, và phù hợp với mọi nhu cầu của khách hàng.
+                </blockquote>
+                <h2>
+                    Tiêu đề này dùng thẻ heading h3
+                </h2>
+                <h3>
+                    Tiêu đề này dùng thẻ heading h3
+                </h3>
+                <h4>
+                    Tiêu đề này dùng thẻ heading h4
+                </h4>
+                <h5>
+                    Tiêu đề này dùng thẻ heading h5
+                </h5>
+                <h6>
+                    Tiêu đề này dùng thẻ heading h6 (kích thước chữ bằng với nội dung)
+                </h6>
+                <ul>
+                    <li>
+                        Đây là danh sách không có số thứ tự
+                    </li>
+                    <li>
+                        Đây là danh sách không có số thứ tự
+                    </li>
+                    <li>
+                        Đây là danh sách không có số thứ tự
+                    </li>
+                    <li>
+                        Đây là danh sách không có số thứ tự
+                    </li>
+                    <li>
+                        Đây là danh sách không có số thứ tự
+                    </li>
+                </ul>
+                <ol>
+                    <li>
+                        Đây là danh sách có số thứ tự
+                    </li>
+                    <li>
+                        Đây là danh sách có số thứ tự
+                    </li>
+                    <li>
+                        Đây là danh sách có số thứ tự
+                    </li>
+                    <li>
+                        Đây là danh sách có số thứ tự
+                    </li>
+                    <li>
+                        Đây là danh sách có số thứ tự
+                    </li>
+                </ol>
+                <p>
+                    Dịch vụ <a href="">thiết kế website đổi thẻ</a> của Nencer Software mang đến cho bạn
+                    một
+                    giải pháp hoàn
+                    hảo để xây dựng trang web đổi thẻ hiện đại, chuyên nghiệp và tối ưu hóa cho trải
+                    nghiệm
+                    người dùng tốt nhất. Với sự cam kết về chất lượng và sáng tạo, chúng tôi hy vọng có
+                    cơ
+                    hội hợp tác và giúp bạn đạt được mục tiêu trực tuyến của mình.
+                </p>
+                <p>
+                    <img src="https://nencer.com/storage/userfiles/files/thiet-ke-website-doi-the-cao-thanh-tien-mat.JPG"
+                         alt="">
+                </p>
+                <h2>
+                    Lợi ích của việc sử dụng dịch vụ thiết kế website đổi thẻ từ Nencer Software
+                </h2>
+                <p>
+                    Khi bạn chọn dịch vụ thiết kế website đổi thẻ từ Nencer Software, bạn sẽ được hưởng
+                    nhiều lợi ích quan trọng:
+                </p>
+                <h3>
+                    1: Thiết kế chuyên nghiệp
+                </h3>
+                <p>
+                    Chúng tôi có đội ngũ thiết kế chuyên nghiệp với nhiều năm kinh nghiệm trong việc tạo
+                    ra
+                    các trang web đổi thẻ chất lượng cao, phù hợp với mọi nhu cầu của bạn.
+                </p>
+                <h3>2: Công nghệ mới nhất</h3>
+                <p>
+                    Nencer Software luôn cập nhật với công nghệ và xu hướng mới nhất trong <em>thiết kế
+                    website
+                    đổi
+                    thẻ</em>.
+                    Chúng tôi sử dụng các công cụ và ngôn ngữ lập trình hiện đại như
+                    HTML5, CSS3, JavaScript, và Responsive Web Design để đảm bảo trang web của bạn luôn
+                    đẹp
+                    và hiệu quả trên mọi thiết bị.
+                </p>
+                <p>
+                    Các phần mềm của chúng tôi cung cấp đều được thiết kế rất chuyên nghiệp và tỉ mỉ.
+                    Đối
+                    với những khách hàng VIP, chúng tôi nhận hỗ trợ từ 24/7 không ngày nghỉ lễ. Chúng
+                    tôi sẽ
+                    giúp cho khách hàng tối ưu chi phí và nhân lực bằng việc tự động hóa sản phẩm. Quý
+                    khách
+                    muốn mua sản phẩm chỉ cần thanh toán trực tuyến. Hệ thống sẽ nhận và hỗ trợ 24/24.
+                </p>
+                <div class="table-responsive">
+                    <table align="center" border="1" cellpadding="1" cellspacing="1"
+                           style="width: 100%;" class="table table-bordered">
+                        <tbody>
+                        <tr>
+                            <td style="text-align: center;"><span style="font-size:18px;"><strong>Quy
+                                mô</strong></span>
+                            </td>
+                            <td style="text-align: center;"><span style="font-size:18px;"><strong>Tính
+                                năng&nbsp;
+                                phần
+                                mềm</strong></span>
+                            </td>
+                            <td style="text-align: center;"><span style="font-size:18px;"><strong>Báo
+                                giá
+                                phần
+                                mềm</strong></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;"><strong><span style="font-size:16px;">Phòng
+                                khám
+                                chuyên
+                                khoa</span></strong>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li><span style="font-size:16px;">Quản lý tiếp đón</span></li>
+                                    <li><span style="font-size:16px;">Quản lý kế toán - Thu ngân</span>
+                                    </li>
+                                    <li><span style="font-size:16px;">Quản lý kho thuốc – vật tư y
+                                        tế</span>
+                                    </li>
+                                    <li><span style="font-size:16px;">Quản lý đội ngũ y bác sĩ, nhân
+                                        viên</span>
+                                    </li>
+                                    <li><span style="font-size:16px;">Quản lý và tạo lập đơn
+                                        thuốc</span></li>
+                                    <li><span style="font-size:16px;">Kết nối máy ngoại vi</span></li>
+                                    <li><span style="font-size:16px;">Thống kê, báo cáo</span></li>
+                                    <li><span style="font-size:16px;">Lưu trữ lịch sử, hồ sơ khám
+                                        bệnh</span>
+                                    </li>
+                                    <li><span style="font-size:16px;">Hẹn lịch khám, nhắc lịch
+                                        khám</span></li>
+                                </ul>
+                            </td>
+                            <td><span style="font-size:16px;">2.000.000 VNĐ</span></td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;"><strong><span style="font-size:16px;">Phòng
+                                khám
+                                đa
+                                khoa</span></strong>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li><span style="font-size:16px;">Quản lý tiếp đón</span></li>
+                                    <li><span style="font-size:16px;">Quản lý khoa phòng</span></li>
+                                    <li><span style="font-size:16px;">Quản lý bệnh nhân điều trị ngoại
+                                        trú</span></li>
+                                    <li><span style="font-size:16px;">Quản lý kế toán - Thu ngân</span>
+                                    </li>
+                                    <li><span style="font-size:16px;">Quản lý kho thuốc – vật tư y
+                                        tế</span>
+                                    </li>
+                                    <li><span style="font-size:16px;">Quản lý đội ngũ y bác sĩ, nhân
+                                        viên</span>
+                                    </li>
+                                    <li><span style="font-size:16px;">Quản lý và tạo lập đơn
+                                        thuốc</span></li>
+                                    <li><span style="font-size:16px;">Kết nối máy ngoại vi</span></li>
+                                    <li><span style="font-size:16px;">Thống kê, báo cáo</span></li>
+                                    <li><span style="font-size:16px;">Lưu trữ lịch sử, hồ sơ khám
+                                        bệnh</span>
+                                    </li>
+                                    <li><span style="font-size:16px;">Hẹn lịch khám, nhắc lịch
+                                        khám</span></li>
+                                    <li><span style="font-size:16px;">In tem bệnh nhân</span></li>
+                                    <li><span style="font-size:16px;">Quản lý viện phí</span></li>
+                                    <li><span style="font-size:16px;">Liên thông BHXH</span></li>
+                                    <li><span style="font-size:16px;">Quản lý khám sức khỏe</span></li>
+                                    <li><span style="font-size:16px;">Quản lý cấp cứu</span></li>
+                                    <li><span style="font-size:16px;">Đặt lịch khám bệnh trực
+                                        tuyến</span></li>
+                                </ul>
+                            </td>
+                            <td><span style="font-size:16px;">10.000.000 VNĐ</span></td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;"><strong><span style="font-size:16px;">Bệnh
+                                viện</span></strong>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li><span style="font-size:16px;">Quản lý tiếp đón</span></li>
+                                    <li><span style="font-size:16px;">Quản lý khoa phòng</span></li>
+                                    <li><span style="font-size:16px;">Quản lý bệnh nhân điều trị ngoại
+                                        trú</span></li>
+                                    <li><span style="font-size:16px;">Quản lý bệnh nhân điều trị nội
+                                        trú</span>
+                                    </li>
+                                    <li><span style="font-size:16px;">Quản lý kế toán - Thu ngân</span>
+                                    </li>
+                                    <li><span style="font-size:16px;">Quản lý kho thuốc – vật tư y
+                                        tế</span>
+                                    </li>
+                                    <li><span style="font-size:16px;">Quản lý đội ngũ y bác sĩ, nhân
+                                        viên</span>
+                                    </li>
+                                    <li><span style="font-size:16px;">Quản lý và tạo lập đơn
+                                        thuốc</span></li>
+                                    <li><span style="font-size:16px;">Kết nối máy ngoại vi</span></li>
+                                    <li><span style="font-size:16px;">Thống kê, báo cáo</span></li>
+                                    <li><span style="font-size:16px;">Lưu trữ lịch sử, hồ sơ khám
+                                        bệnh</span>
+                                    </li>
+                                    <li><span style="font-size:16px;">Hẹn lịch khám, nhắc lịch
+                                        khám</span></li>
+                                    <li><span style="font-size:16px;">In tem bệnh nhân</span></li>
+                                    <li><span style="font-size:16px;">Quản lý viện phí</span></li>
+                                    <li><span style="font-size:16px;">Liên thông BHXH</span></li>
+                                    <li><span style="font-size:16px;">Quản lý khám sức khỏe</span></li>
+                                    <li><span style="font-size:16px;">Đặt lịch khám bệnh trực
+                                        tuyến</span></li>
+                                    <li><span style="font-size:16px;">Quản lý cấp cứu</span></li>
+                                    <li><span style="font-size:16px;">Quản lý đấu thầu</span></li>
+                                    <li><span style="font-size:16px;">Quản lý quá trình đào tạo
+                                        tuyến</span>
+                                    </li>
+                                    <li><span style="font-size:16px;">Quản lý chương trình y tế</span>
+                                    </li>
+                                    <li><span style="font-size:16px;">Tích hợp thêm modun nâng
+                                        cao</span></li>
+                                </ul>
+                            </td>
+                            <td><span style="font-size:16px;">25.000.000 VNĐ</span></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p>
+                    Công ty phần mềm trực tuyến Nencer Software là đơn vị hàng đầu chuyên thiết kế web
+                    đổi
+                    thẻ cào, làm web bán thẻ cào, làm web gạch thẻ tự động, web gạch cước tự động uy tín
+                    chuyên nghiệp trên toàn quốc, đã thực hiện rất nhiều dự án thiết kế website gạch thẻ
+                    cào, web nạp cước thành công cho khách hàng.
+                </p>
+                <p>
+                    Với kinh nghiệm hơn 10 năm trong lĩnh vực lập trình web và đội ngũ kỹ thuật giỏi
+                    chuyên
+                    môn, chuyên nghiệp trong công việc Nencer Software sẽ đáp ứng tất cả các yêu cầu của
+                    khách hàng. Ngoài ra chúng tôi sẽ hỗ trợ, hướng dẫn khách hàng vận hành, khai thác
+                    hệ
+                    thống với hiệu quả tốt nhất và tư vấn miễn phí khách hàng về marketing online.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="section-gap section-page">
+        <div class="container">
+            <div class="section-heading">
+                <div class="heading-title text-start mb-0">
+                    Các mẫu website liên quan
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-3">
+                <div class="col">
+                    <div class="website-card card border-0 h-100">
+                        <a href="" class="card-header border-0 p-0 bg-transparent">
+                            <img src="./assets/images/website/1-330x1520.png"
+                                 class="img-fluid" alt="">
+                        </a>
+                        <div class="card-body px-0 pb-0">
+                            <a href="" class="card-title limit">
+                                Mẫu Website bán cây cảnh đẹp
+                            </a>
+                            <div class="card-price hstack flex-wrap justify-content-start gap-10px">
+                                <div class="price-current">
+                                    Giá chỉ: 499,999 VND
+                                </div>
+                                <div class="price-cost">
+                                    750,000 VND
+                                </div>
+                            </div>
+                            <div class="card-tag hstack flex-wrap justify-content-start gap-5px">
+                                <strong>TAG:</strong>
+                                <a href="">Cây cảnh</a>
+                                <a href="">Doanh nghiệp</a>
+                                <a href="">Bán hàng</a>
+                                <a href="">Dịch vụ</a>
+                            </div>
+                            <div class="card-buttons hstack gap-8px">
+                                <a href="" class="button-theme button-theme_primary button-theme_small flex-fill">
+                                    Xem demo
+                                </a>
+                                <a href="" class="button-theme button-theme_secondary button-theme_small flex-fill">
+                                    Xem chi tiết
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="website-card card border-0 h-100">
+                        <a href="" class="card-header border-0 p-0 bg-transparent">
+                            <img src="./assets/images/website/2-330x1830.png"
+                                 class="img-fluid" alt="">
+                        </a>
+                        <div class="card-body px-0 pb-0">
+                            <a href="" class="card-title limit">
+                                Mẫu Website Dịch Vụ Vận Chuyển Hàng Hóa Quốc Tế Linh Hoạt
+                            </a>
+                            <div class="card-price hstack flex-wrap justify-content-start gap-10px">
+                                <div class="price-current">
+                                    Giá chỉ: 499,999 VND
+                                </div>
+                                <div class="price-cost">
+                                    750,000 VND
+                                </div>
+                            </div>
+                            <div class="card-tag hstack flex-wrap justify-content-start gap-5px">
+                                <strong>TAG:</strong>
+                                <a href="">Cây cảnh</a>
+                                <a href="">Doanh nghiệp</a>
+                                <a href="">Bán hàng</a>
+                                <a href="">Dịch vụ</a>
+                            </div>
+                            <div class="card-buttons hstack gap-8px">
+                                <a href="" class="button-theme button-theme_primary button-theme_small flex-fill">
+                                    Xem demo
+                                </a>
+                                <a href="" class="button-theme button-theme_secondary button-theme_small flex-fill">
+                                    Xem chi tiết
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="website-card card border-0 h-100">
+                        <a href="" class="card-header border-0 p-0 bg-transparent">
+                            <img src="./assets/images/website/3-330x1284.png"
+                                 class="img-fluid" alt="">
+                        </a>
+                        <div class="card-body px-0 pb-0">
+                            <a href="" class="card-title limit">
+                                Mẫu Website Dịch Vụ Vận Chuyển Hàng Hóa Quốc Tế Linh Hoạt
+                            </a>
+                            <div class="card-price hstack flex-wrap justify-content-start gap-10px">
+                                <div class="price-current">
+                                    Giá chỉ: 499,999 VND
+                                </div>
+                                <div class="price-cost">
+                                    750,000 VND
+                                </div>
+                            </div>
+                            <div class="card-tag hstack flex-wrap justify-content-start gap-5px">
+                                <strong>TAG:</strong>
+                                <a href="">Cây cảnh</a>
+                                <a href="">Doanh nghiệp</a>
+                                <a href="">Bán hàng</a>
+                                <a href="">Dịch vụ</a>
+                            </div>
+                            <div class="card-buttons hstack gap-8px">
+                                <a href="" class="button-theme button-theme_primary button-theme_small flex-fill">
+                                    Xem demo
+                                </a>
+                                <a href="" class="button-theme button-theme_secondary button-theme_small flex-fill">
+                                    Xem chi tiết
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="website-card card border-0 h-100">
+                        <a href="" class="card-header border-0 p-0 bg-transparent">
+                            <img src="./assets/images/website/4-330x1208.png"
+                                 class="img-fluid" alt="">
+                        </a>
+                        <div class="card-body px-0 pb-0">
+                            <a href="" class="card-title limit">
+                                Mẫu Website bán cây cảnh đẹp
+                            </a>
+                            <div class="card-price hstack flex-wrap justify-content-start gap-10px">
+                                <div class="price-current">
+                                    Giá chỉ: 499,999 VND
+                                </div>
+                                <div class="price-cost">
+                                    750,000 VND
+                                </div>
+                            </div>
+                            <div class="card-tag hstack flex-wrap justify-content-start gap-5px">
+                                <strong>TAG:</strong>
+                                <a href="">Cây cảnh</a>
+                                <a href="">Doanh nghiệp</a>
+                                <a href="">Bán hàng</a>
+                                <a href="">Dịch vụ</a>
+                            </div>
+                            <div class="card-buttons hstack gap-8px">
+                                <a href="" class="button-theme button-theme_primary button-theme_small flex-fill">
+                                    Xem demo
+                                </a>
+                                <a href="" class="button-theme button-theme_secondary button-theme_small flex-fill">
+                                    Xem chi tiết
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="website-card card border-0 h-100">
+                        <a href="" class="card-header border-0 p-0 bg-transparent">
+                            <img src="./assets/images/website/1-330x1520.png"
+                                 class="img-fluid" alt="">
+                        </a>
+                        <div class="card-body px-0 pb-0">
+                            <a href="" class="card-title limit">
+                                Mẫu Website bán cây cảnh đẹp
+                            </a>
+                            <div class="card-price hstack flex-wrap justify-content-start gap-10px">
+                                <div class="price-current">
+                                    Giá chỉ: 499,999 VND
+                                </div>
+                                <div class="price-cost">
+                                    750,000 VND
+                                </div>
+                            </div>
+                            <div class="card-tag hstack flex-wrap justify-content-start gap-5px">
+                                <strong>TAG:</strong>
+                                <a href="">Cây cảnh</a>
+                                <a href="">Doanh nghiệp</a>
+                                <a href="">Bán hàng</a>
+                                <a href="">Dịch vụ</a>
+                            </div>
+                            <div class="card-buttons hstack gap-8px">
+                                <a href="" class="button-theme button-theme_primary button-theme_small flex-fill">
+                                    Xem demo
+                                </a>
+                                <a href="" class="button-theme button-theme_secondary button-theme_small flex-fill">
+                                    Xem chi tiết
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="website-card card border-0 h-100">
+                        <a href="" class="card-header border-0 p-0 bg-transparent">
+                            <img src="./assets/images/website/2-330x1830.png"
+                                 class="img-fluid" alt="">
+                        </a>
+                        <div class="card-body px-0 pb-0">
+                            <a href="" class="card-title limit">
+                                Mẫu Website Dịch Vụ Vận Chuyển Hàng Hóa Quốc Tế Linh Hoạt
+                            </a>
+                            <div class="card-price hstack flex-wrap justify-content-start gap-10px">
+                                <div class="price-current">
+                                    Giá chỉ: 499,999 VND
+                                </div>
+                                <div class="price-cost">
+                                    750,000 VND
+                                </div>
+                            </div>
+                            <div class="card-tag hstack flex-wrap justify-content-start gap-5px">
+                                <strong>TAG:</strong>
+                                <a href="">Cây cảnh</a>
+                                <a href="">Doanh nghiệp</a>
+                                <a href="">Bán hàng</a>
+                                <a href="">Dịch vụ</a>
+                            </div>
+                            <div class="card-buttons hstack gap-8px">
+                                <a href="" class="button-theme button-theme_primary button-theme_small flex-fill">
+                                    Xem demo
+                                </a>
+                                <a href="" class="button-theme button-theme_secondary button-theme_small flex-fill">
+                                    Xem chi tiết
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="website-card card border-0 h-100">
+                        <a href="" class="card-header border-0 p-0 bg-transparent">
+                            <img src="./assets/images/website/3-330x1284.png"
+                                 class="img-fluid" alt="">
+                        </a>
+                        <div class="card-body px-0 pb-0">
+                            <a href="" class="card-title limit">
+                                Mẫu Website Dịch Vụ Vận Chuyển Hàng Hóa Quốc Tế Linh Hoạt
+                            </a>
+                            <div class="card-price hstack flex-wrap justify-content-start gap-10px">
+                                <div class="price-current">
+                                    Giá chỉ: 499,999 VND
+                                </div>
+                                <div class="price-cost">
+                                    750,000 VND
+                                </div>
+                            </div>
+                            <div class="card-tag hstack flex-wrap justify-content-start gap-5px">
+                                <strong>TAG:</strong>
+                                <a href="">Cây cảnh</a>
+                                <a href="">Doanh nghiệp</a>
+                                <a href="">Bán hàng</a>
+                                <a href="">Dịch vụ</a>
+                            </div>
+                            <div class="card-buttons hstack gap-8px">
+                                <a href="" class="button-theme button-theme_primary button-theme_small flex-fill">
+                                    Xem demo
+                                </a>
+                                <a href="" class="button-theme button-theme_secondary button-theme_small flex-fill">
+                                    Xem chi tiết
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="website-card card border-0 h-100">
+                        <a href="" class="card-header border-0 p-0 bg-transparent">
+                            <img src="./assets/images/website/4-330x1208.png"
+                                 class="img-fluid" alt="">
+                        </a>
+                        <div class="card-body px-0 pb-0">
+                            <a href="" class="card-title limit">
+                                Mẫu Website bán cây cảnh đẹp
+                            </a>
+                            <div class="card-price hstack flex-wrap justify-content-start gap-10px">
+                                <div class="price-current">
+                                    Giá chỉ: 499,999 VND
+                                </div>
+                                <div class="price-cost">
+                                    750,000 VND
+                                </div>
+                            </div>
+                            <div class="card-tag hstack flex-wrap justify-content-start gap-5px">
+                                <strong>TAG:</strong>
+                                <a href="">Cây cảnh</a>
+                                <a href="">Doanh nghiệp</a>
+                                <a href="">Bán hàng</a>
+                                <a href="">Dịch vụ</a>
+                            </div>
+                            <div class="card-buttons hstack gap-8px">
+                                <a href="" class="button-theme button-theme_primary button-theme_small flex-fill">
+                                    Xem demo
+                                </a>
+                                <a href="" class="button-theme button-theme_secondary button-theme_small flex-fill">
+                                    Xem chi tiết
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <footer id="footer" class="footer">
-	<div class="footer-main">
-		<div class="position-relative zi-2">
-			<div class="container">
-				<div class="section-gap">
-					<div class="row">
-						<div class="col-lg-5 col-xl-4">
-							<div class="footer-title">
-								Netpay Corporation
-							</div>
-							<ul class="footer-list list-unstyled mb-0">
-								<li class="footer-list_item">
-									<a href="" class="footer-list_item--link">
-										<i class="far fa-map-marker-alt"></i>
-										Số 152 Trần Vỹ, Mai Dịch, Cầu Giấy, Hà Nội
-									</a>
-								</li>
-								<li class="footer-list_item">
-									<a href="" class="footer-list_item--link">
-										<i class="far fa-phone-rotary"></i>0969110811
-									</a>
-								</li>
-								<li class="footer-list_item">
-									<a href="" class="footer-list_item--link">
-										<i class="far fa-phone-alt"></i>0969110811
-									</a>
-								</li>
-								<li class="footer-list_item">
-									<a href="" class="footer-list_item--link">
-										<i class="far fa-envelope"></i>support@netpay.vn
-									</a>
-								</li>
-							</ul>
-							<ul class="footer-social list-unstyled mb-0 hstack gap-5px">
-								<li class="footer-social_item">
-									<a href="fb.com/admin" class="footer-social_item--link footer-social_facebook">
-										<i class="fab fa-facebook-f"></i>
-									</a>
-								</li>
-								<li class="footer-social_item">
-									<a href="fb.com/admin" class="footer-social_item--link footer-social_twitter">
-										<i class="fab fa-twitter"></i>
-									</a>
-								</li>
-								<li class="footer-social_item">
-									<a href="fb.com/admin" class="footer-social_item--link footer-social_google">
-										<i class="fab fa-google"></i>
-									</a>
-								</li>
-								<li class="footer-social_item">
-									<a href="https://www.youtube.com/watch?v=neCmEbI2VWg"
-									   class="footer-social_item--link footer-social_youtube">
-										<i class="fab fa-youtube"></i>
-									</a>
-								</li>
-							</ul>
-						</div>
-						<div class="col-lg-7 col-xl-8 mt-4 mt-lg-0">
-							<div class="row g-4">
-								<div class="col-6 col-xl-3">
-									<div class="footer-title">
-										PHẦN MỀM
-									</div>
-									<ul class="footer-list footer-link list-unstyled mb-0">
-										<li class="footer-list_item">
-											<a href="" class="footer-list_item--link">
-												Quản lý trường học
-											</a>
-										</li>
-										<li class="footer-list_item">
-											<a href="" class="footer-list_item--link">
-												Quản lý bệnh viện
-											</a>
-										</li>
-										<li class="footer-list_item">
-											<a href="" class="footer-list_item--link">
-												Quản lý khách sạn
-											</a>
-										</li>
-										<li class="footer-list_item">
-											<a href="" class="footer-list_item--link">
-												Quản lý sân golf
-											</a>
-										</li>
-									</ul>
-								</div>
-								<div class="col-6 col-xl-3">
-									<div class="footer-title">
-										DỊCH VỤ WEB
-									</div>
-									<ul class="footer-list footer-link list-unstyled mb-0">
-										<li class="footer-list_item">
-											<a href="" class="footer-list_item--link">
-												Bán hàng trực tuyến
-											</a>
-										</li>
-										<li class="footer-list_item">
-											<a href="" class="footer-list_item--link">
-												Bán file tài liệu
-											</a>
-										</li>
-										<li class="footer-list_item">
-											<a href="" class="footer-list_item--link">
-												Học trực tuyến
-											</a>
-										</li>
-										<li class="footer-list_item">
-											<a href="" class="footer-list_item--link">
-												Thuê website
-											</a>
-										</li>
-										<li class="footer-list_item">
-											<a href="" class="footer-list_item--link">
-												Bán thẻ cào
-											</a>
-										</li>
-									</ul>
-								</div>
-								<div class="col-6 col-xl-3">
-									<div class="footer-title">
-										LƯU TRỮ WEB
-									</div>
-									<ul class="footer-list footer-link list-unstyled mb-0">
-										<li class="footer-list_item">
-											<a href="" class="footer-list_item--link">
-												Tên miền
-											</a>
-										</li>
-										<li class="footer-list_item">
-											<a href="" class="footer-list_item--link">
-												Máy chủ ảo
-											</a>
-										</li>
-										<li class="footer-list_item">
-											<a href="" class="footer-list_item--link">
-												Máy chủ vật lý
-											</a>
-										</li>
-										<li class="footer-list_item">
-											<a href="" class="footer-list_item--link">
-												Email doanh nghiệp
-											</a>
-										</li>
-										<li class="footer-list_item">
-											<a href="" class="footer-list_item--link">
-												Chứng chỉ SSL
-											</a>
-										</li>
-									</ul>
-								</div>
-								<div class="col-6 col-xl-3">
-									<div class="footer-title">
-										THÔNG TIN
-									</div>
-									<ul class="footer-list footer-link list-unstyled mb-0">
-										<li class="footer-list_item">
-											<a href="" class="footer-list_item--link">
-												Chia sẻ kiến thức
-											</a>
-										</li>
-										<li class="footer-list_item">
-											<a href="" class="footer-list_item--link">
-												Chính sách bảo mật
-											</a>
-										</li>
-										<li class="footer-list_item">
-											<a href="" class="footer-list_item--link">
-												Quy định sử dụng
-											</a>
-										</li>
-										<li class="footer-list_item">
-											<a href="" class="footer-list_item--link">
-												Miễn trừ trách nhiệm
-											</a>
-										</li>
-										<li class="footer-list_item">
-											<a href="" class="footer-list_item--link">
-												Thông tin thanh toán
-											</a>
-										</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="section-gap">
-					<div class="row flex-column-reverse flex-lg-row justify-content-center justify-content-lg-between g-3">
-						<div class="col-auto">
-							<div class="text-center footer-copyright">© 2023 Netpay Corporation. All rights reserved
-							</div>
-						</div>
-						<div class="col-auto">
-							<div class="hstack justify-content-center justify-content-lg-end gap-10px footer-logos">
-								<a href="">
-									<img src="./assets/images/payment/momo.svg" alt="">
-								</a>
-								<a href="">
-									<img src="./assets/images/payment/vnpay.svg" alt="">
-								</a>
-								<a href="">
-									<img src="./assets/images/payment/visa.svg" alt="">
-								</a>
-								<a href="">
-									<img src="./assets/images/payment/master.svg" alt="">
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+    <div class="footer-main">
+        <div class="position-relative zi-2">
+            <div class="container">
+                <div class="section-gap">
+                    <div class="row">
+                        <div class="col-lg-5 col-xl-4">
+                            <div class="footer-title">
+                                Netpay Corporation
+                            </div>
+                            <ul class="footer-list list-unstyled mb-0">
+                                <li class="footer-list_item">
+                                    <a href="" class="footer-list_item--link">
+                                        <i class="far fa-map-marker-alt"></i>
+                                        Số 152 Trần Vỹ, Mai Dịch, Cầu Giấy, Hà Nội
+                                    </a>
+                                </li>
+                                <li class="footer-list_item">
+                                    <a href="" class="footer-list_item--link">
+                                        <i class="far fa-phone-rotary"></i>0969110811
+                                    </a>
+                                </li>
+                                <li class="footer-list_item">
+                                    <a href="" class="footer-list_item--link">
+                                        <i class="far fa-phone-alt"></i>0969110811
+                                    </a>
+                                </li>
+                                <li class="footer-list_item">
+                                    <a href="" class="footer-list_item--link">
+                                        <i class="far fa-envelope"></i>support@netpay.vn
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="footer-social list-unstyled mb-0 hstack gap-5px">
+                                <li class="footer-social_item">
+                                    <a href="fb.com/admin" class="footer-social_item--link footer-social_facebook">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li class="footer-social_item">
+                                    <a href="fb.com/admin" class="footer-social_item--link footer-social_twitter">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li class="footer-social_item">
+                                    <a href="fb.com/admin" class="footer-social_item--link footer-social_google">
+                                        <i class="fab fa-google"></i>
+                                    </a>
+                                </li>
+                                <li class="footer-social_item">
+                                    <a href="https://www.youtube.com/watch?v=neCmEbI2VWg"
+                                       class="footer-social_item--link footer-social_youtube">
+                                        <i class="fab fa-youtube"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-7 col-xl-8 mt-4 mt-lg-0">
+                            <div class="row g-4">
+                                <div class="col-6 col-xl-3">
+                                    <div class="footer-title">
+                                        PHẦN MỀM
+                                    </div>
+                                    <ul class="footer-list footer-link list-unstyled mb-0">
+                                        <li class="footer-list_item">
+                                            <a href="" class="footer-list_item--link">
+                                                Quản lý trường học
+                                            </a>
+                                        </li>
+                                        <li class="footer-list_item">
+                                            <a href="" class="footer-list_item--link">
+                                                Quản lý bệnh viện
+                                            </a>
+                                        </li>
+                                        <li class="footer-list_item">
+                                            <a href="" class="footer-list_item--link">
+                                                Quản lý khách sạn
+                                            </a>
+                                        </li>
+                                        <li class="footer-list_item">
+                                            <a href="" class="footer-list_item--link">
+                                                Quản lý sân golf
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-6 col-xl-3">
+                                    <div class="footer-title">
+                                        DỊCH VỤ WEB
+                                    </div>
+                                    <ul class="footer-list footer-link list-unstyled mb-0">
+                                        <li class="footer-list_item">
+                                            <a href="" class="footer-list_item--link">
+                                                Bán hàng trực tuyến
+                                            </a>
+                                        </li>
+                                        <li class="footer-list_item">
+                                            <a href="" class="footer-list_item--link">
+                                                Bán file tài liệu
+                                            </a>
+                                        </li>
+                                        <li class="footer-list_item">
+                                            <a href="" class="footer-list_item--link">
+                                                Học trực tuyến
+                                            </a>
+                                        </li>
+                                        <li class="footer-list_item">
+                                            <a href="" class="footer-list_item--link">
+                                                Thuê website
+                                            </a>
+                                        </li>
+                                        <li class="footer-list_item">
+                                            <a href="" class="footer-list_item--link">
+                                                Bán thẻ cào
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-6 col-xl-3">
+                                    <div class="footer-title">
+                                        LƯU TRỮ WEB
+                                    </div>
+                                    <ul class="footer-list footer-link list-unstyled mb-0">
+                                        <li class="footer-list_item">
+                                            <a href="" class="footer-list_item--link">
+                                                Tên miền
+                                            </a>
+                                        </li>
+                                        <li class="footer-list_item">
+                                            <a href="" class="footer-list_item--link">
+                                                Máy chủ ảo
+                                            </a>
+                                        </li>
+                                        <li class="footer-list_item">
+                                            <a href="" class="footer-list_item--link">
+                                                Máy chủ vật lý
+                                            </a>
+                                        </li>
+                                        <li class="footer-list_item">
+                                            <a href="" class="footer-list_item--link">
+                                                Email doanh nghiệp
+                                            </a>
+                                        </li>
+                                        <li class="footer-list_item">
+                                            <a href="" class="footer-list_item--link">
+                                                Chứng chỉ SSL
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-6 col-xl-3">
+                                    <div class="footer-title">
+                                        THÔNG TIN
+                                    </div>
+                                    <ul class="footer-list footer-link list-unstyled mb-0">
+                                        <li class="footer-list_item">
+                                            <a href="" class="footer-list_item--link">
+                                                Chia sẻ kiến thức
+                                            </a>
+                                        </li>
+                                        <li class="footer-list_item">
+                                            <a href="" class="footer-list_item--link">
+                                                Chính sách bảo mật
+                                            </a>
+                                        </li>
+                                        <li class="footer-list_item">
+                                            <a href="" class="footer-list_item--link">
+                                                Quy định sử dụng
+                                            </a>
+                                        </li>
+                                        <li class="footer-list_item">
+                                            <a href="" class="footer-list_item--link">
+                                                Miễn trừ trách nhiệm
+                                            </a>
+                                        </li>
+                                        <li class="footer-list_item">
+                                            <a href="" class="footer-list_item--link">
+                                                Thông tin thanh toán
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-gap">
+                    <div class="row flex-column-reverse flex-lg-row justify-content-center justify-content-lg-between g-3">
+                        <div class="col-auto">
+                            <div class="text-center footer-copyright">© 2023 Netpay Corporation. All rights reserved
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <div class="hstack justify-content-center justify-content-lg-end gap-10px footer-logos">
+                                <a href="">
+                                    <img src="./assets/images/payment/momo.svg" alt="">
+                                </a>
+                                <a href="">
+                                    <img src="./assets/images/payment/vnpay.svg" alt="">
+                                </a>
+                                <a href="">
+                                    <img src="./assets/images/payment/visa.svg" alt="">
+                                </a>
+                                <a href="">
+                                    <img src="./assets/images/payment/master.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </footer>
 
 <script type=" text/javascript" src="./assets/plugins/jquery.min.js"></script>
